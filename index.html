@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="assets/app-icon.png?v=2" type="image/png" />
-  <link rel="stylesheet" href="styles.css?v=9" />
+  <link rel="stylesheet" href="styles.css?v=11" />
 </head>
 <body>
   <header class="app-bar">
@@ -51,14 +51,25 @@
         <p class="card-eyebrow">Beta</p>
         <h2>시범판 다운로드</h2>
         <p class="download-version">VibeStat-Text <span>0.7.7-beta.2</span></p>
-        <p class="download-recommend">처음 받으시면 <strong>포터블</strong>을 권장합니다. (설치 없이 실행 · 차단이 적음)</p>
+        <p class="download-recommend">처음 받으시면 <strong>ZIP</strong>을 권장합니다. (압축 풀고 실행 · exe 직접 받기보다 차단이 적음)</p>
+
+        <a
+          class="btn btn-zip btn-recommended btn-full"
+          href="https://github.com/MruEdu/vibestat-releases/releases/download/v0.7.7-beta.2/VibeStat-Text-0.7.7-beta.2-win64.zip"
+          rel="noopener"
+        >
+          <span class="btn-label">ZIP 압축 <span class="btn-badge">권장</span></span>
+          <span class="btn-meta">압축 풀기 → VibeStat.exe 실행 · 약 153 MB</span>
+        </a>
+
+        <p class="download-alt-label">또는 exe 직접 받기</p>
         <div class="download-grid">
           <a
-            class="btn btn-portable btn-recommended"
+            class="btn btn-portable"
             href="https://github.com/MruEdu/vibestat-releases/releases/download/v0.7.7-beta.2/VibeStat-Portable-0.7.7-beta.2.exe"
             rel="noopener"
           >
-            <span class="btn-label">포터블 <span class="btn-badge">권장</span></span>
+            <span class="btn-label">포터블</span>
             <span class="btn-meta">설치 없이 실행 · 약 92 MB</span>
           </a>
           <a
@@ -75,29 +86,28 @@
         </p>
 
         <details class="install-help" open>
-          <summary>⚠ 실행이 안 될 때 — 3단계만</summary>
+          <summary>⚠ 받은 뒤 실행 방법 (ZIP 권장)</summary>
           <div class="install-help-body">
             <p class="install-help-lead">
-              <strong>포터블</strong> 파일만 받으세요. (설치형은 쓰지 마세요)<br />
-              경고 ⚠ 는 <strong>Windows가 낯선 프로그램이라 막는 것</strong>이지, 바이러스가 아닙니다.
+              <strong>ZIP</strong>은 exe보다 Edge에서 막히는 경우가 적습니다.<br />
+              학교·회사 PC는 보안 정책(WDAC)으로 실행이 안 될 수 있습니다.
             </p>
             <ol class="install-steps">
               <li>
-                <strong>① 차단 해제</strong><br />
-                「다운로드」 폴더 → <code>VibeStat-Portable-…exe</code> <strong>우클릭</strong> → <strong>속성</strong><br />
-                맨 아래 <strong>「보안: 차단 해제」</strong>에 ✔ → <strong>적용</strong> → <strong>확인</strong>
+                <strong>① ZIP 받기</strong> → 다운로드 100%까지 기다리기<br />
+                Edge ⚠ → <strong>⋯ → 「유지」</strong>
               </li>
               <li>
-                <strong>② 실행</strong><br />
-                파일을 <strong>더블클릭</strong> → 파란 창이 뜨면<br />
-                <strong>「추가 정보」</strong> 클릭 → <strong>「실행」</strong> 클릭
+                <strong>② 압축 풀기</strong><br />
+                ZIP 우클릭 → <strong>「압축 풀기」</strong> 또는 <strong>「모두 압축 풀기」</strong><br />
+                폴더 <code>VibeStat-Text-0.7.7-beta.2-win64</code> 안의 <strong>VibeStat.exe</strong> 를 실행
               </li>
               <li>
-                <strong>③ 그래도 안 되면</strong><br />
-                학교·회사 PC는 보안 정책으로 막힐 수 있습니다. <strong>개인 PC</strong>에서 시도하거나 IT 관리자에게 문의하세요.
+                <strong>③ 차단 해제 → 실행</strong><br />
+                <strong>VibeStat.exe</strong> 우클릭 → 속성 → <strong>「차단 해제」</strong> ✔ → 적용<br />
+                더블클릭 → <strong>「추가 정보」</strong> → <strong>「실행」</strong>
               </li>
             </ol>
-            <p class="install-help-note">GitHub에서 <strong>코드 입력</strong> 창이 뜨면 → <strong>무시·닫기</strong> (다운로드와 무관합니다)</p>
           </div>
         </details>
       </section>

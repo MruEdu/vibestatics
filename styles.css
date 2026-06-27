@@ -223,6 +223,29 @@ body {
   gap: 0.75rem;
 }
 
+.btn-full {
+  display: flex;
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+.download-alt-label {
+  margin: 0 0 0.5rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.btn-zip {
+  background: #0d7a4a;
+  color: #ecfdf5;
+  border: 1px solid #10b981;
+}
+
+.btn-zip:hover {
+  background: #0f9660;
+}
+
 .btn {
   display: flex;
   flex-direction: column;
