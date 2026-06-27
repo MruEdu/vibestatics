@@ -19,7 +19,7 @@ if ($LASTEXITCODE -eq 0) {
 
 $remote = git remote get-url origin 2>$null
 if (-not $remote) {
-  git remote add origin https://github.com/vibestatics/vibestatics.git
+  git remote add origin https://github.com/MruEdu/vibestatics.git
   Write-Host "[first-push] remote origin 추가됨"
 }
 
