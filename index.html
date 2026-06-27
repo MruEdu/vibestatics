@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="assets/app-icon.png?v=2" type="image/png" />
-  <link rel="stylesheet" href="styles.css?v=11" />
+  <link rel="stylesheet" href="styles.css?v=12" />
 </head>
 <body>
   <header class="app-bar">
@@ -43,7 +43,7 @@
           TXT·CSV·Excel·PDF·HWP를 넣고 버튼만 누르면 R 분석이 실행됩니다.
         </p>
         <p class="intro-note">
-          Windows 10/11 · 오프라인 R 분석 · 시범판 무료 (<strong>2026년 8월 31일</strong>까지)
+          Windows 10/11 · ZIP 풀고 바로 실행 · 시범판 무료 (<strong>2026년 8월 31일</strong>까지)
         </p>
       </section>
 
@@ -51,18 +51,54 @@
         <p class="card-eyebrow">Beta</p>
         <h2>시범판 다운로드</h2>
         <p class="download-version">VibeStat-Text <span>0.7.7-beta.2</span></p>
-        <p class="download-recommend">처음 받으시면 <strong>ZIP</strong>을 권장합니다. (압축 풀고 실행 · exe 직접 받기보다 차단이 적음)</p>
+        <p class="download-recommend">
+          <strong>ZIP</strong>을 받아 압축을 풀고 <strong>VibeStat.exe</strong>를 실행하세요.<br />
+          Windows 설치 프로그램이 아닙니다 · exe 직접 받기보다 차단이 적습니다.
+        </p>
 
         <a
           class="btn btn-zip btn-recommended btn-full"
           href="https://github.com/MruEdu/vibestat-releases/releases/download/v0.7.7-beta.2/VibeStat-Text-0.7.7-beta.2-win64.zip"
           rel="noopener"
         >
-          <span class="btn-label">ZIP 압축 <span class="btn-badge">권장</span></span>
+          <span class="btn-label">ZIP 다운로드 <span class="btn-badge">권장</span></span>
           <span class="btn-meta">압축 풀기 → VibeStat.exe 실행 · 약 153 MB</span>
         </a>
 
-        <p class="download-alt-label">또는 exe 직접 받기</p>
+        <details class="install-help" open>
+          <summary>📋 ZIP 받은 뒤 — 4단계</summary>
+          <div class="install-help-body">
+            <ol class="install-steps">
+              <li>
+                <strong>① ZIP 다운로드</strong><br />
+                153 MB · <strong>100%까지</strong> 기다리기<br />
+                Edge·Chrome ⚠ → <strong>⋯ → 「유지」</strong> (또는 「그래도 유지」)
+              </li>
+              <li>
+                <strong>② 압축 풀기</strong><br />
+                ZIP <strong>우클릭 → 「압축 풀기」</strong> (바탕화면·다운로드 등)<br />
+                ZIP 안만 열지 말고, <strong>풀린 폴더</strong>로 들어가세요.
+              </li>
+              <li>
+                <strong>③ VibeStat.exe 실행</strong><br />
+                폴더 <code>VibeStat-Text-0.7.7-beta.2-win64</code> 안의 <strong>VibeStat.exe</strong> 더블클릭<br />
+                ⚠ 뜨면: exe <strong>우클릭 → 속성 → 「차단 해제」</strong> ✔ → <strong>「추가 정보」→「실행」</strong>
+              </li>
+              <li>
+                <strong>④ 첫 실행</strong><br />
+                「설치 완료」·준비 메시지 → <strong>앱 첫 준비</strong>입니다 (Windows 설치 아님)<br />
+                <strong>시범판 이용약관</strong> 동의 → 프로그램 실행 (인증번호 불필요)<br />
+                이후에는 같은 폴더에서 <strong>VibeStat.exe</strong>만 누르면 바로 실행됩니다.
+              </li>
+            </ol>
+            <p class="install-help-note">
+              exe만 따로 빼면 안 됩니다 · <code>resources</code> 등 <strong>폴더 전체</strong>가 필요합니다.<br />
+              학교·회사 PC는 보안 정책으로 막힐 수 있습니다 · 개인 PC 권장
+            </p>
+          </div>
+        </details>
+
+        <p class="download-alt-label">exe 직접 받기 (Edge에서 막히면 ZIP 사용)</p>
         <div class="download-grid">
           <a
             class="btn btn-portable"
@@ -81,35 +117,6 @@
             <span class="btn-meta">시작 메뉴 등록 · 약 110 MB</span>
           </a>
         </div>
-        <p class="download-hint">
-          첫 실행 시 <strong>시범판 이용약관</strong>에 동의하면 바로 사용합니다. (인증번호 불필요)
-        </p>
-
-        <details class="install-help" open>
-          <summary>⚠ 받은 뒤 실행 방법 (ZIP 권장)</summary>
-          <div class="install-help-body">
-            <p class="install-help-lead">
-              <strong>ZIP</strong>은 exe보다 Edge에서 막히는 경우가 적습니다.<br />
-              학교·회사 PC는 보안 정책(WDAC)으로 실행이 안 될 수 있습니다.
-            </p>
-            <ol class="install-steps">
-              <li>
-                <strong>① ZIP 받기</strong> → 다운로드 100%까지 기다리기<br />
-                Edge ⚠ → <strong>⋯ → 「유지」</strong>
-              </li>
-              <li>
-                <strong>② 압축 풀기</strong><br />
-                ZIP 우클릭 → <strong>「압축 풀기」</strong> 또는 <strong>「모두 압축 풀기」</strong><br />
-                폴더 <code>VibeStat-Text-0.7.7-beta.2-win64</code> 안의 <strong>VibeStat.exe</strong> 를 실행
-              </li>
-              <li>
-                <strong>③ 차단 해제 → 실행</strong><br />
-                <strong>VibeStat.exe</strong> 우클릭 → 속성 → <strong>「차단 해제」</strong> ✔ → 적용<br />
-                더블클릭 → <strong>「추가 정보」</strong> → <strong>「실행」</strong>
-              </li>
-            </ol>
-          </div>
-        </details>
       </section>
     </div>
 

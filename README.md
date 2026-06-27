@@ -6,25 +6,22 @@
 
 **https://mruedu.github.io/vibestatics/**
 
-GitHub Pages: `main` 브랜치 · `/ (root)`
-
-## 파일
+## 배포 방식 (시범판)
 
 | 파일 | 설명 |
 |------|------|
-| `index.html` | 한 페이지 랜딩 (소개 · 다운로드 · 기능) |
-| `styles.css` | 앱 톤 `#1e1e1e` 스타일 |
-| `assets/app-icon.png` | VibeStat.exe 설치 아이콘 (256px) |
-| `.nojekyll` | Jekyll 비활성 |
+| **ZIP (권장)** | `VibeStat-Text-0.7.7-beta.2-win64.zip` — 압축 풀고 `VibeStat.exe` 실행 |
+| 포터블 exe | 보조 (Edge에서 차단될 수 있음) |
+| 설치형 exe | 시작 메뉴 등록용 (보조) |
 
-## exe 다운로드 (별도 저장소)
+Release: **https://github.com/MruEdu/vibestat-releases**
 
-랜딩의 다운로드 링크는 **`MruEdu/vibestat-releases`** public Release를 가리킵니다.
+## Release 업로드 (개발자)
 
 ```powershell
 cd c:\Workspace\VibeStat-Text
-gh auth login
-powershell -ExecutionPolicy Bypass -File scripts/finish-beta-deploy.ps1
+npm run pack:student
+powershell -ExecutionPolicy Bypass -File scripts/upload-release-api.ps1
 ```
 
 ## 연락
