@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="바이브스타틱스(VibeStatics) — Text Mining & Statistical Analysis Software. VibeStat-Text 시범판 다운로드." />
+  <title>바이브스타틱스 · VibeStatics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Noto+Sans+KR:wght@400;500;600&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <main class="page">
+    <header class="hero">
+      <div class="hero-inner">
+        <img
+          src="assets/mark.svg"
+          alt=""
+          class="hero-mark"
+          width="112"
+          height="112"
+        />
+        <div class="hero-copy">
+          <p class="hero-brand-ko">바이브스타틱스</p>
+          <h1 class="hero-title">VibeStatics</h1>
+          <p class="hero-tagline">Text Mining &amp; Statistical Analysis Software</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-grid">
+      <section class="intro card">
+        <p class="card-eyebrow">Desktop Software</p>
+        <h2>VibeStat-Text</h2>
+        <p class="lead">
+          버튼만 눌러 <strong>R 텍스트마이닝</strong>을 실행하는 Windows 데스크톱 프로그램입니다.
+          워드클라우드, LDA 토픽 모델, 형태소 빈도, 문서 비교까지 — 코딩 없이 연구·수업에 바로 활용할 수 있습니다.
+        </p>
+        <p class="intro-note">
+          현재 <strong>시범판(베타)</strong>을 무료로 배포합니다.<br />
+          Windows 10/11 · 오프라인 R 분석 · <strong>2026년 8월 31일</strong>까지
+        </p>
+      </section>
+
+      <section class="download card" id="download">
+        <p class="card-eyebrow">Beta Release</p>
+        <h2>시범판 다운로드</h2>
+        <p class="download-version">VibeStat-Text <span>0.7.7-beta.2</span></p>
+
+        <div class="download-grid">
+          <a
+            class="btn btn-primary"
+            id="btn-portable"
+            href="https://github.com/vibestatics/vibestat-releases/releases/download/v0.7.7-beta.2/VibeStat-Portable-0.7.7-beta.2.exe"
+            rel="noopener"
+          >
+            <span class="btn-label">포터블</span>
+            <span class="btn-meta">설치 없이 실행 · 약 92 MB</span>
+          </a>
+          <a
+            class="btn btn-secondary"
+            id="btn-setup"
+            href="https://github.com/vibestatics/vibestat-releases/releases/download/v0.7.7-beta.2/VibeStat-Setup-0.7.7-beta.2.exe"
+            rel="noopener"
+          >
+            <span class="btn-label">설치형</span>
+            <span class="btn-meta">시작 메뉴 등록 · 약 110 MB</span>
+          </a>
+        </div>
+
+        <p class="download-hint">
+          exe를 받은 뒤 더블클릭하여 실행하세요. 첫 실행 시 <strong>시범판 이용약관</strong>에 동의하면 바로 사용할 수 있습니다. (인증번호 불필요)<br />
+          SmartScreen 경고가 뜨면 「추가 정보」→「실행」을 선택합니다.
+        </p>
+      </section>
+    </div>
+
+    <section class="features card">
+      <p class="card-eyebrow">Features</p>
+      <h2>주요 기능</h2>
+      <ul class="features-grid">
+        <li>TXT · CSV · Excel · PDF · HWP 등 다양한 형식 적재</li>
+        <li>형태소 분석 · 워드클라우드 · LDA · TF-IDF · 네트워크</li>
+        <li>PDF 여러 개 합치기 · 문서 비교 표</li>
+        <li>내장 교재·설치 안내 · 오프라인 R 분석</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <p class="footer-copy">© 2026 바이브스타틱스 (VibeStatics). All rights reserved.</p>
+      <p class="footer-contact">
+        <a href="mailto:hyc6999@gmail.com">hyc6999@gmail.com</a>
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
