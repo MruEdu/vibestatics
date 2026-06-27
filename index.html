@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="assets/app-icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css?v=5" />
 </head>
 <body>
   <header class="app-bar">
@@ -19,26 +19,41 @@
       <span class="brand-name">VibeStatics Text Mining</span>
       <span class="edition-badge">시범판 ~2026.08.31</span>
     </div>
-    <nav class="app-bar-nav">
-      <a href="#download" class="nav-link is-active">다운로드</a>
-      <a href="#about" class="nav-link">소개</a>
-    </nav>
   </header>
 
-  <!-- 1페이지: 다운로드 -->
-  <section class="page-panel page-download" id="download">
-    <div class="panel-inner">
-      <div class="download-hero">
-        <img src="assets/app-icon.svg" alt="" class="download-icon" width="72" height="72" />
-        <h1>VibeStat-Text</h1>
-        <p class="download-sub">Windows 텍스트마이닝 · 시범판 0.7.7-beta.2</p>
+  <main class="page">
+    <header class="hero">
+      <div class="hero-inner">
+        <img src="assets/app-icon.svg" alt="" class="hero-icon" width="80" height="80" />
+        <div class="hero-copy">
+          <p class="hero-brand-ko">바이브스타틱스</p>
+          <h1>VibeStat-Text</h1>
+          <p class="hero-motto">버튼으로 분석하는 R 텍스트마이닝</p>
+          <p class="hero-tagline">Text Mining &amp; Statistical Analysis Software</p>
+        </div>
       </div>
+    </header>
 
-      <div class="panel-card download-card">
+    <div class="content-grid">
+      <section class="card intro">
+        <p class="card-eyebrow">About</p>
+        <h2>소개</h2>
+        <p class="lead">
+          코딩 없이 <strong>워드클라우드 · LDA · 형태소 빈도 · 문서 비교</strong>까지.
+          TXT·CSV·Excel·PDF·HWP를 넣고 버튼만 누르면 R 분석이 실행됩니다.
+        </p>
+        <p class="intro-note">
+          Windows 10/11 · 오프라인 R 분석 · 시범판 무료 (<strong>2026년 8월 31일</strong>까지)
+        </p>
+      </section>
+
+      <section class="card download" id="download">
+        <p class="card-eyebrow">Beta</p>
         <h2>시범판 다운로드</h2>
+        <p class="download-version">VibeStat-Text <span>0.7.7-beta.2</span></p>
         <div class="download-grid">
           <a
-            class="btn btn-hero btn-portable"
+            class="btn btn-portable"
             href="https://github.com/MruEdu/vibestat-releases/releases/download/v0.7.7-beta.2/VibeStat-Portable-0.7.7-beta.2.exe"
             rel="noopener"
           >
@@ -46,7 +61,7 @@
             <span class="btn-meta">설치 없이 실행 · 약 92 MB</span>
           </a>
           <a
-            class="btn btn-hero btn-setup"
+            class="btn btn-setup"
             href="https://github.com/MruEdu/vibestat-releases/releases/download/v0.7.7-beta.2/VibeStat-Setup-0.7.7-beta.2.exe"
             rel="noopener"
           >
@@ -55,48 +70,27 @@
           </a>
         </div>
         <p class="download-hint">
-          첫 실행 시 <strong>시범판 이용약관</strong>에 동의하면 바로 사용할 수 있습니다. (인증번호 불필요)<br />
-          SmartScreen 경고 → 「추가 정보」→「실행」
+          첫 실행 시 <strong>시범판 이용약관</strong>에 동의하면 바로 사용합니다. (인증번호 불필요)<br />
+          SmartScreen → 「추가 정보」→「실행」
         </p>
-      </div>
-
-      <p class="scroll-hint"><a href="#about">소개 보기 ↓</a></p>
-    </div>
-  </section>
-
-  <!-- 2페이지: 모토 · 설명 · 화면 -->
-  <section class="page-panel page-about" id="about">
-    <div class="panel-inner about-grid">
-      <div class="about-copy">
-        <p class="eyebrow">VibeStatics · 바이브스타틱스</p>
-        <h2 class="motto">버튼으로 분석하는<br />R 텍스트마이닝</h2>
-        <p class="about-lead">
-          코딩 없이 <strong>워드클라우드 · LDA · 형태소 빈도 · 문서 비교</strong>까지.
-          TXT·CSV·Excel·PDF·HWP를 넣고 버튼만 누르면 R 분석이 실행됩니다.
-        </p>
-        <ul class="about-features">
-          <li>오프라인 R 분석 · 내장 교재·설치 안내</li>
-          <li>PDF 여러 개 합치기 · 문서 비교 표</li>
-          <li>Windows 10/11 · 시범판 무료 (~2026.08.31)</li>
-        </ul>
-        <a href="#download" class="btn btn-accent">시범판 다운로드</a>
-      </div>
-      <figure class="about-figure">
-        <img
-          src="assets/app-preview.svg"
-          alt="VibeStat-Text 프로그램 화면 — 텍스트 데이터 적재·워드클라우드"
-          class="app-preview"
-          width="960"
-          height="540"
-        />
-        <figcaption>텍스트 적재 → 빈도 · 워드클라우드 · LDA 토픽 분석</figcaption>
-      </figure>
+      </section>
     </div>
 
-    <footer class="footer panel-inner">
+    <section class="card features">
+      <p class="card-eyebrow">Features</p>
+      <h2>주요 기능</h2>
+      <ul class="features-grid">
+        <li>TXT · CSV · Excel · PDF · HWP 등 다양한 형식 적재</li>
+        <li>형태소 분석 · 워드클라우드 · LDA · TF-IDF · 네트워크</li>
+        <li>PDF 여러 개 합치기 · 문서 비교 표</li>
+        <li>내장 교재·설치 안내 · 오프라인 R 분석</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
       <p class="footer-copy">© 2026 바이브스타틱스 (VibeStatics)</p>
       <p class="footer-contact"><a href="mailto:hyc6999@gmail.com">hyc6999@gmail.com</a></p>
     </footer>
-  </section>
+  </main>
 </body>
 </html>
