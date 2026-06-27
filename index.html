@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="assets/app-icon.png?v=2" type="image/png" />
-  <link rel="stylesheet" href="styles.css?v=12" />
+  <link rel="stylesheet" href="styles.css?v=13" />
 </head>
 <body>
   <header class="app-bar">
@@ -19,20 +19,55 @@
       <span class="brand-name">VibeStatics Text Mining</span>
       <span class="edition-badge">시범판 ~2026.08.31</span>
     </div>
+    <a class="app-bar-cta" href="#download">다운로드</a>
   </header>
 
   <main class="page">
     <header class="hero">
-      <div class="hero-inner">
-        <img src="assets/app-icon.png?v=2" alt="" class="hero-icon" width="80" height="80" />
+      <div class="hero-grid">
         <div class="hero-copy">
           <p class="hero-brand-ko">바이브스타틱스</p>
-          <h1>VibeStat-Text</h1>
+          <div class="hero-title-row">
+            <img src="assets/app-icon.png?v=2" alt="" class="hero-icon" width="64" height="64" />
+            <h1>VibeStat-Text</h1>
+          </div>
           <p class="hero-motto">버튼으로 분석하는 R 텍스트마이닝</p>
           <p class="hero-tagline">Text Mining &amp; Statistical Analysis Software</p>
+          <ul class="hero-chips">
+            <li>코딩 불필요</li>
+            <li>오프라인 R 분석</li>
+            <li>내장 교재·Help</li>
+            <li>시범판 무료</li>
+          </ul>
         </div>
+        <figure class="hero-preview">
+          <img src="assets/app-preview.svg" alt="VibeStat-Text 프로그램 화면" width="960" height="540" />
+        </figure>
       </div>
     </header>
+
+    <section class="highlights">
+      <article class="highlight-card">
+        <span class="highlight-icon" aria-hidden="true">📂</span>
+        <h3>다양한 형식</h3>
+        <p>TXT · CSV · Excel · PDF · HWP</p>
+      </article>
+      <article class="highlight-card">
+        <span class="highlight-icon" aria-hidden="true">☁️</span>
+        <h3>버튼 분석</h3>
+        <p>워드클라우드 · LDA · 빈도</p>
+      </article>
+      <article class="highlight-card">
+        <span class="highlight-icon" aria-hidden="true">📊</span>
+        <h3>문서 비교</h3>
+        <p>집단별 TF-IDF · 네트워크</p>
+      </article>
+      <article class="highlight-card">
+        <span class="highlight-icon" aria-hidden="true">📕</span>
+        <h3>교재 포함</h3>
+        <p>5분 따라하기 · F1 Help</p>
+      </article>
+    </section>
 
     <div class="content-grid">
       <section class="card intro">
@@ -42,9 +77,11 @@
           코딩 없이 <strong>워드클라우드 · LDA · 형태소 빈도 · 문서 비교</strong>까지.
           TXT·CSV·Excel·PDF·HWP를 넣고 버튼만 누르면 R 분석이 실행됩니다.
         </p>
-        <p class="intro-note">
-          Windows 10/11 · ZIP 풀고 바로 실행 · 시범판 무료 (<strong>2026년 8월 31일</strong>까지)
-        </p>
+        <ul class="intro-list">
+          <li>Windows 10/11 · ZIP 풀고 <strong>VibeStat.exe</strong> 실행</li>
+          <li>시범판 무료 · <strong>2026년 8월 31일</strong>까지</li>
+          <li>첫 실행 약관 동의 · <strong>인증번호 불필요</strong></li>
+        </ul>
       </section>
 
       <section class="card download" id="download">
@@ -53,7 +90,7 @@
         <p class="download-version">VibeStat-Text <span>0.7.7-beta.2</span></p>
         <p class="download-recommend">
           <strong>ZIP</strong>을 받아 압축을 풀고 <strong>VibeStat.exe</strong>를 실행하세요.<br />
-          Windows 설치 프로그램이 아닙니다 · exe 직접 받기보다 차단이 적습니다.
+          Windows 설치 프로그램이 아닙니다.
         </p>
 
         <a
@@ -65,40 +102,20 @@
           <span class="btn-meta">압축 풀기 → VibeStat.exe 실행 · 약 153 MB</span>
         </a>
 
-        <details class="install-help" open>
+        <details class="install-help">
           <summary>📋 ZIP 받은 뒤 — 4단계</summary>
           <div class="install-help-body">
             <ol class="install-steps">
-              <li>
-                <strong>① ZIP 다운로드</strong><br />
-                153 MB · <strong>100%까지</strong> 기다리기<br />
-                Edge·Chrome ⚠ → <strong>⋯ → 「유지」</strong> (또는 「그래도 유지」)
-              </li>
-              <li>
-                <strong>② 압축 풀기</strong><br />
-                ZIP <strong>우클릭 → 「압축 풀기」</strong> (바탕화면·다운로드 등)<br />
-                ZIP 안만 열지 말고, <strong>풀린 폴더</strong>로 들어가세요.
-              </li>
-              <li>
-                <strong>③ VibeStat.exe 실행</strong><br />
-                폴더 <code>VibeStat-Text-0.7.7-beta.2-win64</code> 안의 <strong>VibeStat.exe</strong> 더블클릭<br />
-                ⚠ 뜨면: exe <strong>우클릭 → 속성 → 「차단 해제」</strong> ✔ → <strong>「추가 정보」→「실행」</strong>
-              </li>
-              <li>
-                <strong>④ 첫 실행</strong><br />
-                「설치 완료」·준비 메시지 → <strong>앱 첫 준비</strong>입니다 (Windows 설치 아님)<br />
-                <strong>시범판 이용약관</strong> 동의 → 프로그램 실행 (인증번호 불필요)<br />
-                이후에는 같은 폴더에서 <strong>VibeStat.exe</strong>만 누르면 바로 실행됩니다.
-              </li>
+              <li><strong>① ZIP 다운로드</strong> — 153 MB · 100% · Edge ⚠ → <strong>유지</strong></li>
+              <li><strong>② 압축 풀기</strong> — ZIP 안만 열지 말고 <strong>풀린 폴더</strong>로</li>
+              <li><strong>③ VibeStat.exe</strong> — 차단 해제 → 추가 정보 → 실행</li>
+              <li><strong>④ 첫 실행</strong> — 「설치 완료」= 앱 준비 · 약관 동의 → 바로 사용</li>
             </ol>
-            <p class="install-help-note">
-              exe만 따로 빼면 안 됩니다 · <code>resources</code> 등 <strong>폴더 전체</strong>가 필요합니다.<br />
-              학교·회사 PC는 보안 정책으로 막힐 수 있습니다 · 개인 PC 권장
-            </p>
+            <p class="install-help-note">exe만 빼면 안 됩니다 · 폴더 전체 필요 · 학교 PC는 막힐 수 있음</p>
           </div>
         </details>
 
-        <p class="download-alt-label">exe 직접 받기 (Edge에서 막히면 ZIP 사용)</p>
+        <p class="download-alt-label">exe 직접 받기</p>
         <div class="download-grid">
           <a
             class="btn btn-portable"
@@ -106,7 +123,7 @@
             rel="noopener"
           >
             <span class="btn-label">포터블</span>
-            <span class="btn-meta">설치 없이 실행 · 약 92 MB</span>
+            <span class="btn-meta">약 92 MB</span>
           </a>
           <a
             class="btn btn-setup"
@@ -114,7 +131,7 @@
             rel="noopener"
           >
             <span class="btn-label">설치형</span>
-            <span class="btn-meta">시작 메뉴 등록 · 약 110 MB</span>
+            <span class="btn-meta">약 110 MB</span>
           </a>
         </div>
       </section>
@@ -123,16 +140,35 @@
     <section class="card features">
       <p class="card-eyebrow">Features</p>
       <h2>주요 기능</h2>
-      <ul class="features-grid">
-        <li>TXT · CSV · Excel · PDF · HWP 등 다양한 형식 적재</li>
-        <li>형태소 분석 · 워드클라우드 · LDA · TF-IDF · 네트워크</li>
-        <li>PDF 여러 개 합치기 · 문서 비교 표</li>
-        <li>내장 교재·설치 안내 · 오프라인 R 분석</li>
-      </ul>
+      <div class="feature-tiles">
+        <article class="feature-tile">
+          <span class="feature-tile-icon">📄</span>
+          <h3>데이터 적재</h3>
+          <p>TXT · CSV · Excel · PDF · HWP · 여러 PDF 합치기</p>
+        </article>
+        <article class="feature-tile">
+          <span class="feature-tile-icon">🔤</span>
+          <h3>형태소·빈도</h3>
+          <p>한글 형태소 분석 · 단어·문서 빈도 · TF-IDF</p>
+        </article>
+        <article class="feature-tile">
+          <span class="feature-tile-icon">☁️</span>
+          <h3>시각화</h3>
+          <p>워드클라우드 · LDA 토픽 · 네트워크 그래프</p>
+        </article>
+        <article class="feature-tile">
+          <span class="feature-tile-icon">⚖️</span>
+          <h3>문서 비교</h3>
+          <p>집단별 코퍼스 비교 · 비교 표 · 오프라인 R</p>
+        </article>
+      </div>
     </section>
 
     <footer class="footer">
-      <p class="footer-copy">© 2026 바이브스타틱스 (VibeStatics)</p>
+      <div class="footer-brand">
+        <img src="assets/app-icon.png?v=2" alt="" width="24" height="24" />
+        <p class="footer-copy">© 2026 바이브스타틱스 (VibeStatics)</p>
+      </div>
       <p class="footer-contact"><a href="mailto:hyc6999@gmail.com">hyc6999@gmail.com</a></p>
     </footer>
   </main>
