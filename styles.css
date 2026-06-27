@@ -1,16 +1,16 @@
 :root {
-  --bg: #111111;
-  --bg-card: #181818;
+  --bg: #2e2b28;
+  --bg-card: #3a3632;
   --accent: #9a8550;
   --accent-soft: #7a6840;
-  --text: #d6d2ca;
-  --text-muted: #888580;
-  --heading: #ece8e0;
+  --text: #ddd9d2;
+  --text-muted: #a09a92;
+  --heading: #f2eee6;
   --display: "Cormorant Garamond", "Times New Roman", serif;
   --body: "Noto Sans KR", "Source Sans 3", "Segoe UI", sans-serif;
   --en: "Source Sans 3", "Segoe UI", sans-serif;
-  --border: rgba(255, 255, 255, 0.07);
-  --border-accent: rgba(154, 133, 80, 0.25);
+  --border: rgba(255, 255, 255, 0.1);
+  --border-accent: rgba(154, 133, 80, 0.32);
   --page-max: 1080px;
 }
 
@@ -29,7 +29,7 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: var(--body);
-  background: var(--bg);
+  background: linear-gradient(165deg, #383430 0%, #2e2b28 45%, #282522 100%);
   color: var(--text);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
@@ -40,7 +40,7 @@ body {
   inset: 0;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.14;
+  opacity: 0.1;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
   background-size: 180px 180px;
 }
@@ -121,7 +121,7 @@ body {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 2rem 2.25rem;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
 }
 
 .card-eyebrow {
