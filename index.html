@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="assets/app-icon.png?v=2" type="image/png" />
-  <link rel="stylesheet" href="styles.css?v=8" />
+  <link rel="stylesheet" href="styles.css?v=9" />
 </head>
 <body>
   <header class="app-bar">
@@ -74,19 +74,30 @@
           첫 실행 시 <strong>시범판 이용약관</strong>에 동의하면 바로 사용합니다. (인증번호 불필요)
         </p>
 
-        <details class="install-help">
-          <summary>⚠ Windows 경고·설치가 안 될 때</summary>
+        <details class="install-help" open>
+          <summary>⚠ 실행이 안 될 때 — 3단계만</summary>
           <div class="install-help-body">
-            <p>
-              인터넷에서 받은 <strong>미서명 exe</strong>라 Windows SmartScreen(방패 ⚠) 경고가 뜹니다.
-              <strong>바이러스가 아니며</strong>, 시범판 배포에서 흔한 현상입니다.
+            <p class="install-help-lead">
+              <strong>포터블</strong> 파일만 받으세요. (설치형은 쓰지 마세요)<br />
+              경고 ⚠ 는 <strong>Windows가 낯선 프로그램이라 막는 것</strong>이지, 바이러스가 아닙니다.
             </p>
-            <ol>
-              <li>경고 창 → <strong>「추가 정보」</strong> → <strong>「실행」</strong></li>
-              <li>그래도 막히면: 다운로드 폴더에서 파일 <strong>우클릭 → 속성</strong> → 하단 <strong>「차단 해제」</strong> 체크 → 적용 → 다시 실행</li>
-              <li>설치형이 계속 실패하면 <strong>포터블</strong>을 사용하세요. (설치 마법사 없이 바로 실행)</li>
+            <ol class="install-steps">
+              <li>
+                <strong>① 차단 해제</strong><br />
+                「다운로드」 폴더 → <code>VibeStat-Portable-…exe</code> <strong>우클릭</strong> → <strong>속성</strong><br />
+                맨 아래 <strong>「보안: 차단 해제」</strong>에 ✔ → <strong>적용</strong> → <strong>확인</strong>
+              </li>
+              <li>
+                <strong>② 실행</strong><br />
+                파일을 <strong>더블클릭</strong> → 파란 창이 뜨면<br />
+                <strong>「추가 정보」</strong> 클릭 → <strong>「실행」</strong> 클릭
+              </li>
+              <li>
+                <strong>③ 그래도 안 되면</strong><br />
+                학교·회사 PC는 보안 정책으로 막힐 수 있습니다. <strong>개인 PC</strong>에서 시도하거나 IT 관리자에게 문의하세요.
+              </li>
             </ol>
-            <p class="install-help-cmd">PowerShell 예: <code>Unblock-File -Path "$env:USERPROFILE\Downloads\VibeStat-*.exe"</code></p>
+            <p class="install-help-note">GitHub에서 <strong>코드 입력</strong> 창이 뜨면 → <strong>무시·닫기</strong> (다운로드와 무관합니다)</p>
           </div>
         </details>
       </section>

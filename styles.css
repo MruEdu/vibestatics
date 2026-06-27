@@ -333,20 +333,26 @@ body {
   color: var(--text);
 }
 
-.install-help-cmd {
-  margin: 0;
+.install-help-lead {
+  margin: 0 0 0.85rem;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--text);
 }
 
-.install-help-cmd code {
-  display: block;
-  margin-top: 0.35rem;
-  padding: 0.5rem 0.65rem;
+.install-steps li {
+  margin-bottom: 0.85rem;
+  line-height: 1.7;
+}
+
+.install-help-note {
+  margin: 0.5rem 0 0;
+  padding: 0.55rem 0.65rem;
   border-radius: 4px;
-  background: var(--bg-input);
-  border: 1px solid var(--border);
-  font-size: 0.78rem;
-  color: #c8e4ff;
-  word-break: break-all;
+  background: rgba(59, 158, 255, 0.1);
+  border: 1px solid rgba(59, 158, 255, 0.25);
+  font-size: 0.82rem;
+  color: #9ecfff;
 }
 
 .features-grid {
