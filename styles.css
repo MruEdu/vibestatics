@@ -61,6 +61,13 @@ body {
   min-width: 0;
 }
 
+.app-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-shrink: 0;
+}
+
 .app-bar-cta {
   flex-shrink: 0;
   padding: 5px 12px;
@@ -75,6 +82,18 @@ body {
 
 .app-bar-cta:hover {
   background: var(--accent-hover);
+}
+
+.app-bar-cta-ghost {
+  background: transparent;
+  color: #9ecfff;
+  border: 1px solid rgba(59, 158, 255, 0.35);
+  margin-right: 6px;
+}
+
+.app-bar-cta-ghost:hover {
+  background: rgba(59, 158, 255, 0.12);
+  color: #c8e4ff;
 }
 
 .app-icon {
@@ -521,6 +540,129 @@ body {
   color: var(--text-muted);
 }
 
+/* ── Inquiry ── */
+.inquiry {
+  margin-bottom: 1.25rem;
+  background:
+    linear-gradient(135deg, rgba(180, 120, 20, 0.06) 0%, var(--bg-panel) 40%),
+    var(--bg-panel);
+  border-color: rgba(255, 200, 80, 0.2);
+}
+
+.inquiry-teaser {
+  margin: 0 0 1.25rem;
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+
+.inquiry-teaser strong {
+  color: #ffe8a3;
+  font-weight: 600;
+}
+
+.inquiry-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.inquiry-panel {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.inquiry-panel summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.inquiry-panel summary::-webkit-details-marker {
+  display: none;
+}
+
+.inquiry-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  width: 100%;
+  padding: 1rem 0.75rem;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  transition: background 0.15s, filter 0.15s;
+}
+
+.inquiry-btn::after {
+  content: "클릭하면 연락처가 열립니다";
+  font-size: 10px;
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+.inquiry-panel[open] .inquiry-btn::after {
+  content: "아래로 연락해 주세요";
+}
+
+.inquiry-btn-purchase {
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  color: #eff6ff;
+  border: 1px solid #3b82f6;
+}
+
+.inquiry-btn-purchase:hover {
+  filter: brightness(1.08);
+}
+
+.inquiry-btn-lecture {
+  background: linear-gradient(135deg, rgba(140, 90, 15, 0.85), rgba(100, 60, 10, 0.9));
+  color: #ffe8a3;
+  border: 1px solid rgba(255, 200, 80, 0.45);
+}
+
+.inquiry-btn-lecture:hover {
+  filter: brightness(1.1);
+}
+
+.inquiry-reveal {
+  padding: 0.85rem 1rem 1rem;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+}
+
+.inquiry-reveal p {
+  margin: 0 0 0.65rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.inquiry-link {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #9ecfff;
+  text-decoration: none;
+}
+
+.inquiry-link:hover {
+  color: #c8e4ff;
+  text-decoration: underline;
+}
+
+.inquiry-link-meta {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
 /* ── Footer ── */
 .footer {
   display: flex;
@@ -549,13 +691,17 @@ body {
   margin: 0;
 }
 
-.footer-contact a {
-  color: var(--text);
+.footer-inquiry {
+  font-size: 0.82rem;
+  color: var(--text-muted);
   text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
 }
 
-.footer-contact a:hover {
-  color: var(--accent);
+.footer-inquiry:hover {
+  color: #ffe8a3;
+  border-bottom-color: rgba(255, 200, 80, 0.4);
 }
 
 @media (max-width: 960px) {
@@ -612,7 +758,8 @@ body {
 
   .highlights,
   .feature-tiles,
-  .download-grid {
+  .download-grid,
+  .inquiry-actions {
     grid-template-columns: 1fr;
   }
 
