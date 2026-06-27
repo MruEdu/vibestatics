@@ -1,15 +1,16 @@
 :root {
-  --bg: #2e2b28;
-  --bg-card: #3a3632;
+  /* VibeStat-Text 앱 테마와 동일 (--bg-app / --bg-panel) */
+  --bg: #1e1e1e;
+  --bg-card: #252526;
   --accent: #9a8550;
   --accent-soft: #7a6840;
-  --text: #ddd9d2;
-  --text-muted: #a09a92;
-  --heading: #f2eee6;
+  --text: #d4d4d4;
+  --text-muted: #8a8a8a;
+  --heading: #ececec;
   --display: "Cormorant Garamond", "Times New Roman", serif;
   --body: "Noto Sans KR", "Source Sans 3", "Segoe UI", sans-serif;
   --en: "Source Sans 3", "Segoe UI", sans-serif;
-  --border: rgba(255, 255, 255, 0.1);
+  --border: #3c3c3c;
   --border-accent: rgba(154, 133, 80, 0.32);
   --page-max: 1080px;
 }
@@ -29,7 +30,7 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: var(--body);
-  background: linear-gradient(165deg, #383430 0%, #2e2b28 45%, #282522 100%);
+  background: linear-gradient(165deg, rgba(0, 120, 212, 0.06) 0%, var(--bg) 40%, #1a1a1a 100%);
   color: var(--text);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
@@ -40,7 +41,7 @@ body {
   inset: 0;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.1;
+  opacity: 0.06;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
   background-size: 180px 180px;
 }
@@ -121,7 +122,7 @@ body {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 2rem 2.25rem;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.18);
 }
 
 .card-eyebrow {
