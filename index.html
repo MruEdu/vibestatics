@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="VibeStat-Text · 바이브통계(바이브스타틱스) — 바이브 코딩을 넘어, 논문·졸업연구를 위한 바이브 R 텍스트마이닝. 시범판 무료 다운로드" />
-  <meta name="keywords" content="VibeStat, 바이브통계, 바이브스타틱스, 바이브 R, R 텍스트마이닝, 논문, 졸업연구, 워드클라우드, LDA" />
+  <meta name="keywords" content="VibeStat, VibeStatics, 바이브통계, 바이브스타틱스, 바이브 코딩, Vibe Statistics, 바이브 R, R 텍스트마이닝, 논문, 졸업연구" />
   <link rel="canonical" href="https://vibestatics.com/" />
   <meta property="og:title" content="VibeStat-Text · 바이브통계 · 바이브스타틱스" />
   <meta property="og:description" content="바이브 코딩을 넘어, 연구자를 위한 바이브 R 텍스트마이닝 — 논문·졸업연구용 양적·텍스트 분석" />
@@ -16,7 +16,40 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="assets/app-icon.png?v=2" type="image/png" />
-  <link rel="stylesheet" href="styles.css?v=36" />
+  <link rel="stylesheet" href="styles.css?v=37" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://vibestatics.com/#organization",
+        "name": "VibeStatics",
+        "alternateName": ["바이브스타틱스", "바이브통계", "Vibe Statistics"],
+        "url": "https://vibestatics.com/",
+        "email": "hyc6999@gmail.com",
+        "telephone": "+82-507-1428-7031",
+        "description": "바이브 코딩을 넘어 연구자를 위한 Vibe Statistics(바이브통계) 플랫폼. R 기반 학술 텍스트마이닝·통계 분석."
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://vibestatics.com/#vibestat-text",
+        "name": "VibeStat-Text",
+        "alternateName": ["바이브통계", "바이브 R", "VibeStatics Text Mining"],
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Windows 10, Windows 11",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "KRW",
+          "description": "시범판 무료 (2026년 8월 31일까지)"
+        },
+        "publisher": { "@id": "https://vibestatics.com/#organization" },
+        "description": "논문·졸업연구를 위한 R 텍스트마이닝 — 워드클라우드, LDA, 형태소 빈도, 문서 비교."
+      }
+    ]
+  }
+  </script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GG4RV46FB1"></script>
   <script>
@@ -89,6 +122,37 @@
         <h3>교재 포함</h3>
         <p>5분 따라하기 · F1 Help</p>
       </article>
+    </section>
+
+    <section class="card brand-story" id="brand">
+      <p class="card-eyebrow">VibeStatics · Brand</p>
+      <h2>바이브스타틱스란</h2>
+      <p class="lead brand-lead">
+        <strong>VibeStatics</strong>(바이브스타틱스)는 학술·연구 현장을 위한
+        <strong>Vibe Statistics</strong>(바이브 통계) 플랫폼입니다.
+        국문 별칭 <strong>바이브통계</strong>와 앱명 <strong>VibeStat</strong>은 같은 체계를 가리킵니다.
+        첫 제품 <a href="#download">VibeStat-Text</a>는 R 텍스트마이닝에 특화되어 있습니다.
+      </p>
+      <div class="brand-grid">
+        <article class="brand-item">
+          <h3>바이브 코딩 (Vibe Coding)</h3>
+          <p>
+            AI와 대화하며 R·Python <strong>스크립트를 생성</strong>하는 방식입니다.
+            연구자에게 코드 작성 부담을 줄이지만, <strong>코퍼스 설계·전처리·재현성·통계 해석</strong>은
+            여전히 연구자의 몫입니다. 바이브 코딩은 <em>코드 생산</em>에 가깝습니다.
+          </p>
+        </article>
+        <article class="brand-item">
+          <h3>Vibe + Statistics (VibeStatics)</h3>
+          <p>
+            <strong>Vibe</strong>(연구 몰입·분석의 흐름)와 <strong>Statistics</strong>(통계·데이터 분석)의 합성어입니다.
+            Five(숫자 5) Statics가 아니라, <strong>Vibe Statics</strong> — 즉
+            <strong>vibestatics.com</strong> 도메인과 같은 표기입니다.
+            바이브스타틱스는 바이브 코딩 <strong>을 넘어</strong>, 버튼과 내장 R로
+            <strong>연구 질문 → 코퍼스 → 분석 → 해석</strong>까지 이어지도록 돕습니다.
+          </p>
+        </article>
+      </div>
     </section>
 
     <div class="content-grid">

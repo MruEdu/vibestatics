@@ -370,6 +370,58 @@ body {
   font-weight: 600;
 }
 
+/* ── Brand story (SEO · naming) ── */
+.brand-story {
+  margin-bottom: 1.25rem;
+}
+
+.brand-lead a {
+  color: #9ecfff;
+  text-decoration: none;
+}
+
+.brand-lead a:hover {
+  text-decoration: underline;
+}
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.brand-item {
+  padding: 1.1rem 1.2rem;
+  border-radius: 5px;
+  background: rgba(15, 23, 42, 0.45);
+  border: 1px solid var(--border);
+}
+
+.brand-item h3 {
+  margin: 0 0 0.55rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #9ecfff;
+  line-height: 1.4;
+}
+
+.brand-item p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.brand-item p strong {
+  color: #cbd5e1;
+  font-weight: 600;
+}
+
+.brand-item p em {
+  font-style: normal;
+  color: #94a3b8;
+}
+
 .intro-list {
   margin: 0;
   padding: 0;
@@ -1194,6 +1246,10 @@ body {
   }
 
   .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-grid {
     grid-template-columns: 1fr;
   }
 
