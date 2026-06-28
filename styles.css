@@ -422,6 +422,39 @@ body {
   color: #94a3b8;
 }
 
+.brand-audience {
+  margin: 1.15rem 0 0;
+  padding: 1.15rem 1.25rem;
+  border-radius: 5px;
+  border-left: 3px solid rgba(59, 158, 255, 0.55);
+  background: rgba(30, 41, 59, 0.35);
+}
+
+.brand-audience p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: #cbd5e1;
+}
+
+.brand-audience p + p {
+  margin-top: 0.75rem;
+}
+
+.brand-audience strong {
+  color: #e2e8f0;
+  font-weight: 600;
+}
+
+.brand-audience a {
+  color: #9ecfff;
+  text-decoration: none;
+}
+
+.brand-audience a:hover {
+  text-decoration: underline;
+}
+
 .intro-list {
   margin: 0;
   padding: 0;
