@@ -212,6 +212,14 @@ body {
   line-height: 1.45;
 }
 
+.hero-research {
+  margin: 0.35rem 0 0;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
 .hero-tagline {
   margin: 0.4rem 0 0.35rem;
   font-size: 0.88rem;
