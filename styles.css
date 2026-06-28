@@ -418,6 +418,31 @@ body {
   color: #c8e4ff;
 }
 
+.download-trust {
+  margin: 0 0 1rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  line-height: 1.55;
+  color: #8ab4d9;
+  background: rgba(16, 185, 129, 0.06);
+  border: 1px solid rgba(16, 185, 129, 0.22);
+}
+
+.download-trust strong {
+  color: #a7f3d0;
+}
+
+.download-trust a {
+  color: #9ecfff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.download-trust a:hover {
+  color: #c8e4ff;
+}
+
 .btn-full {
   display: flex;
   width: 100%;

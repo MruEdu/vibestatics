@@ -8,6 +8,9 @@
 안녕하세요, 바이브스타틱스(VibeStatics)입니다.
 ○기(7/○ 토 14:00) 실습반 신청이 확인되었습니다.
 
+※ Windows 「PC 보호」 안내는 서명되지 않은 프로그램에 흔히 뜨는 것입니다.
+  바이브스타틱스(VibeStatics) 공식 배포(vibestatics.com)이며 PC를 손상시키지 않습니다.
+
 ■ 1. 기본 설치 (권장 · 공개)
   https://vibestatics.com
   → 「ZIP 다운로드」→ 압축 풀기 → VibeStat.exe 실행
