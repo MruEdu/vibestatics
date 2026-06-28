@@ -4,7 +4,11 @@
 
 ## 공개 URL
 
-**https://mruedu.github.io/vibestatics/**
+| URL | 용도 |
+|-----|------|
+| **https://vibestatics.com** | 메인 (커스텀 도메인) |
+| https://mruedu.github.io/vibestatics/ | GitHub Pages 기본 주소 |
+| https://vibestatics.kr · https://vibestatics.co.kr | → `.com` 리다이렉트 (가비아 포워딩) |
 
 ## 배포 방식 (시범판)
 
