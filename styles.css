@@ -442,13 +442,15 @@ body {
 }
 
 .download-trust a {
-  color: #9ecfff;
+  color: var(--text);
   text-decoration: underline;
-  text-underline-offset: 2px;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(212, 212, 212, 0.45);
 }
 
 .download-trust a:hover {
-  color: #c8e4ff;
+  color: var(--heading);
+  text-decoration-color: rgba(236, 236, 236, 0.65);
 }
 
 .btn-full {
@@ -1001,19 +1003,26 @@ body {
 
 .inquiry-contact {
   margin: 0 0 1.1rem;
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: #cbd5e1;
+  padding: 0.65rem 0.8rem;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--text-muted);
   letter-spacing: 0.01em;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 6px;
 }
 
 .inquiry-contact a {
-  color: #9ecfff;
-  text-decoration: none;
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(212, 212, 212, 0.45);
 }
 
 .inquiry-contact a:hover {
-  text-decoration: underline;
+  color: var(--heading);
+  text-decoration-color: rgba(236, 236, 236, 0.65);
 }
 
 .inquiry-actions {
@@ -1088,15 +1097,15 @@ body {
 
 .footer-inquiry {
   font-size: 0.82rem;
-  color: var(--text-muted);
+  color: #9a9a9a;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: color 0.15s, border-color 0.15s;
 }
 
 .footer-inquiry:hover {
-  color: #ffe8a3;
-  border-bottom-color: rgba(255, 200, 80, 0.4);
+  color: var(--text);
+  border-bottom-color: rgba(212, 212, 212, 0.35);
 }
 
 @media (max-width: 960px) {
