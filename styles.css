@@ -501,6 +501,27 @@ body {
   color: var(--text);
 }
 
+.install-exe-figure {
+  margin: 0.55rem 0 0;
+  padding: 0.45rem 0.55rem;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.install-exe-figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.install-exe-figure figcaption {
+  margin-top: 0.35rem;
+  font-size: 0.76rem;
+  line-height: 1.45;
+  color: #8ab4d9;
+}
+
 .install-help-note {
   margin: 0.5rem 0 0;
   padding: 0.5rem 0.6rem;

@@ -1,0 +1,20 @@
+GitHub Release v0.7.7-beta.2 — 본문 붙여넣기용
+https://github.com/MruEdu/vibestat-releases/releases/edit/v0.7.7-beta.2
+
+※ ZIP은 건드리지 말고 Description만 수정하면 다운로드 횟수가 유지됩니다.
+
+--- 아래부터 복사 ---
+
+## VibeStat-Text 시범판 (0.7.7-beta.2)
+
+- **ZIP** — 압축 풀고 `VibeStat.exe` 실행 (~153 MB)
+- **첫 실행** — 바탕 화면 바로 가기 만들기 안내 (Windows 설치 아님)
+- 포터블·설치형 exe는 Edge/SmartScreen 이슈로 **제공하지 않습니다**
+
+Windows 10/11 · 사용 기한: 2026년 8월 31일까지 · 인증번호 불필요
+
+랜딩: https://vibestatics.com
+
+--- 여기까지 ---
+
+제목(선택): VibeStat-Text 0.7.7-beta.2 (시범판)
