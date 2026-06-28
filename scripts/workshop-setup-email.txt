@@ -1,0 +1,44 @@
+실습반 사전 안내 메일 — Setup.zip (비공개 첨부)
+발송: hyc6999@gmail.com · 신청 확인 후 개별 발송
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+제목: [VibeStat-Text] ○기 실습반 사전 안내 — 설치 파일
+━━━━━━━━━━━━━━━━━━━━━━━━
+
+안녕하세요, 바이브스타틱스(VibeStatics)입니다.
+○기(7/○ 토 14:00) 실습반 신청이 확인되었습니다.
+
+■ 1. 기본 설치 (권장 · 공개)
+  https://vibestatics.com
+  → 「ZIP 다운로드」→ 압축 풀기 → VibeStat.exe 실행
+  → 첫 실행 시 「바탕 화면 바로 가기 만들기」 → 만들기
+
+■ 2. 설치 프로그램 (선택 · 이 메일 첨부)
+  첨부: VibeStat-Setup-0.7.7-beta.2-email.zip
+  → 압축 풀기 → Setup.exe 실행 → 설치
+  → 바탕 화면 아이콘이 자동으로 생깁니다.
+
+  ※ Windows 「PC 보호」 경고 시:
+     Setup 우클릭 → 속성 → 「차단 해제」
+     → 실행 → 「추가 정보」 → 「실행」
+
+■ 3. 둘 중 하나만 설치하세요
+  ZIP(권장) 또는 Setup(첨부) — 동시 설치 불필요
+
+■ 4. 실습 전 체크
+  - Windows 10/11
+  - 시범판 체험·약관 동의 완료
+  - 문제 시 hyc6999@gmail.com
+
+실습 당일 Zoom 링크는 전날 별도 안내드립니다.
+
+바이브스타틱스(VibeStatics)
+hyc6999@gmail.com
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+개발자 — Setup.zip 만들기 (공개 업로드 금지)
+━━━━━━━━━━━━━━━━━━━━━━━━
+cd c:\Workspace\VibeStat-Text
+npm run pack:setup-email
+→ releases\VibeStat-Setup-0.7.7-beta.2-email.zip
+정식·기한판: npm run pack:setup-email -- --formal
