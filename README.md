@@ -10,9 +10,7 @@
 
 | 파일 | 설명 |
 |------|------|
-| **ZIP (권장)** | `VibeStat-Text-0.7.7-beta.2-win64.zip` — 압축 풀고 `VibeStat.exe` 실행 |
-| 포터블 exe | 보조 (Edge에서 차단될 수 있음) |
-| 설치형 exe | 시작 메뉴 등록용 (보조) |
+| **ZIP** | `VibeStat-Text-0.7.7-beta.2-win64.zip` — 압축 풀고 `VibeStat.exe` 실행 (공개 랜딩 유일 경로) |
 
 Release: **https://github.com/MruEdu/vibestat-releases**
 
