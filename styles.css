@@ -999,6 +999,23 @@ body {
   font-weight: 600;
 }
 
+.inquiry-contact {
+  margin: 0 0 1.1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #cbd5e1;
+  letter-spacing: 0.01em;
+}
+
+.inquiry-contact a {
+  color: #9ecfff;
+  text-decoration: none;
+}
+
+.inquiry-contact a:hover {
+  text-decoration: underline;
+}
+
 .inquiry-actions {
   display: grid;
   grid-template-columns: 1fr 1fr;
