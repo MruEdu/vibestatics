@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="VibeStatics — VibeStat-Text: R text mining for research, institutions &amp; practice. Designed by Ed.D. from dissertation &amp; graduate supervision. Vibe-Talk, Vibe-Loom. Beta by email." />
+  <meta name="keywords" content="VibeStatics, VibeStat-Text, Vibe Statistics, R text mining, document analysis, Vibe-Talk, Vibe-Loom, academic research, Korea, made in Korea, word cloud, LDA" />
+  <link rel="canonical" href="https://vibestatics.com/en/" />
+  <link rel="alternate" hreflang="ko" href="https://vibestatics.com/" />
+  <link rel="alternate" hreflang="en" href="https://vibestatics.com/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://vibestatics.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vibestatics.com/en/" />
+  <meta property="og:title" content="VibeStatics | VibeStat-Text — R Text Mining for Researchers" />
+  <meta property="og:description" content="Beyond Vibe Coding — button-driven R text mining on Windows. Built-in R engine. Korean UI complete; English UI in development." />
+  <meta property="og:image" content="https://vibestatics.com/assets/app-icon.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ko_KR" />
+  <meta name="theme-color" content="#1e1e1e" />
+  <title>VibeStatics | VibeStat-Text — R Text Mining · Made in Korea</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="../assets/app-icon.png?v=2" type="image/png" />
+  <link rel="stylesheet" href="../styles.css?v=49" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://vibestatics.com/#website",
+        "url": "https://vibestatics.com/",
+        "name": "VibeStatics",
+        "alternateName": ["바이브스타틱스", "바이브통계", "Vibe Statistics", "VibeStat-Text"],
+        "publisher": { "@id": "https://vibestatics.com/#organization" },
+        "inLanguage": ["ko", "en"]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://vibestatics.com/#organization",
+        "name": "VibeStatics",
+        "alternateName": ["바이브스타틱스", "바이브통계", "Vibe Statistics"],
+        "url": "https://vibestatics.com/",
+        "email": "hyc6999@gmail.com",
+        "telephone": "+82-507-1428-7031",
+        "description": "Korean software brand for R-based academic text mining and statistics on Windows."
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "VibeStat-Text",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Windows 10, Windows 11",
+        "inLanguage": ["ko", "en"],
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW", "description": "Beta trial by email application" },
+        "description": "Designed by Ed.D. from dissertation and graduate text-mining supervision. Word clouds, LDA, document comparison, Vibe-Talk, Vibe-Loom. Korean UI complete; English UI in development.",
+        "publisher": { "@id": "https://vibestatics.com/#organization" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is VibeStatics?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "VibeStatics is a Korean software brand for R-based text mining on Windows. VibeStat-Text offers button-driven analysis with a built-in R engine."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who designed VibeStat-Text and why?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An Ed.D. scholar designed it from their own dissertation experience and graduate text-mining supervision. High barriers in R, packages, and scripting led to a tool with built-in R, buttons, and textbooks so researchers can focus on corpus, questions, and interpretation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are Vibe-Talk and Vibe-Loom?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Vibe-Talk is a conversational analysis assistant; Vibe-Loom helps weave paper and report drafts. Both are optional AI features (your API key). Core text mining runs offline with built-in R."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is VibeStatics related to Vibe Coding or Naver VIBE?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. VibeStatics is independent desktop research software, not AI code generation (Vibe Coding) or Naver's music service."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who uses VibeStat-Text?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Researchers, graduate students, faculty, institutions, and professionals who need document and corpus analysis — papers, policy reports, surveys, interviews, and content text."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I run text mining without coding?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Core analysis runs via buttons with a built-in R engine on your PC — word frequency, word clouds, LDA, and document comparison without writing tm or ggplot scripts."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is an API key required?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No for core text mining. Vibe-Talk and Vibe-Loom are optional and require your own API key (BYOK)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When will the English UI be ready?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Korean UI is complete. English program UI is in active development."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="app-bar">
+    <div class="app-bar-left">
+      <img src="../assets/app-icon.png?v=2" alt="" class="app-icon" width="26" height="26" />
+      <span class="brand-mark">VibeStat-Text</span>
+      <span class="app-bar-slogan">Vibe R · Academic Text Mining</span>
+    </div>
+    <div class="app-bar-right">
+      <a class="app-bar-cta app-bar-cta-ghost" href="../" hreflang="ko" lang="ko">한국어</a>
+      <a class="app-bar-cta app-bar-cta-ghost" href="#guide">Guide</a>
+      <a class="app-bar-cta app-bar-cta-ghost" href="#faq">FAQ</a>
+      <a class="app-bar-cta" href="#download">Beta Apply</a>
+    </div>
+  </header>
+
+  <main class="page" id="main">
+    <header class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="hero-brand-ko" lang="ko">바이브스타틱스 · 바이브통계</p>
+          <div class="hero-title-row">
+            <img src="../assets/app-icon.png?v=2" alt="" class="hero-icon" width="72" height="72" />
+            <h1>VibeStat-Text</h1>
+          </div>
+          <p class="hero-motto">Beyond Vibe Coding — <strong>Vibe R</strong> text mining for <strong>research, practice &amp; institutions</strong></p>
+          <p class="hero-research">Quantitative &amp; text analysis for papers, policy reports, surveys, interviews, and document corpora</p>
+          <p class="hero-tagline">Big Data · Text Mining · Statistical Analysis</p>
+          <p class="hero-audience"><strong>Built-in R engine</strong> — run word frequency, word clouds, and LDA with buttons, not scripts</p>
+          <div class="status-pills" role="list" aria-label="Language status">
+            <span class="status-pill status-pill-done" role="listitem">Made in Korea · Korean UI ready</span>
+            <span class="status-pill status-pill-soon" role="listitem">English UI in development</span>
+          </div>
+          <ul class="hero-chips">
+            <li>Designed by Ed.D. scholar</li>
+            <li>Built-in R</li>
+            <li>Internet for first install</li>
+            <li>Built-in textbook · Help</li>
+            <li>Beta by application</li>
+          </ul>
+        </div>
+        <div class="hero-preview-wrap">
+          <figure class="hero-preview" aria-labelledby="hero-r-caption-en">
+            <img src="../assets/r-logo-official.svg" alt="R logo (The R Foundation)" width="724" height="561" />
+            <p class="hero-r-engine">Built-in R · runs locally on your PC</p>
+            <figcaption class="hero-r-credit" id="hero-r-caption-en">
+              R logo © The R Foundation ·
+              <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license noopener">CC BY-SA 4.0</a>
+              · VibeStat-Text is an <strong>independent product</strong>, not an official R app
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </header>
+
+    <nav class="page-nav" aria-label="Page sections">
+      <a href="#guide">At a glance</a>
+      <a href="#origin">Design story</a>
+      <a href="#download">Beta Apply</a>
+      <a href="#more">Learn more</a>
+      <a href="#faq">FAQ</a>
+      <a href="../" hreflang="ko" lang="ko">한국어</a>
+    </nav>
+
+    <section class="card visitor-guide" id="guide" aria-labelledby="guide-heading-en">
+      <p class="card-eyebrow">Guide</p>
+      <h2 id="guide-heading-en">At a glance</h2>
+      <p class="guide-lead">
+        New here? Skim this section first.
+        <strong>VibeStat-Text</strong> by <strong>VibeStatics</strong> is Windows
+        <strong>R text mining</strong> software.
+        Load interview, survey, report, paper, news, or policy text — then run
+        frequency, word clouds, LDA, and document comparison with buttons, not scripts.
+        Not only graduate students: also for <strong>institutions, practitioners, and classrooms</strong>.
+        Designed by an <strong>Ed.D.</strong> from <strong>dissertation</strong> and <strong>graduate text-mining supervision</strong> to lower R entry barriers.
+      </p>
+      <div class="guide-grid">
+        <div class="guide-block">
+          <h3>Who it is for</h3>
+          <ul class="guide-list">
+            <li><strong>Researchers &amp; graduate students</strong> — theses, dissertations, journal submissions</li>
+            <li><strong>Faculty</strong> — research methods, text mining, mixed-methods labs</li>
+            <li><strong>Public &amp; private institutes</strong> — policy, evaluation, project reports, survey &amp; interview data</li>
+            <li><strong>Practice &amp; consulting</strong> — client feedback, reviews, proposals, meeting notes</li>
+            <li><strong>Content, media &amp; UX</strong> — articles, posts, user feedback — topics, frequency, comparison</li>
+            <li>Anyone who needs <strong>reproducible document analysis</strong> without heavy R/Python scripting</li>
+          </ul>
+        </div>
+        <div class="guide-block">
+          <h3>What you do (in short)</h3>
+          <ul class="guide-list">
+            <li><strong>Load data</strong> — PDF · Excel · HWP · Word · CSV · TXT · merge PDFs</li>
+            <li><strong>Button analysis (local R)</strong> — morphology · frequency · TF-IDF · word cloud · LDA · doc compare</li>
+            <li><strong>Dictionary &amp; preprocess</strong> — stopwords, synonyms, phrases · outputs in <code>.vibestat/output/</code></li>
+            <li><strong>Optional AI (BYOK)</strong> — <strong>Vibe-Talk</strong> conversational assistant · <strong>Vibe-Loom</strong> draft weaving for papers &amp; reports</li>
+            <li>Built-in tutorial · F1 Help — start in about five minutes</li>
+          </ul>
+        </div>
+      </div>
+      <p class="guide-vibe-note">
+        <strong>Vibe-Talk</strong> and <strong>Vibe-Loom</strong> are <strong>optional</strong> (your API key).
+        Core text mining runs <strong>offline with built-in R</strong> — no API key required.
+      </p>
+      <p class="guide-next">
+        To try it: <a href="#download">Beta application</a>
+        · Details: <a href="#more">Learn more</a>
+        · Design story: <a href="#origin">Why we built it</a>
+        · Names &amp; FAQ: <a href="#faq">Q&amp;A</a>
+      </p>
+    </section>
+
+    <section class="highlights">
+      <article class="highlight-card">
+        <span class="highlight-icon" aria-hidden="true">📂</span>
+        <h3>Many formats</h3>
+        <p>TXT · CSV · Excel · PDF · HWP</p>
+      </article>
+      <article class="highlight-card">
+        <span class="highlight-icon" aria-hidden="true">☁️</span>
+        <h3>Button analysis</h3>
+        <p>Word cloud · LDA · frequency</p>
+      </article>
+      <article class="highlight-card">
+        <span class="highlight-icon" aria-hidden="true">📊</span>
+        <h3>Compare docs</h3>
+        <p>Group TF-IDF · networks</p>
+      </article>
+      <article class="highlight-card">
+        <span class="highlight-icon" aria-hidden="true">📕</span>
+        <h3>Textbook included</h3>
+        <p>5-min tutorial · F1 Help</p>
+      </article>
+    </section>
+
+    <section class="card download" id="download">
+      <p class="card-eyebrow">Trial</p>
+      <h2>Beta trial application</h2>
+      <p class="download-version">Limited slots · researchers · graduate students · institutions</p>
+      <p class="policy-notice">
+        Public free download has <strong>ended</strong>. Please apply by <strong>email</strong> for individual install instructions.
+      </p>
+      <a class="btn btn-zip btn-full" id="btn-beta-apply" href="mailto:hyc6999@gmail.com">
+        <span class="btn-label">Apply for beta</span>
+        <span class="btn-meta">Email form auto-filled · Gmail or mail app</span>
+      </a>
+      <a class="btn btn-secondary-outline btn-full" id="btn-license-consult" href="mailto:hyc6999@gmail.com">
+        <span class="btn-label">License inquiry</span>
+        <span class="btn-meta">Formal edition · university · volume</span>
+      </a>
+      <p class="download-trust">
+        <a href="tel:050714287031">0507-1428-7031</a> · <a href="mailto:hyc6999@gmail.com">hyc6999@gmail.com</a>
+      </p>
+    </section>
+
+    <section class="card expand-hub" id="more">
+      <p class="card-eyebrow">More</p>
+      <h2>Learn more</h2>
+      <p class="expand-lead">Demo, design story, features, editions — expand each section below.</p>
+
+      <div class="fold-list">
+        <details class="fold-item" id="origin">
+          <summary class="fold-q">Why we built it · design story</summary>
+          <div class="fold-a origin-story">
+            <p>
+              <strong>VibeStat-Text</strong> was not built from a feature checklist alone.
+              An <strong>Ed.D. scholar</strong> wrote a <strong>dissertation</strong> centered on text and document analysis
+              through a far more <strong>manual path</strong> than this tool provides today —
+              learning R, packages, environment setup, and scripts <strong>alone</strong>, often wanting to quit along the way.
+            </p>
+            <p>
+              Later, while <strong>supervising graduate students</strong> in text mining, the same barriers appeared again:
+              time lost to installation and coding instead of corpus design, research questions, and interpretation.
+              That field experience became the <strong>direct motive</strong> for development.
+            </p>
+            <p>
+              The goal is <strong>research question → corpus → analysis → interpretation</strong> with
+              <strong>built-in R</strong>, <strong>buttons</strong>, <strong>dictionary &amp; preprocess</strong>, and a <strong>built-in textbook</strong>.
+              Optional <strong>Vibe-Talk</strong> and <strong>Vibe-Loom</strong> extend interpretation and drafting (your API key).
+            </p>
+            <p class="origin-note">
+              The app enables <strong>richer exploration and reproducibility</strong> than the designer had for their own dissertation —
+              but analysis quality and interpretation remain the researcher’s responsibility.
+              It is for <strong>research, institutions, and practice</strong> — not a student homework shortcut.
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">6-minute demo (silent)</summary>
+          <div class="fold-a">
+            <p class="video-lead">Sample data → word frequency · word cloud · LDA</p>
+            <div class="video-teaser">
+              <button
+                type="button"
+                class="video-thumb"
+                data-youtube="mP4pKTpWBLU"
+                data-title="VibeStat-Text demo"
+                aria-label="Play 6-minute demo video"
+              >
+                <img
+                  src="https://img.youtube.com/vi/mP4pKTpWBLU/mqdefault.jpg"
+                  alt=""
+                  width="320"
+                  height="180"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="video-play-badge" aria-hidden="true">▶</span>
+              </button>
+              <p class="video-thumb-hint">Click to play · 6 min silent demo</p>
+              <div class="video-wrap video-wrap-compact" hidden></div>
+            </div>
+            <p class="video-link"><a href="https://youtu.be/mP4pKTpWBLU" rel="noopener noreferrer">Watch on YouTube</a></p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">About VibeStatics · Vibe Statistics</summary>
+          <div class="fold-a">
+            <p>
+              <strong>VibeStatics</strong> (바이브스타틱스) is a platform for <strong>Vibe Statistics</strong> —
+              academic text mining and data analysis on Windows, developed in <strong>Korea</strong>.
+              The Korean name <strong>바이브통계</strong> refers to the same brand.
+              VibeStatics goes <strong>beyond Vibe Coding</strong> (AI script generation) by offering
+              <strong>research question → corpus → analysis → interpretation</strong> with buttons and built-in R.
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">Features in detail</summary>
+          <div class="fold-a">
+            <ul class="fold-ul">
+              <li>Load TXT, CSV, Excel, PDF, HWP, Word; merge multiple PDFs</li>
+              <li>Korean morphological analysis · word &amp; document frequency · TF-IDF</li>
+              <li>Word clouds · LDA topics · network graphs · document comparison</li>
+              <li>Dictionary manager — stopwords, synonyms, phrases; re-run analysis</li>
+              <li>Outputs saved under <code>.vibestat/output/</code></li>
+              <li>Optional AI — Vibe-Talk · Vibe-Loom (your API key, BYOK)</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">Vibe-Talk · Vibe-Loom (optional AI)</summary>
+          <div class="fold-a">
+            <p>
+              <strong>Vibe-Talk</strong> — conversational assistant within your analysis context.
+              <strong>Vibe-Loom</strong> — helps weave paper and report drafts (structure, citations to tables/figures).
+              Both are <strong>optional</strong> and require <strong>your API key (BYOK)</strong>.
+            </p>
+            <p>
+              Core text mining runs <strong>locally with built-in R</strong> — no API key.
+              Unlike Vibe Coding (script generation), Talk and Loom extend the <strong>Vibe R</strong> workflow
+              after you have reproducible outputs from button-driven analysis.
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">Beta vs formal edition</summary>
+          <div class="fold-a">
+            <p><strong>Local R analysis</strong> runs on your PC without an API key. <strong>AI features</strong> are optional (online, your key).</p>
+            <div class="edition-grid">
+              <article class="edition-col edition-col-beta">
+                <h3>Beta <span class="edition-tag">by email</span></h3>
+                <dl class="edition-dl">
+                  <div><dt>Local</dt><dd>Frequency · TF-IDF · word cloud · LDA · doc compare</dd></div>
+                  <div><dt>API</dt><dd>Vibe-Talk · Vibe-Loom (Upstage Solar · your key)</dd></div>
+                </dl>
+              </article>
+              <article class="edition-col edition-col-formal">
+                <h3>Formal <span class="edition-tag edition-tag-formal">inquiry</span></h3>
+                <dl class="edition-dl">
+                  <div><dt>Local</dt><dd>Beta + network · sentiment · LDA K-scan, etc.</dd></div>
+                  <div><dt>API</dt><dd>AI R fix · annotations · report ZIP/PDF</dd></div>
+                </dl>
+              </article>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="card faq-hub" id="faq">
+      <p class="card-eyebrow">FAQ</p>
+      <h2>Frequently asked questions</h2>
+      <p class="expand-lead">For Google and AI search — how <strong>VibeStatics</strong> differs from similar names.</p>
+
+      <div class="fold-list">
+        <details class="fold-item" open>
+          <summary class="fold-q">What is VibeStatics?</summary>
+          <div class="fold-a">
+            <p>
+              <strong>VibeStatics</strong> is a <strong>Korean software brand</strong> for
+              <strong>R-based text mining and statistics</strong> on Windows.
+              <strong>VibeStat-Text</strong> is the flagship product: button-driven analysis with a <strong>built-in R engine</strong>.
+              Also known in Korean as <strong>바이브스타틱스</strong> and <strong>바이브통계</strong> (Vibe Statistics).
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">Who designed VibeStat-Text and why?</summary>
+          <div class="fold-a">
+            <p>
+              An <strong>Ed.D. scholar</strong> designed it from a <strong>dissertation</strong> and
+              <strong>graduate text-mining supervision</strong> experience.
+              High R entry barriers — experienced firsthand and seen repeatedly in supervision — led to
+              built-in R, buttons, and textbooks so researchers can focus on <strong>corpus, questions, and interpretation</strong>.
+            </p>
+            <p><a href="#origin">Full design story →</a></p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">What are Vibe-Talk and Vibe-Loom?</summary>
+          <div class="fold-a">
+            <p>
+              <strong>Vibe-Talk</strong> — conversational analysis assistant.
+              <strong>Vibe-Loom</strong> — paper/report drafting support.
+              Optional AI (your key); core mining runs <strong>offline with built-in R</strong>.
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">Is VibeStatics the same as Vibe Coding or Naver VIBE?</summary>
+          <div class="fold-a">
+            <p>
+              <strong>No.</strong> Vibe Coding means generating R/Python scripts with AI.
+              Naver VIBE is a music service. <strong>VibeStatics</strong> is independent
+              <strong>desktop research software</strong> for corpus-based text mining.
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">Is it “Five Statics” (the number 5)?</summary>
+          <div class="fold-a">
+            <p>
+              <strong>No.</strong> The name is <strong>Vibe</strong> + <strong>Statistics</strong> → <strong>Vibe Statics</strong>,
+              matching the domain <strong>vibestatics.com</strong>.
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">Is the English UI available?</summary>
+          <div class="fold-a">
+            <p>
+              <strong>Korean UI is complete</strong> and ready for research and teaching.
+              The <strong>English program UI</strong> is <strong>in active development</strong> —
+              this English web page helps global researchers find VibeStatics while the app UI is being localized.
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">Do I need to code in R?</summary>
+          <div class="fold-a">
+            <p>
+              Core workflows use <strong>buttons</strong> — no tm/ggplot scripts required for frequency, word clouds, LDA, or document comparison.
+              The R engine runs <strong>locally</strong> inside the app. Advanced users can still view R code and console.
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">Do I need an API key?</summary>
+          <div class="fold-a">
+            <p>
+              <strong>No</strong> for core text mining — runs offline with built-in R.
+              Optional AI (Vibe-Talk, Vibe-Loom) requires <strong>your own</strong> API key (BYOK).
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">바이브스타틱스란? (한국어)</summary>
+          <div class="fold-a" lang="ko">
+            <p><strong>바이브스타틱스(VibeStatics)</strong>는 한국에서 개발한 R 텍스트마이닝 소프트웨어 브랜드입니다. <a href="../" hreflang="ko">한국어 페이지 →</a></p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-brand">
+        <img src="../assets/app-icon.png?v=2" alt="" width="24" height="24" />
+        <p class="footer-copy">© 2026 VibeStatics (바이브스타틱스 · 바이브통계)</p>
+        <p class="footer-trademark">R logo © The R Foundation (CC BY-SA 4.0)</p>
+      </div>
+      <p class="footer-lang">
+        <a href="../" hreflang="ko" lang="ko">한국어</a> · <a href="#faq">English FAQ</a>
+      </p>
+      <a class="footer-inquiry" href="mailto:hyc6999@gmail.com">hyc6999@gmail.com · license &amp; lecture inquiry</a>
+    </footer>
+  </main>
+  <script src="../landing.js" defer></script>
+</body>
+</html>

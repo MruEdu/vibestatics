@@ -12,6 +12,15 @@
 
 ## 배포 방식
 
+**랜딩 HTML** — 이 저장소 `main` 푸시 시 GitHub Actions(`pages.yml`)로 **vibestatics.com** 자동 배포.
+
+| 경로 | 설명 |
+|------|------|
+| `/` | 한국어 랜딩 (SEO · FAQ 접이식) |
+| `/en/` | English intro (Korean UI complete; English UI in development) |
+
+원본 편집은 `VibeStat-Text/landing/` 에서 하고, 배포 전 이 저장소로 복사합니다.
+
 | 대상 | 파일 | 공개 |
 |------|------|------|
 | **일반·랜딩** | `VibeStat-Text-*-win64.zip` | ✅ GitHub Release · vibestatics.com |
