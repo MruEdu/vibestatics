@@ -3,357 +3,201 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="VibeStat-Text · 바이브통계 — 교육학 박사가 설계한 바이브 R 텍스트마이닝. 논문·졸업연구·교육학 연구방법론. 시범판 무료 다운로드" />
-  <meta name="keywords" content="VibeStat, VibeStatics, 바이브통계, 바이브스타틱스, 교육학 연구방법론, 교육학 박사, 바이브 코딩, Vibe Statistics, 바이브 R, R 텍스트마이닝, 논문, 졸업연구" />
-  <link rel="canonical" href="https://vibestatics.com/" />
-  <meta property="og:title" content="VibeStat-Text · 바이브통계 · 바이브스타틱스" />
-  <meta property="og:description" content="바이브 코딩을 넘어, 연구자를 위한 바이브 R 텍스트마이닝 — 논문·졸업연구용 양적·텍스트 분석" />
-  <meta property="og:url" content="https://vibestatics.com/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="ko_KR" />
-  <title>VibeStat-Text · 바이브통계 · 바이브스타틱스</title>
+  <meta
+    name="description"
+    content="바이브스타틱스(VibeStatics) VibeStat-Text — 내장 R 엔진 텍스트마이닝. 시험판 선착순 모집 · 이메일 신청."
+  />
+  <title>VibeStat-Text · 바이브스타틱스 — 시험판 신청</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="icon" href="assets/app-icon.png?v=2" type="image/png" />
-  <link rel="stylesheet" href="styles.css?v=42" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://vibestatics.com/#organization",
-        "name": "VibeStatics",
-        "alternateName": ["바이브스타틱스", "바이브통계", "Vibe Statistics"],
-        "url": "https://vibestatics.com/",
-        "email": "hyc6999@gmail.com",
-        "telephone": "+82-507-1428-7031",
-        "description": "교육학 박사가 설계한 R 기반 학술 텍스트마이닝·통계 분석 플랫폼(바이브통계)."
-      },
-      {
-        "@type": "SoftwareApplication",
-        "@id": "https://vibestatics.com/#vibestat-text",
-        "name": "VibeStat-Text",
-        "alternateName": ["바이브통계", "바이브 R", "VibeStatics Text Mining"],
-        "applicationCategory": "EducationalApplication",
-        "operatingSystem": "Windows 10, Windows 11",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "KRW",
-          "description": "시범판 무료 (2026년 8월 31일까지)"
-        },
-        "publisher": { "@id": "https://vibestatics.com/#organization" },
-        "description": "교육학 연구방법론 현장을 염두에 둔 R 텍스트마이닝 — 워드클라우드, LDA, 형태소 빈도, 문서 비교."
-      }
-    ]
-  }
-  </script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GG4RV46FB1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag("js", new Date());
-    gtag("config", "G-GG4RV46FB1");
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="app-bar">
-    <div class="app-bar-left">
-      <img src="assets/app-icon.png?v=2" alt="" class="app-icon" width="26" height="26" />
-      <span class="brand-mark">VibeStat-Text</span>
-      <span class="app-bar-slogan">바이브 R · 학술 텍스트마이닝</span>
-    </div>
-    <div class="app-bar-right">
-      <a class="app-bar-cta app-bar-cta-ghost" href="#contact">문의</a>
-      <a class="app-bar-cta" href="#download">다운로드</a>
-    </div>
-  </header>
+  <div class="grain" aria-hidden="true"></div>
 
   <main class="page">
     <header class="hero">
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <p class="hero-brand-ko">바이브스타틱스 · 바이브통계</p>
-          <div class="hero-title-row">
-            <img src="assets/app-icon.png?v=2" alt="" class="hero-icon" width="72" height="72" />
-            <h1>VibeStat-Text</h1>
-          </div>
-          <p class="hero-motto">바이브 코딩을 넘어 — 연구자를 위한 <strong>바이브 R</strong> 텍스트마이닝</p>
-          <p class="hero-research">논문·졸업논문·학위연구를 염두에 둔 양적·텍스트 분석</p>
-          <p class="hero-tagline">Big Data · Text Mining · Statistical Analysis</p>
-          <p class="hero-audience"><strong>R 엔진</strong>이 앱 안에 포함되어 tm·ggplot 스크립트 없이 버튼으로 분석합니다</p>
-          <ul class="hero-chips">
-            <li>교육학 박사 설계</li>
-            <li>R 엔진 내장</li>
-            <li>오프라인 · 인터넷 불필요</li>
-            <li>내장 교재·Help</li>
-            <li>시범판 무료</li>
-          </ul>
-        </div>
-        <div class="hero-preview-wrap">
-          <figure class="hero-preview" aria-labelledby="hero-r-caption">
-            <img
-              src="assets/r-logo-official.svg"
-              alt="R 로고 (The R Foundation)"
-              width="724"
-              height="561"
-            />
-            <p class="hero-r-engine">R 엔진 내장 · PC 안에서 로컬 실행</p>
-            <figcaption class="hero-r-credit" id="hero-r-caption">
-              R 로고 © The R Foundation ·
-              <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license noopener">CC BY-SA 4.0</a>
-              · VibeStat-Text는 R 공식 앱이 아닌 <strong>독립 제품</strong>입니다
-            </figcaption>
-          </figure>
-        </div>
-      </div>
+      <img
+        src="assets/logo.png"
+        alt="VibeStatics 로고"
+        class="hero-logo"
+        width="120"
+        height="120"
+      />
+      <h1 class="hero-title">VibeStatics</h1>
+      <p class="hero-tagline">Text Mining &amp; Statistical Analysis Software</p>
+      <p class="hero-brand-ko">바이브스타틱스 · 바이브통계</p>
     </header>
 
-    <section class="highlights">
-      <article class="highlight-card">
-        <span class="highlight-icon" aria-hidden="true">📂</span>
-        <h3>다양한 형식</h3>
-        <p>TXT · CSV · Excel · PDF · HWP</p>
-      </article>
-      <article class="highlight-card">
-        <span class="highlight-icon" aria-hidden="true">☁️</span>
-        <h3>버튼 분석</h3>
-        <p>워드클라우드 · LDA · 빈도</p>
-      </article>
-      <article class="highlight-card">
-        <span class="highlight-icon" aria-hidden="true">📊</span>
-        <h3>문서 비교</h3>
-        <p>집단별 TF-IDF · 네트워크</p>
-      </article>
-      <article class="highlight-card">
-        <span class="highlight-icon" aria-hidden="true">📕</span>
-        <h3>교재 포함</h3>
-        <p>5분 따라하기 · F1 Help</p>
-      </article>
-    </section>
-
-    <section class="card brand-story" id="brand">
-      <p class="card-eyebrow">VibeStatics · Brand</p>
-      <h2>바이브스타틱스란</h2>
-      <p class="lead brand-lead">
-        <strong>VibeStatics</strong>(바이브스타틱스)는 학술·연구 현장을 위한
-        <strong>Vibe Statistics</strong>(바이브 통계) 플랫폼입니다.
-        국문 별칭 <strong>바이브통계</strong>와 앱명 <strong>VibeStat</strong>은 같은 체계를 가리킵니다.
-        첫 제품 <a href="#download">VibeStat-Text</a>는 R 텍스트마이닝에 특화되어 있으며,
-        <strong>교육학 박사</strong>가 <strong>교육학 연구방법론</strong> 현장을 염두에 두고 <strong>설계</strong>했습니다.
+    <section class="intro card">
+      <p class="badge">시험판 · 베타</p>
+      <h2>VibeStat-Text</h2>
+      <p class="intro-lead">
+        버튼만 눌러 <strong>R 텍스트마이닝</strong>을 실행하는 Windows 데스크톱 프로그램입니다.
+        <strong>내장 R 엔진</strong> · PDF·Excel·Word·한글·CSV — 코딩 없이 빈도·워드클라우드·LDA까지.
       </p>
-      <div class="brand-grid">
-        <article class="brand-item">
-          <h3>바이브 코딩 (Vibe Coding)</h3>
-          <p>
-            AI와 대화하며 R·Python <strong>스크립트를 생성</strong>하는 방식입니다.
-            연구자에게 코드 작성 부담을 줄이지만, <strong>코퍼스 설계·전처리·재현성·통계 해석</strong>은
-            여전히 연구자의 몫입니다. 바이브 코딩은 <em>코드 생산</em>에 가깝습니다.
-          </p>
-        </article>
-        <article class="brand-item">
-          <h3>Vibe + Statistics (VibeStatics)</h3>
-          <p>
-            <strong>Vibe</strong>(연구 몰입·분석의 흐름)와 <strong>Statistics</strong>(통계·데이터 분석)의 합성어입니다.
-            Five(숫자 5) Statics가 아니라, <strong>Vibe Statics</strong> — 즉
-            <strong>vibestatics.com</strong> 도메인과 같은 표기입니다.
-            바이브스타틱스는 바이브 코딩 <strong>을 넘어</strong>, 버튼과 내장 R로
-            <strong>연구 질문 → 코퍼스 → 분석 → 해석</strong>까지 이어지도록 돕습니다.
-          </p>
-        </article>
-      </div>
-      <aside class="brand-audience" aria-label="누구를 위한 플랫폼인가">
-        <p>
-          <strong>R</strong>이 빅데이터·텍스트 분석에 적합하다는 것은 알지만,
-          <strong>패키지·스크립트·환경 설정</strong> 앞에서 한 번 멈췄던 연구자에게 —
-          <strong>코퍼스·텍스트마이닝</strong>을 논문·학위 연구 주제로 삼고 싶은 분에게
-          VibeStat-Text는 <strong>다시 시작할 수 있는 R 분석</strong>을 제공합니다.
-        </p>
-        <p>
-          이 분야에서 연구하고 싶은 <strong>대학원생·연구자·실무자</strong> —
-          혼자 R 입문서만으로 버티기 어렵다면
-          <a href="#download">시범판</a>으로 바로 시작하고, 정식판·특강은
-          <a href="#contact">문의</a>로 안내받을 수 있습니다.
-        </p>
-      </aside>
+      <p class="policy-notice">
+        시험판 무료 다운로드는 <strong>회사 정책에 따라 종료</strong>하였습니다.
+        이전에 홈페이지에서 받으셨던 분도 <strong>시험판 신청</strong> 후 개별 안내를 받으실 수 있습니다.
+      </p>
+      <p class="intro-note">
+        <strong>시험판은 이메일 신청</strong> 후 순서대로 안내합니다. 정식판·기관 라이센스는 별도 상담합니다.
+      </p>
     </section>
 
-    <div class="content-grid">
-      <section class="card intro">
-        <p class="card-eyebrow">About</p>
-        <h2>소개</h2>
-        <p class="lead">
-          VibeStat-Text(<strong>바이브통계</strong> · VibeStatics)는
-          <strong>교육학 박사</strong>가 <strong>교육학 연구방법론</strong> 강의·지도 경험을 바탕으로
-          <strong>설계</strong>한 <strong>바이브 R</strong> 텍스트마이닝 도구입니다.
-          <strong>논문·졸업연구</strong>를 염두에 두었으며, <strong>R</strong>은 빅데이터·통계 분석의 강력한 엔진이지만
-          텍스트마이닝은 <strong>패키지·스크립트 진입장벽</strong>이 큽니다.
-          버튼만으로 <strong>워드클라우드 · LDA · 형태소 빈도 · 문서 비교</strong>까지 —
-          코딩 없이 바로 시작할 수 있습니다.
-        </p>
-        <ul class="intro-list">
-          <li>Windows 10/11 · ZIP <strong>차단 해제</strong> → 풀기 → <strong>VibeStat.exe</strong></li>
-          <li>기본 <strong>🔒 오프라인</strong> · AI는 <strong>온라인 AI</strong> 전환 시 API 키</li>
-          <li>시범판 무료 · <strong>2026년 8월 31일</strong>까지</li>
-          <li>첫 실행 약관 동의 · <strong>바탕 화면 바로 가기</strong> 안내 · 인증번호 불필요</li>
-        </ul>
-      </section>
+    <section class="video card" id="demo">
+      <h2>6분 시연 영상 (무음)</h2>
+      <p class="section-lead">샘플 데이터 따라하기 → 단어 빈도 · 워드클라우드 · LDA</p>
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/mP4pKTpWBLU"
+          title="6분만에 끝내는 텍스트마이닝 | VibeStat-Text 시연 (무음)"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+      <p class="video-link">
+        <a href="https://youtu.be/mP4pKTpWBLU" rel="noopener noreferrer">YouTube에서 보기</a>
+      </p>
+    </section>
 
-      <section class="card download" id="download">
-        <p class="card-eyebrow">Beta</p>
-        <h2>시범판 다운로드</h2>
-        <p class="download-version">VibeStat-Text <span>0.7.7-beta.2</span></p>
-        <p class="download-recommend">
-          <strong>ZIP</strong>을 받아 <strong>차단 해제</strong> 후 압축을 풀고 <strong>VibeStat.exe</strong>를 실행하세요.<br />
-          ZIP 안 <strong>「차단해제-먼저-읽기.txt」</strong> 참고 · 첫 실행 시 바탕 화면 바로 가기 안내.
-        </p>
+    <section class="beta card" id="beta">
+      <h2>시험판 신청</h2>
+      <p class="beta-quota"><span class="beta-quota-num">선착순 50명</span> · 연구자·대학원생·기관 담당자</p>
+      <ul class="beta-list">
+        <li>Windows 10/11 · <strong>최초 설치 시 인터넷 연결 필요</strong></li>
+        <li>내장 R 엔진 — API 키 없이 핵심 텍스트마이닝 기능 사용</li>
+        <li>신청 확인 후 <strong>시험판 설치 안내</strong>를 이메일로 개별 발송</li>
+        <li>AI(Vibe-Talk·Vibe-Loom)는 선택 기능(BYOK) — 안내 시 별도 설명</li>
+      </ul>
 
-        <p class="download-trust">
-          Windows 보안 안내가 뜰 수 있습니다.
-          <strong>바이브스타틱스(VibeStatics) 공식 배포</strong>이며 PC를 손상시키지 않습니다.
-          · <a href="https://vibestatics.com">vibestatics.com</a>
-          · <span class="contact-item"><span class="contact-kind" aria-hidden="true">T.</span><a href="tel:050714287031">0507-1428-7031</a></span>
-          · <span class="contact-item"><span class="contact-kind" aria-hidden="true">E.</span><a href="mailto:hyc6999@gmail.com">hyc6999@gmail.com</a></span>
-        </p>
+      <div class="beta-apply-box">
+        <p class="beta-apply-title">신청 시 아래 항목을 적어 주세요</p>
+        <p class="beta-apply-note">학과·학번은 받지 않습니다. <strong>소속</strong>과 <strong>전공·연구 분야</strong> 정도만 알면 됩니다.</p>
+        <dl class="beta-apply-fields">
+          <div><dt>이름</dt><dd>필수</dd></div>
+          <div><dt>소속</dt><dd>대학·연구소·기관 등 (학과명은 선택)</dd></div>
+          <div><dt>전공·연구 분야</dt><dd>예: 교육학, 경영, 컴퓨터, 인문·사회 등</dd></div>
+          <div><dt>연락처</dt><dd>휴대전화</dd></div>
+          <div><dt>회신 이메일</dt><dd>시험판 안내를 받을 주소</dd></div>
+          <div><dt>사용 목적</dt><dd>연구·수업·기타 (한 줄)</dd></div>
+        </dl>
+      </div>
 
+      <div class="cta-grid">
         <a
-          class="btn btn-zip btn-full"
-          href="https://github.com/MruEdu/vibestat-releases/releases/download/v0.7.7-beta.2/VibeStat-Text-0.7.7-beta.2-win64.zip"
-          rel="noopener"
+          class="btn btn-primary"
+          id="btn-beta-apply"
+          href="mailto:hyc6999@gmail.com"
         >
-          <span class="btn-label">ZIP 다운로드</span>
-          <span class="btn-meta">차단 해제 → 압축 풀기 → VibeStat.exe · 약 153 MB</span>
+          <span class="btn-label">시험판 신청</span>
+          <span class="btn-meta">이메일로 신청 · 양식 자동 입력</span>
         </a>
-
-        <details class="install-help">
-          <summary>📋 ZIP 받은 뒤 — 실행 방법 (7단계)</summary>
-          <div class="install-help-body">
-            <ol class="install-steps">
-              <li><strong>① ZIP 다운로드</strong> — 153 MB · 100% · Edge ⚠ → <strong>유지</strong></li>
-              <li><strong>② 차단 해제 (먼저)</strong> — ZIP <strong>우클릭 → 속성 → 「차단 해제」</strong> 체크 → 확인 · <strong>압축 풀기 전</strong>에 하세요</li>
-              <li><strong>③ 압축 풀기</strong> — ZIP 안만 열지 말고 <strong>「압축 풀기」</strong> → 폴더 생성 · <strong>「차단해제-먼저-읽기.txt」</strong> 있음</li>
-              <li>
-                <strong>④ VibeStat.exe</strong> — <strong>우클릭 → 속성 → 「차단 해제」</strong> → 더블클릭 (설치 아님)
-                <figure class="install-exe-figure">
-                  <img src="assets/vibestat-exe-icon.png" width="220" height="32" alt="VibeStat.exe 파일 아이콘" loading="lazy" />
-                  <figcaption>파란 보안 창 → 「추가 정보」 → 「실행」 · 프로그램 오류 아님</figcaption>
-                </figure>
-              </li>
-              <li><strong>⑤ 첫 실행</strong> — 「설치 완료」= 앱 준비 · 약관 동의 → <strong>「바탕 화면 바로 가기를 만들까요?」</strong> → <strong>만들기</strong></li>
-              <li><strong>⑥ 이후 실행</strong> — 바탕 화면 <strong>VibeStat</strong> · 보안 안내가 또 뜨면 「추가 정보」→「실행」(바로가기도 동일)</li>
-              <li><strong>⑦ 수동 (선택)</strong> — 바로가기 거절 시 · <strong>VibeStat.exe</strong> 우클릭 → <strong>보내기</strong> → <strong>바탕 화면 바로 가기 만들기</strong></li>
-            </ol>
-            <p class="install-help-note">SmartScreen을 <strong>없앨 수는 없고</strong> · ②④ 차단 해제로 <strong>줄일 수 있습니다</strong> · exe만 옮기지 마세요 · 학교 PC는 막힐 수 있음</p>
-          </div>
-        </details>
-      </section>
-    </div>
-
-    <section class="card edition-compare" id="editions">
-      <p class="card-eyebrow">Editions</p>
-      <h2>시범판 · 정식판</h2>
-      <p class="edition-lead">
-        <strong>로컬 · 비연동</strong>은 PC 안 R 분석 — <strong>인터넷 없이</strong> 사용 ·
-        <strong>API 연동</strong>은 본인 키로 AI 기능(선택, 온라인)입니다.
-      </p>
-      <div class="edition-grid">
-        <article class="edition-col edition-col-beta">
-          <h3>시범판 <span class="edition-tag">지금 ZIP 다운로드</span></h3>
-          <dl class="edition-dl">
-            <div>
-              <dt>로컬 · 비연동</dt>
-              <dd>빈도 · TF-IDF · 워드클라우드 · LDA · 문서 비교 <span class="edition-note">· 인터넷 없이</span></dd>
-            </div>
-            <div>
-              <dt>API 연동</dt>
-              <dd>Vibe-Talk · Vibe-Loom <span class="edition-note">(Upstage Solar · 본인 API 키)</span></dd>
-            </div>
-          </dl>
-        </article>
-        <article class="edition-col edition-col-formal">
-          <h3>정식판 <span class="edition-tag edition-tag-formal">개인·기관 · 문의</span></h3>
-          <dl class="edition-dl">
-            <div>
-              <dt>로컬 · 비연동</dt>
-              <dd>시범판 + 네트워크 · 감성 · LDA K스캔 등 <span class="edition-note">· 인터넷 없이</span></dd>
-            </div>
-            <div>
-              <dt>API 연동</dt>
-              <dd>AI R 교정 · 주석 · 리포트 ZIP/PDF <span class="edition-note">· Upstage 외 LLM API 선택 가능</span></dd>
-            </div>
-          </dl>
-        </article>
+        <a class="btn btn-secondary" href="tel:050714287031">
+          <span class="btn-label">전화 문의</span>
+          <span class="btn-meta">0507-1428-7031</span>
+        </a>
       </div>
-      <p class="edition-foot">
-        <strong>개인 연구자</strong> · 대학·기관 모두 정식판 구매 가능 ·
-        특강 시 기한 한정 제공 ·
-        <a href="#contact">문의</a>
+
+      <a
+        class="btn btn-secondary btn-block cta-license"
+        id="btn-license-consult"
+        href="mailto:hyc6999@gmail.com"
+      >
+        <span class="btn-label">정식·라이센스 상담</span>
+        <span class="btn-meta">정식판 구매 · 대학·기관·볼륨 계약</span>
+      </a>
+
+      <p class="beta-hint">
+        <strong>시험판 신청</strong> 버튼을 누르면 <strong>hyc6999@gmail.com</strong>으로 양식이 채워진 메일이 열립니다.
+        내용을 채운 뒤 <strong>보내기</strong>만 누르세요. 마감 시 본 페이지에서 안내합니다.
+      </p>
+      <p class="beta-fallback">
+        메일이 안 열리면
+        <a href="mailto:hyc6999@gmail.com?subject=VibeStat-Text%20%EC%8B%9C%ED%97%98%ED%8C%90%20%EC%8B%A0%EC%B2%AD">hyc6999@gmail.com</a>
+        으로 제목 <strong>「VibeStat-Text 시험판 신청」</strong>을 적어 위 항목을 보내 주세요.
       </p>
     </section>
 
-    <section class="card features">
-      <p class="card-eyebrow">Features</p>
+    <section class="partner card" id="partner">
+      <h2>국내 유통·파트너</h2>
+      <p>
+        VibeStat-Text의 <strong>국내 독점 유통·수탁</strong> 파트너를 검토 중입니다.
+        대학·기관·출판·교육 사업 관심 업체는 이메일로 연락 주세요.
+      </p>
+      <a
+        class="btn btn-secondary btn-block"
+        href="mailto:hyc6999@gmail.com?subject=VibeStat-Text%20%EA%B5%AD%EB%82%B4%20%EC%9C%A0%ED%86%B5%C2%B7%ED%8C%8C%ED%8A%B8%EB%84%88%20%EB%AC%B8%EC%9D%98"
+      >
+        <span class="btn-label">유통·파트너 문의</span>
+      </a>
+    </section>
+
+    <section class="features card">
       <h2>주요 기능</h2>
-      <div class="feature-tiles">
-        <article class="feature-tile">
-          <span class="feature-tile-icon">📄</span>
-          <h3>데이터 적재</h3>
-          <p>TXT · CSV · Excel · PDF · HWP · 여러 PDF 합치기</p>
-        </article>
-        <article class="feature-tile">
-          <span class="feature-tile-icon">🔤</span>
-          <h3>형태소·빈도</h3>
-          <p>한글 형태소 분석 · 단어·문서 빈도 · TF-IDF</p>
-        </article>
-        <article class="feature-tile">
-          <span class="feature-tile-icon">☁️</span>
-          <h3>시각화</h3>
-          <p>워드클라우드 · LDA 토픽 · 네트워크 그래프</p>
-        </article>
-        <article class="feature-tile">
-          <span class="feature-tile-icon">⚖️</span>
-          <h3>문서 비교</h3>
-          <p>집단별 코퍼스 비교 · 비교 표 · 오프라인 R</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="card inquiry" id="contact">
-      <p class="card-eyebrow">Contact</p>
-      <h2>개인 · 기관 · 특강</h2>
-      <p class="inquiry-teaser">
-        연구자 <strong>개인</strong>·대학·기관 정식판 구매, 맞춤 특강·수업 패키지.<br />
-        시범판 체험 후 상담해 드립니다.
-      </p>
-      <p class="inquiry-contact">
-        <span class="contact-item"><span class="contact-kind" aria-hidden="true">T.</span><a href="tel:050714287031">0507-1428-7031</a></span>
-        <span class="contact-sep">·</span>
-        <span class="contact-item"><span class="contact-kind" aria-hidden="true">E.</span><a href="mailto:hyc6999@gmail.com">hyc6999@gmail.com</a></span>
-      </p>
-      <div class="inquiry-actions">
-        <a
-          class="inquiry-btn inquiry-btn-purchase"
-          href="mailto:hyc6999@gmail.com?subject=VibeStat-Text%20정식판%20구매%20문의"
-        >정식판 · 구매 상담</a>
-        <a
-          class="inquiry-btn inquiry-btn-lecture"
-          href="mailto:hyc6999@gmail.com?subject=VibeStat-Text%20특강%20강의%20문의"
-        >특강 · 강의 문의</a>
-      </div>
+      <ul>
+        <li>TXT · CSV · Excel · PDF · HWP 등 다양한 형식 적재</li>
+        <li>형태소(elbird) · 워드클라우드 · LDA · TF-IDF · 문서 비교</li>
+        <li>내장 R 엔진 · 로컬 분석 · 재현 가능한 출력(.vibestat/output/)</li>
+        <li>선택 AI — 연구 상담·논문 직조 (본인 API 키)</li>
+      </ul>
     </section>
 
     <footer class="footer">
-      <div class="footer-brand">
-        <img src="assets/app-icon.png?v=2" alt="" width="24" height="24" />
-        <p class="footer-copy">© 2026 바이브스타틱스 · 바이브통계 (VibeStatics)</p>
-        <p class="footer-trademark">R 로고 © The R Foundation (CC BY-SA 4.0)</p>
-      </div>
-      <a class="footer-inquiry" href="#contact"><span class="contact-kind contact-kind-inline" aria-hidden="true">T.</span> 0507-1428-7031 · 개인·기관 구매 · 특강 문의</a>
+      <p class="footer-copy">© 2026 바이브스타틱스 (VibeStatics). All rights reserved.</p>
+      <p class="footer-contact">
+        <a href="mailto:hyc6999@gmail.com">hyc6999@gmail.com</a>
+        · T. <a href="tel:050714287031">0507-1428-7031</a>
+      </p>
     </footer>
   </main>
-  <script src="assets/analytics.js?v=2" defer></script>
+  <script>
+    (function () {
+      var TO = 'hyc6999@gmail.com';
+
+      function mailto(subject, body) {
+        return (
+          'mailto:' +
+          TO +
+          '?subject=' +
+          encodeURIComponent(subject) +
+          '&body=' +
+          encodeURIComponent(body)
+        );
+      }
+
+      var betaBtn = document.getElementById('btn-beta-apply');
+      if (betaBtn) {
+        betaBtn.href = mailto(
+          'VibeStat-Text 시험판 신청',
+          '안녕하세요. VibeStat-Text 시험판 신청합니다.\n\n' +
+            '이름:\n' +
+            '소속 (대학·연구소·기관 등):\n' +
+            '전공·연구 분야:\n' +
+            '연락처:\n' +
+            '회신 이메일:\n\n' +
+            '시험판 사용 목적 (연구·수업·기타):\n' +
+            '간단한 코멘트 (선택):\n'
+        );
+      }
+
+      var licenseBtn = document.getElementById('btn-license-consult');
+      if (licenseBtn) {
+        licenseBtn.href = mailto(
+          'VibeStat-Text 정식·라이센스 상담',
+          '안녕하세요. VibeStat-Text 정식판·라이센스 상담을 요청합니다.\n\n' +
+            '이름·담당자:\n' +
+            '소속·기관:\n' +
+            '연락처:\n' +
+            '회신 이메일:\n\n' +
+            '문의 유형 (정식판 구매·기관·수업·볼륨 라이센스 등):\n' +
+            '예상 사용자 수·기간:\n' +
+            '기타 요청 사항:\n'
+        );
+      }
+    })();
+  </script>
 </body>
 </html>
