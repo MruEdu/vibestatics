@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="index, follow" />
-  <meta name="description" content="VibeStatics — VibeStat-Text: R text mining for research, institutions &amp; practice. Designed by Ed.D. from dissertation &amp; graduate supervision. Vibe-Talk, Vibe-Loom. Beta by email." />
-  <meta name="keywords" content="VibeStatics, VibeStat-Text, Vibe Statistics, R text mining, document analysis, Vibe-Talk, Vibe-Loom, academic research, Korea, made in Korea, word cloud, LDA" />
+  <meta name="description" content="VibeStatics — VibeStat-Text: R text mining &amp; statistical analysis for research. Built-in R packages (tidytext, quanteda, ggplot2, topicmodels). RStudio alternative on Windows. Word cloud, LDA, document analysis. Made in Korea. vibestatics.com" />
+  <meta name="keywords" content="VibeStatics, Vibe Statistics, VibeStat-Text, 바이브스타틱스, 바이브통계, R text mining, RStudio, R packages, tidytext, quanteda, ggplot2, topicmodels, statistical analysis, text analysis, document analysis, word cloud, LDA, topic modeling, TF-IDF, Korea, made in Korea, Vibe-Talk, Vibe-Loom" />
   <link rel="canonical" href="https://vibestatics.com/en/" />
   <link rel="alternate" hreflang="ko" href="https://vibestatics.com/" />
   <link rel="alternate" hreflang="en" href="https://vibestatics.com/en/" />
@@ -13,17 +13,17 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://vibestatics.com/en/" />
   <meta property="og:title" content="VibeStatics | VibeStat-Text — R Text Mining for Researchers" />
-  <meta property="og:description" content="Beyond Vibe Coding — button-driven R text mining on Windows. Built-in R engine. Korean UI complete; English UI in development." />
+  <meta property="og:description" content="VibeStatics — R text mining &amp; statistics on Windows. Built-in R packages. Word clouds, LDA, document analysis. Korean UI ready; English UI in development." />
   <meta property="og:image" content="https://vibestatics.com/assets/app-icon.png" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:locale:alternate" content="ko_KR" />
   <meta name="theme-color" content="#1e1e1e" />
-  <title>VibeStatics | VibeStat-Text — R Text Mining · Made in Korea</title>
+  <title>VibeStatics | VibeStat-Text — R Text Mining · Statistics · Word Cloud · Made in Korea</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="../assets/app-icon.png?v=2" type="image/png" />
-  <link rel="stylesheet" href="../styles.css?v=49" />
+  <link rel="stylesheet" href="../styles.css?v=71" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -45,7 +45,16 @@
         "url": "https://vibestatics.com/",
         "email": "hyc6999@gmail.com",
         "telephone": "+82-507-1428-7031",
-        "description": "Korean software brand for R-based academic text mining and statistics on Windows."
+        "description": "Korean software brand for R-based academic text mining and statistics on Windows.",
+        "knowsAbout": [
+          "R text mining",
+          "statistical analysis",
+          "word clouds",
+          "LDA topic modeling",
+          "tidytext",
+          "quanteda",
+          "RStudio alternative"
+        ]
       },
       {
         "@type": "SoftwareApplication",
@@ -55,6 +64,16 @@
         "inLanguage": ["ko", "en"],
         "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW", "description": "Beta trial by email application" },
         "description": "Designed by Ed.D. from dissertation and graduate text-mining supervision. Word clouds, LDA, document comparison, Vibe-Talk, Vibe-Loom. Korean UI complete; English UI in development.",
+        "featureList": [
+          "Document and corpus text analysis",
+          "Word frequency and TF-IDF",
+          "Word clouds",
+          "LDA topic modeling",
+          "Document comparison",
+          "Built-in R engine with code view",
+          "Free word cloud web demo on vibestatics.com"
+        ],
+        "keywords": "VibeStatics, Vibe Statistics, R text mining, RStudio, R packages, tidytext, quanteda, ggplot2, statistical analysis, word cloud, LDA, document analysis",
         "publisher": { "@id": "https://vibestatics.com/#organization" }
       },
       {
@@ -118,10 +137,50 @@
           },
           {
             "@type": "Question",
+            "name": "Is it the same as running R directly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Core text mining runs on your PC via R (Rscript) using academic packages such as tidytext, quanteda, and topicmodels. Buttons are the UI; you can view R code and console output. With the same packages, preprocessing, and settings, the computation path matches standard R (numbers may differ if versions or seeds differ)."
+            }
+          },
+          {
+            "@type": "Question",
             "name": "When will the English UI be ready?",
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Korean UI is complete. English program UI is in active development."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use VibeStat-Text without RStudio?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. VibeStat-Text runs R text mining and statistical analysis on Windows via buttons without installing RStudio separately. The app includes an R engine and packages such as tidytext, quanteda, ggplot2, and topicmodels locally on your PC."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which R packages does VibeStat-Text use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Standard academic R packages including tm, tidytext, quanteda, topicmodels, wordcloud2, and ggplot2. Buttons are the UI; computation runs via Rscript on your PC. LIVE LOG and console show the packages used."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a free word cloud demo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. On vibestatics.com (Korean homepage), the Word Cloud Playground lets you paste text and save a PNG without installing software. Morphological analysis, LDA, and document comparison require the VibeStat-Text beta or formal edition."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is VibeStatics for statistical and text analysis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. For papers, policy reports, surveys, interviews, news, and document corpora — word frequency, word clouds, LDA topics, TF-IDF, and document comparison. Built for researchers, graduate students, faculty, institutions, and professionals."
             }
           }
         ]
@@ -156,7 +215,10 @@
             <img src="../assets/app-icon.png?v=2" alt="" class="hero-icon" width="72" height="72" />
             <h1>VibeStat-Text</h1>
           </div>
-          <p class="hero-motto">Beyond Vibe Coding — <strong>Vibe R</strong> text mining for <strong>research, practice &amp; institutions</strong></p>
+          <p class="hero-motto">
+            <span class="hero-motto-line">Beyond Vibe Coding —</span>
+            <span class="hero-motto-line"><strong>Vibe R</strong> text mining for <strong>research, practice &amp; institutions</strong></span>
+          </p>
           <p class="hero-research">Quantitative &amp; text analysis for papers, policy reports, surveys, interviews, and document corpora</p>
           <p class="hero-tagline">Big Data · Text Mining · Statistical Analysis</p>
           <p class="hero-audience"><strong>Built-in R engine</strong> — run word frequency, word clouds, and LDA with buttons, not scripts</p>
@@ -169,7 +231,8 @@
             <li>Built-in R</li>
             <li>Internet for first install</li>
             <li>Built-in textbook · Help</li>
-            <li>Beta by application</li>
+            <li class="hero-chip hero-chip-try"><a href="#playground" class="hero-chip-link" data-wc-open>☁️ Word cloud</a></li>
+            <li class="hero-chip hero-chip-cta"><a href="#download" class="hero-chip-link">Beta apply</a></li>
           </ul>
         </div>
         <div class="hero-preview-wrap">
@@ -190,10 +253,40 @@
       <a href="#guide">At a glance</a>
       <a href="#origin">Design story</a>
       <a href="#download">Beta Apply</a>
+      <a href="#video">Demo</a>
+      <a href="#trust-r">R · Trust</a>
       <a href="#more">Learn more</a>
       <a href="#faq">FAQ</a>
       <a href="../" hreflang="ko" lang="ko">한국어</a>
     </nav>
+
+    <section class="card video-spot" id="video" aria-labelledby="video-heading-en">
+      <p class="card-eyebrow">Demo</p>
+      <h2 id="video-heading-en" class="video-spot-title">6-minute demo (silent)</h2>
+      <p class="video-lead">Sample data → word frequency · word cloud · LDA</p>
+      <div class="video-teaser">
+        <button
+          type="button"
+          class="video-thumb"
+          data-youtube="mP4pKTpWBLU"
+          data-title="6-minute VibeStat-Text demo (silent)"
+          aria-label="Play 6-minute demo video"
+        >
+          <img
+            src="https://img.youtube.com/vi/mP4pKTpWBLU/mqdefault.jpg"
+            alt=""
+            width="320"
+            height="180"
+            loading="lazy"
+            decoding="async"
+          />
+          <span class="video-play-badge" aria-hidden="true">▶</span>
+        </button>
+        <p class="video-thumb-hint">Click to play · 6 min silent demo</p>
+        <div class="video-wrap video-wrap-compact" hidden></div>
+      </div>
+      <p class="video-link"><a href="https://youtu.be/mP4pKTpWBLU" rel="noopener noreferrer">Watch on YouTube</a></p>
+    </section>
 
     <section class="card visitor-guide" id="guide" aria-labelledby="guide-heading-en">
       <p class="card-eyebrow">Guide</p>
@@ -206,6 +299,7 @@
         frequency, word clouds, LDA, and document comparison with buttons, not scripts.
         Not only graduate students: also for <strong>institutions, practitioners, and classrooms</strong>.
         Designed by an <strong>Ed.D.</strong> from <strong>dissertation</strong> and <strong>graduate text-mining supervision</strong> to lower R entry barriers.
+        It is not a proprietary stats engine — analysis runs on <strong>built-in R</strong>. See <a href="#trust-r">R · trust</a>.
       </p>
       <div class="guide-grid">
         <div class="guide-block">
@@ -237,6 +331,8 @@
       <p class="guide-next">
         To try it: <a href="#download">Beta application</a>
         · Details: <a href="#more">Learn more</a>
+        · <a href="#video">6-min demo</a>
+        · <a href="#trust-r">R · trust</a>
         · Design story: <a href="#origin">Why we built it</a>
         · Names &amp; FAQ: <a href="#faq">Q&amp;A</a>
       </p>
@@ -288,7 +384,7 @@
     <section class="card expand-hub" id="more">
       <p class="card-eyebrow">More</p>
       <h2>Learn more</h2>
-      <p class="expand-lead">Demo, design story, features, editions — expand each section below.</p>
+      <p class="expand-lead">Design story, R trust, features, editions — expand each section below.</p>
 
       <div class="fold-list">
         <details class="fold-item" id="origin">
@@ -318,32 +414,42 @@
           </div>
         </details>
 
+        <details class="fold-item" id="trust-r">
+          <summary class="fold-q">R engine · why you can trust it</summary>
+          <div class="fold-a trust-story">
+            <p>
+              VibeStat-Text is <strong>not</strong> an Excel macro or a black-box stats engine.
+              Analysis runs on your PC via <strong>R (Rscript.exe)</strong>.
+              Each button triggers <strong>validated R scripts</strong> you can inspect in
+              <strong>R Code / Console</strong>.
+            </p>
+            <p>
+              Text mining uses <strong>tidytext · quanteda · topicmodels · wordcloud2</strong> and other
+              <strong>standard academic R packages</strong>.
+              With the same packages, preprocessing, and settings, results follow the
+              <strong>same R computation path</strong> as running scripts in RStudio
+              (numbers may differ if package versions, stopwords, or seeds differ).
+            </p>
+            <ul class="fold-ul trust-list">
+              <li><strong>Local execution</strong> — core mining does not send full corpora to cloud LLMs</li>
+              <li><strong>Saved outputs</strong> — CSV and images under <code>.vibestat/output/</code> for papers and reports</li>
+              <li><strong>Reproducibility aids</strong> — dictionaries, preprocessing, and session saves for re-runs</li>
+              <li><strong>Korean morphology</strong> — elbird (Kiwi), etc.; LIVE LOG / console records the analyzer used</li>
+              <li><strong>Independent product</strong> — not an official R Foundation app; R engine use is disclosed with attribution</li>
+            </ul>
+            <p class="origin-note">
+              Unlike Vibe Coding (AI generates scripts for you), VibeStat-Text helps
+              <strong>reproducible R-based text mining</strong> through a UI.
+              <strong>Vibe-Talk</strong> and <strong>Vibe-Loom</strong> are optional interpretation/drafting aids; the core is local R.
+            </p>
+          </div>
+        </details>
+
         <details class="fold-item">
           <summary class="fold-q">6-minute demo (silent)</summary>
           <div class="fold-a">
-            <p class="video-lead">Sample data → word frequency · word cloud · LDA</p>
-            <div class="video-teaser">
-              <button
-                type="button"
-                class="video-thumb"
-                data-youtube="mP4pKTpWBLU"
-                data-title="VibeStat-Text demo"
-                aria-label="Play 6-minute demo video"
-              >
-                <img
-                  src="https://img.youtube.com/vi/mP4pKTpWBLU/mqdefault.jpg"
-                  alt=""
-                  width="320"
-                  height="180"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <span class="video-play-badge" aria-hidden="true">▶</span>
-              </button>
-              <p class="video-thumb-hint">Click to play · 6 min silent demo</p>
-              <div class="video-wrap video-wrap-compact" hidden></div>
-            </div>
-            <p class="video-link"><a href="https://youtu.be/mP4pKTpWBLU" rel="noopener noreferrer">Watch on YouTube</a></p>
+            <p>Sample data → word frequency · word cloud · LDA</p>
+            <p><a href="#video">Play demo video →</a></p>
           </div>
         </details>
 
@@ -352,11 +458,28 @@
           <div class="fold-a">
             <p>
               <strong>VibeStatics</strong> (바이브스타틱스) is a platform for <strong>Vibe Statistics</strong> —
-              academic text mining and data analysis on Windows, developed in <strong>Korea</strong>.
-              The Korean name <strong>바이브통계</strong> refers to the same brand.
+              <strong>graduate text-mining supervision</strong> experience.
+              It serves <strong>research, institutions, and practice</strong> — not only thesis students.
               VibeStatics goes <strong>beyond Vibe Coding</strong> (AI script generation) by offering
               <strong>research question → corpus → analysis → interpretation</strong> with buttons and built-in R.
             </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">Introduction · requirements</summary>
+          <div class="fold-a">
+            <p>
+              VibeStat-Text is Windows <strong>R text mining</strong> for <strong>research, institutions, and practice</strong>.
+              Load papers, policy reports, surveys, and document corpora — then run
+              word clouds, LDA, morphology frequency, and document comparison with buttons.
+            </p>
+            <ul class="intro-list">
+              <li>Windows 10/11 · <strong>internet required for first install</strong></li>
+              <li>Built-in R — core mining without API key · AI optional (BYOK)</li>
+              <li><strong>Beta by email application</strong> — individual install instructions</li>
+              <li>First-run terms · desktop shortcut · no activation code</li>
+            </ul>
           </div>
         </details>
 
@@ -418,7 +541,22 @@
     <section class="card faq-hub" id="faq">
       <p class="card-eyebrow">FAQ</p>
       <h2>Frequently asked questions</h2>
-      <p class="expand-lead">For Google and AI search — how <strong>VibeStatics</strong> differs from similar names.</p>
+      <p class="expand-lead">For Google and AI search — <strong>VibeStatics</strong>, <strong>R text mining</strong>, <strong>statistics</strong>, <strong>RStudio</strong>, and <strong>R packages</strong>.</p>
+
+      <div class="search-topics" id="search-topics" aria-labelledby="search-topics-heading-en">
+        <h3 class="search-topics-heading" id="search-topics-heading-en">Search topics</h3>
+        <p class="search-topics-lead">
+          <strong>vibestatics.com</strong> is the official site for VibeStatics (바이브스타틱스 · 바이브통계).
+        </p>
+        <ul class="search-topic-list">
+          <li><strong>VibeStatics · Vibe Statistics · 바이브통계</strong> — Korean R text mining brand</li>
+          <li><strong>Statistical analysis · text analysis · document analysis</strong> — corpus workflows</li>
+          <li><strong>R text mining · RStudio · R packages</strong> — tidytext, quanteda, tm, ggplot2, topicmodels</li>
+          <li><strong>Word cloud</strong> — free demo on the <a href="../#playground" hreflang="ko">Korean homepage playground</a></li>
+          <li><strong>LDA · topic modeling · TF-IDF</strong> — button-driven in VibeStat-Text</li>
+          <li><strong>Researchers · academia · institutions</strong> — papers, policy, surveys, interviews</li>
+        </ul>
+      </div>
 
       <div class="fold-list">
         <details class="fold-item" open>
@@ -479,6 +617,34 @@
         </details>
 
         <details class="fold-item">
+          <summary class="fold-q">What is VibeStat-Text?</summary>
+          <div class="fold-a">
+            <p>
+              Windows <strong>text mining</strong> for <strong>research, institutions, practice, and teaching</strong>.
+              PDF · Excel · Word · HWP · CSV · TXT → frequency · word clouds · LDA · TF-IDF · document comparison.
+              <strong>Built-in R</strong> runs locally; an <strong>independent product</strong>, not an official R app.
+              <a href="#trust-r">R · trust →</a>
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">Is it the same as running R directly?</summary>
+          <div class="fold-a">
+            <p>
+              Core analysis runs via <strong>R (Rscript)</strong> with <strong>tidytext · quanteda · topicmodels</strong> and similar packages.
+              Buttons are the UI; you can view <strong>R code and console</strong> output.
+              Same packages, preprocessing, and settings → <strong>same R computation path</strong> as RStudio scripts.
+            </p>
+            <p>
+              Numbers may differ if package versions, dictionaries, or LDA seeds differ.
+              For Methods sections, record the <strong>actual packages and analyzer</strong> shown in LIVE LOG or console.
+            </p>
+            <p><a href="#trust-r">Full R · trust section →</a></p>
+          </div>
+        </details>
+
+        <details class="fold-item">
           <summary class="fold-q">Is the English UI available?</summary>
           <div class="fold-a">
             <p>
@@ -505,6 +671,50 @@
             <p>
               <strong>No</strong> for core text mining — runs offline with built-in R.
               Optional AI (Vibe-Talk, Vibe-Loom) requires <strong>your own</strong> API key (BYOK).
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">Can I use VibeStat-Text without RStudio?</summary>
+          <div class="fold-a">
+            <p>
+              <strong>Yes.</strong> Run <strong>R text mining and statistical analysis</strong> on Windows via buttons
+              without installing <strong>RStudio</strong> separately. The app includes an <strong>R engine</strong> and
+              packages such as <strong>tidytext · quanteda · ggplot2 · topicmodels</strong> on your PC.
+              <a href="#trust-r">R · trust →</a>
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">Which R packages are used?</summary>
+          <div class="fold-a">
+            <p>
+              Standard academic packages: <strong>tm · tidytext · quanteda · topicmodels · wordcloud2 · ggplot2</strong>.
+              Computation runs via <strong>Rscript</strong>; LIVE LOG and console show what was used.
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">Is there a free word cloud demo?</summary>
+          <div class="fold-a">
+            <p>
+              <strong>Yes.</strong> The <a href="../#playground" hreflang="ko">Word Cloud Playground</a> on the Korean homepage
+              lets you paste text and save a PNG without installing software.
+              Morphological analysis, LDA, and document comparison need the VibeStat-Text app.
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">Is it for statistical and text analysis?</summary>
+          <div class="fold-a">
+            <p>
+              <strong>Yes.</strong> For papers, policy reports, surveys, interviews, and document corpora —
+              frequency, word clouds, <strong>LDA topics</strong>, <strong>TF-IDF</strong>, document comparison.
+              For researchers, graduate students, faculty, institutions, and professionals.
             </p>
           </div>
         </details>
