@@ -15,24 +15,11 @@
       return;
     }
 
-    if (link.classList.contains("btn-workshop")) {
-      gtag("event", "workshop_apply", {
-        event_category: "workshop",
-        event_label: "gmail_apply",
-      });
-      return;
-    }
-
     var href = link.getAttribute("href") || "";
     if (href === "#download") {
       gtag("event", "cta_click", {
         event_category: "navigation",
         event_label: "download_nav",
-      });
-    } else if (href === "#workshop") {
-      gtag("event", "cta_click", {
-        event_category: "navigation",
-        event_label: "workshop_nav",
       });
     }
   });
