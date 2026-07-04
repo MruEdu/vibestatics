@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="../assets/app-icon.png?v=2" type="image/png" />
-  <link rel="stylesheet" href="../styles.css?v=78" />
+  <link rel="stylesheet" href="../styles.css?v=79" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -62,7 +62,7 @@
         "applicationCategory": "EducationalApplication",
         "operatingSystem": "Windows 10, Windows 11",
         "inLanguage": ["ko", "en"],
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW", "description": "Trial edition by email · usable through Sep 30, 2026" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW", "description": "Application by email · guidance through Sep 30, 2026" },
         "description": "Designed by Ed.D. from dissertation and graduate text-mining supervision. Word clouds, LDA, document comparison, Vibe-Talk, Vibe-Loom. Korean and English UI ready for research and teaching.",
         "featureList": [
           "Document and corpus text analysis",
@@ -168,10 +168,10 @@
           },
           {
             "@type": "Question",
-            "name": "How do I apply for the trial edition?",
+            "name": "How do I apply to use VibeStat-Text?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Apply by email on vibestatics.com/en. We send Windows trial install instructions usable through September 30, 2026. Word clouds, LDA, and morphology run in the app with built-in R."
+              "text": "Apply by email on vibestatics.com/en. We send Windows install instructions through September 30, 2026. Word clouds, LDA, and morphology run in the app with built-in R."
             }
           },
           {
@@ -180,6 +180,30 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Yes. For papers, policy reports, surveys, interviews, news, and document corpora — word frequency, word clouds, LDA topics, TF-IDF, and document comparison. Built for researchers, graduate students, faculty, institutions, and professionals."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is text mining?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Text mining extracts quantitative patterns, topics, and frequencies from unstructured text such as papers, reports, interviews, and surveys. VibeStat-Text runs frequency, TF-IDF, word clouds, LDA, and document comparison with built-in R on Windows."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I start text analysis before learning R programming?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "VibeStat-Text runs core workflows via buttons without writing tm or ggplot scripts. Computation uses standard R packages (tidytext, quanteda, topicmodels) locally; you can view R code and console output."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the history of the R programming language?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "R was created in the 1990s by Ross Ihaka and Robert Gentleman at the University of Auckland as open-source software for statistical computing. First released in 1995; The R Foundation was established in 2000. CRAN hosts thousands of packages used in academic text mining."
             }
           }
         ]
@@ -201,7 +225,7 @@
       <a class="app-bar-cta app-bar-cta-ghost" href="../" hreflang="ko" lang="ko">한국어</a>
       <a class="app-bar-cta app-bar-cta-ghost" href="#guide">Guide</a>
       <a class="app-bar-cta app-bar-cta-ghost" href="#faq">FAQ</a>
-      <a class="app-bar-cta" href="#download">Trial apply</a>
+      <a class="app-bar-cta" href="#download">Apply</a>
     </div>
   </header>
 
@@ -232,7 +256,7 @@
             <li>Built-in textbook · Help</li>
             <li class="hero-chip hero-chip-try"><a href="#video" class="hero-chip-link">▶ YouTube demo</a></li>
             <li class="hero-chip"><a href="#download" class="hero-chip-link">English beta welcome</a></li>
-            <li class="hero-chip hero-chip-cta"><a href="#download" class="hero-chip-link">Trial apply</a></li>
+            <li class="hero-chip hero-chip-cta"><a href="#download" class="hero-chip-link">Apply</a></li>
           </ul>
         </div>
         <div class="hero-preview-wrap">
@@ -252,11 +276,13 @@
     <nav class="page-nav" aria-label="Page sections">
       <a href="#guide">At a glance</a>
       <a href="#origin">Design story</a>
-      <a href="#download">Trial apply</a>
+      <a href="#download">Apply</a>
       <a href="#video">Demo</a>
       <a href="#trust-r">R · Trust</a>
       <a href="#more">Learn more</a>
+      <a href="#primer">Theory · R</a>
       <a href="#faq">FAQ</a>
+      <a href="#search-topics">Search topics</a>
       <a href="../" hreflang="ko" lang="ko">한국어</a>
     </nav>
 
@@ -288,9 +314,9 @@
 
       <p class="demo-contact-line">
         <a href="tel:01031056999"><strong>Call</strong></a>
-        · <a href="#download"><strong>Trial apply</strong></a>
+        · <a href="#download"><strong>Apply</strong></a>
       </p>
-      <p class="demo-duo-footnote">Watch on YouTube in full screen. <a href="#download">Apply for trial edition</a> — English beta testers welcome.</p>
+      <p class="demo-duo-footnote">Watch on YouTube in full screen. <a href="#download">Apply by email</a> — English beta testers welcome.</p>
     </section>
 
     <section class="card visitor-guide" id="guide" aria-labelledby="guide-heading-en">
@@ -334,12 +360,13 @@
         Core text mining runs <strong>offline with built-in R</strong> — no API key required.
       </p>
       <p class="guide-next">
-        To try it: <a href="#download">Trial application</a>
+        To try it: <a href="#download">Apply</a>
         · Details: <a href="#more">Learn more</a>
         · <a href="#video">YouTube demo</a>
         · <a href="#trust-r">R · trust</a>
         · Design story: <a href="#origin">Why we built it</a>
         · Names &amp; FAQ: <a href="#faq">Q&amp;A</a>
+        · Background: <a href="#primer">Text mining &amp; R primer</a>
       </p>
     </section>
 
@@ -367,24 +394,24 @@
     </section>
 
     <section class="card download" id="download">
-      <p class="card-eyebrow">Trial</p>
-      <h2>Trial edition application</h2>
+      <p class="card-eyebrow">Apply</p>
+      <h2>Application</h2>
       <p class="download-version">English beta testers welcome · researchers · institutions · <strong>through Sep 30, 2026</strong></p>
       <p class="policy-notice">
         Public free download has <strong>ended</strong>.
-        Apply by <strong>email</strong> for a <strong>trial edition</strong> usable <strong>through September 30, 2026</strong>.
+        Apply by <strong>email</strong> and we send Windows install instructions <strong>through September 30, 2026</strong>.
         <strong>English UI is ready</strong> — toggle EN in the app footer after install.
       </p>
       <p class="download-recommend">
         Use the button below to send your application. We ask for your <strong>affiliation</strong> and <strong>research field</strong> — no student ID required.
       </p>
       <a class="btn btn-zip btn-full" id="btn-beta-apply" href="mailto:hyc6999@gmail.com">
-        <span class="btn-label">Apply for trial edition</span>
-        <span class="btn-meta">Trial through Sep 30, 2026 · English beta welcome</span>
+        <span class="btn-label">Apply</span>
+        <span class="btn-meta">Through Sep 30, 2026 · English beta welcome</span>
       </a>
       <a class="btn btn-secondary-outline btn-full" id="btn-license-consult" href="mailto:hyc6999@gmail.com">
         <span class="btn-label">License · distribution partnership</span>
-        <span class="btn-meta">Formal · university · publisher · channel sales</span>
+        <span class="btn-meta">Individual · university · publisher · channel sales</span>
       </a>
       <p class="download-trust">
         <a href="tel:01031056999">010-3105-6999</a> · <a href="mailto:hyc6999@gmail.com">hyc6999@gmail.com</a>
@@ -394,7 +421,7 @@
     <section class="card expand-hub" id="more">
       <p class="card-eyebrow">More</p>
       <h2>Learn more</h2>
-      <p class="expand-lead">Design story, R trust, features, editions — expand each section below.</p>
+      <p class="expand-lead">Design story, R trust, features — expand each section below.</p>
 
       <div class="fold-list">
         <details class="fold-item" id="origin">
@@ -491,7 +518,7 @@
             <ul class="intro-list">
               <li>Windows 10/11 · <strong>internet required for first install</strong></li>
               <li>Built-in R — core mining without API key · AI optional (BYOK)</li>
-              <li><strong>Trial edition by email</strong> — usable <strong>through Sep 30, 2026</strong> · individual install instructions</li>
+              <li><strong>Apply by email</strong> — <strong>through Sep 30, 2026</strong> · individual install instructions</li>
               <li>First-run terms · desktop shortcut · no activation code</li>
             </ul>
           </div>
@@ -528,25 +555,189 @@
         </details>
 
         <details class="fold-item">
-          <summary class="fold-q">Trial vs formal edition</summary>
+          <summary class="fold-q">Application guide</summary>
           <div class="fold-a">
-            <p><strong>Local R analysis</strong> runs on your PC without an API key. <strong>AI features</strong> are optional (online, your key).</p>
-            <div class="edition-grid">
-              <article class="edition-col edition-col-beta">
-                <h3>Trial <span class="edition-tag">by email · through Sep 30, 2026</span></h3>
-                <dl class="edition-dl">
-                  <div><dt>Local</dt><dd>Frequency · TF-IDF · word cloud · LDA · doc compare</dd></div>
-                  <div><dt>API</dt><dd>Vibe-Talk · Vibe-Loom (Upstage Solar · your key)</dd></div>
-                </dl>
-              </article>
-              <article class="edition-col edition-col-formal">
-                <h3>Formal <span class="edition-tag edition-tag-formal">inquiry</span></h3>
-                <dl class="edition-dl">
-                  <div><dt>Local</dt><dd>Trial + network · sentiment · LDA K-scan, etc.</dd></div>
-                  <div><dt>API</dt><dd>AI R fix · annotations · report ZIP/PDF</dd></div>
-                </dl>
-              </article>
-            </div>
+            <dl class="beta-apply-fields">
+              <div><dt>Name</dt><dd>Required</dd></div>
+              <div><dt>Affiliation</dt><dd>University, institute, organization</dd></div>
+              <div><dt>Research field</dt><dd>e.g. education, business, humanities</dd></div>
+              <div><dt>Phone · reply email</dt><dd>For install guidance</dd></div>
+              <div><dt>Intended use</dt><dd>Research · teaching · other</dd></div>
+            </dl>
+            <p>After you apply by email, we send Windows install instructions <strong>through September 30, 2026</strong>.</p>
+            <p>For licensing or distribution partnership: <a href="mailto:hyc6999@gmail.com">email us</a></p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="card primer-hub" id="primer" aria-labelledby="primer-heading-en">
+      <p class="card-eyebrow">Reference</p>
+      <h2 id="primer-heading-en">Background · text mining theory · R history</h2>
+      <p class="expand-lead">
+        Searching for <strong>text mining</strong>, <strong>R programming</strong>, <strong>topic modeling</strong>,
+        <strong>word clouds</strong>, or <strong>TF-IDF</strong>? Below is a factual primer with
+        <strong>official and academic links</strong>.
+        <strong>VibeStatics</strong> (바이브스타틱스 · 바이브통계) is a Windows tool that runs these
+        academic standards via <strong>buttons and built-in R</strong>.
+      </p>
+
+      <div class="fold-list">
+        <details class="fold-item" open>
+          <summary class="fold-q">What is text mining? — concepts, principles, workflow</summary>
+          <div class="fold-a primer-body">
+            <p>
+              <strong>Text mining</strong> (text analytics) extracts patterns, topics, and frequencies from
+              <strong>unstructured text</strong> — papers, reports, news, interviews, survey responses.
+              It draws on statistics, information retrieval, NLP, and machine learning.
+              (<a href="https://en.wikipedia.org/wiki/Text_mining" target="_blank" rel="noopener noreferrer">Wikipedia · Text mining</a>)
+            </p>
+            <p>A typical <strong>research workflow</strong>:</p>
+            <ol class="workflow-steps">
+              <li><strong>Research question &amp; corpus design</strong> — documents, periods, groups</li>
+              <li><strong>Collection &amp; cleaning</strong> — PDF · Excel · CSV · TXT, encoding, metadata</li>
+              <li><strong>Preprocessing &amp; tokenization</strong> — stopwords, morphology (Korean), dictionaries</li>
+              <li><strong>Exploration</strong> — word/document frequency, TF-IDF, word clouds</li>
+              <li><strong>Modeling &amp; comparison</strong> — LDA topics, log-odds, networks</li>
+              <li><strong>Interpretation &amp; reporting</strong> — tables, figures, reproducible settings</li>
+            </ol>
+            <p>
+              <strong>VibeStat-Text</strong> connects steps 2–5 with <strong>buttons and built-in R</strong>.
+              <a href="#download">Apply →</a>
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">Word frequency · TF-IDF · word clouds — a short primer</summary>
+          <div class="fold-a primer-body">
+            <p><strong>Word frequency</strong> counts how often terms appear in a corpus; results depend on preprocessing.</p>
+            <p>
+              <strong>TF-IDF</strong> highlights terms distinctive to a document by combining term frequency (TF)
+              with inverse document frequency (IDF).
+              (<a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf" target="_blank" rel="noopener noreferrer">Wikipedia · TF-IDF</a>)
+            </p>
+            <p>
+              <strong>Word clouds</strong> visualize weighted terms as font sizes — useful as supplementary figures
+              alongside frequency tables and context. VibeStat-Text uses R packages such as <strong>wordcloud2</strong>.
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">LDA · topic modeling — concepts and references</summary>
+          <div class="fold-a primer-body">
+            <p>
+              <strong>LDA</strong> (Latent Dirichlet Allocation) assumes each document is a mixture of latent topics,
+              each topic a distribution over words.
+              (<a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation" target="_blank" rel="noopener noreferrer">Wikipedia · LDA</a>)
+            </p>
+            <p>
+              Key paper: Blei, Ng &amp; Jordan (2003), <cite>Latent Dirichlet Allocation</cite>, <em>JMLR</em>.
+              (<a href="https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf" target="_blank" rel="noopener noreferrer">JMLR PDF</a>)
+            </p>
+            <p>
+              VibeStat-Text runs LDA locally via
+              <a href="https://cran.r-project.org/package=topicmodels" target="_blank" rel="noopener noreferrer">CRAN topicmodels</a>
+              and related packages. Choosing K and interpreting topics remain researcher decisions.
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item" id="r-history">
+          <summary class="fold-q">R programming language — history and context</summary>
+          <div class="fold-a primer-body">
+            <p>
+              <strong>R</strong> was created in the 1990s by <strong>Ross Ihaka</strong> and <strong>Robert Gentleman</strong>
+              at the University of Auckland for statistical computing and graphics.
+              First public release 1995; <strong>The R Foundation</strong> founded 2000.
+              (<a href="https://www.r-project.org/about.html" target="_blank" rel="noopener noreferrer">The R Project · About</a>
+              · <a href="https://en.wikipedia.org/wiki/R_(programming_language)" target="_blank" rel="noopener noreferrer">Wikipedia · R</a>)
+            </p>
+            <p>
+              R extends through packages on <strong>CRAN</strong>.
+              Text mining often uses <strong>tm</strong>, <strong>tidytext</strong>, <strong>quanteda</strong>,
+              <strong>topicmodels</strong>, <strong>wordcloud2</strong>, <strong>ggplot2</strong>.
+              VibeStat-Text bundles these in a <strong>built-in R engine</strong> for button-driven workflows on Windows.
+            </p>
+            <p class="primer-note">
+              R logo © <a href="https://www.rfoundation.org/" target="_blank" rel="noopener noreferrer">The R Foundation</a>.
+              VibeStat-Text is an <strong>independent product</strong>, not an official R application.
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">R entry barriers — why it feels hard, and alternatives</summary>
+          <div class="fold-a primer-body">
+            <p>Researchers new to R often face:</p>
+            <ul class="fold-ul">
+              <li><strong>Environment setup</strong> — R, IDE (<a href="https://posit.co/" target="_blank" rel="noopener noreferrer">Posit</a>), package dependencies</li>
+              <li><strong>Scripting</strong> — syntax, data structures, error messages</li>
+              <li><strong>Reproducibility</strong> — preprocessing, seeds, package versions</li>
+              <li><strong>Korean preprocessing</strong> — morphological analyzers and dictionaries</li>
+            </ul>
+            <p>
+              <strong>VibeStatics</strong> built <strong>VibeStat-Text</strong> for people who want R-based text mining
+              but were blocked by coding and setup — <strong>built-in R, buttons, dictionaries, and tutorials</strong>.
+              Core computation still uses <strong>standard R packages</strong>. <a href="#trust-r">R · trust →</a>
+            </p>
+            <p>
+              As an <strong>RStudio alternative</strong> focused on <strong>document corpora</strong>,
+              it targets thesis work, policy reports, surveys, and interviews — not general-purpose data science alone.
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item" id="references">
+          <summary class="fold-q">References · official links · Wikipedia</summary>
+          <div class="fold-a primer-body">
+            <p class="ref-intro">Links below are official or academic sources (verified 2026). Confirm originals when citing methods.</p>
+            <ul class="ref-biblio">
+              <li>
+                <span class="ref-type">R · official</span><br />
+                <a href="https://www.r-project.org/" target="_blank" rel="noopener noreferrer">The R Project</a>
+                · <a href="https://www.rfoundation.org/" target="_blank" rel="noopener noreferrer">The R Foundation</a>
+                · <a href="https://cran.r-project.org/" target="_blank" rel="noopener noreferrer">CRAN</a>
+              </li>
+              <li>
+                <span class="ref-type">R · Wikipedia</span><br />
+                <a href="https://en.wikipedia.org/wiki/R_(programming_language)" target="_blank" rel="noopener noreferrer">R (programming language)</a>
+              </li>
+              <li>
+                <span class="ref-type">Text mining</span><br />
+                <a href="https://en.wikipedia.org/wiki/Text_mining" target="_blank" rel="noopener noreferrer">Wikipedia · Text mining</a>
+              </li>
+              <li>
+                <span class="ref-type">Information retrieval</span><br />
+                Manning, Raghavan &amp; Schütze, <cite>Introduction to Information Retrieval</cite>
+                (<a href="https://nlp.stanford.edu/IR-book/" target="_blank" rel="noopener noreferrer">Stanford IR Book</a>)
+              </li>
+              <li>
+                <span class="ref-type">LDA · paper</span><br />
+                Blei, D. M., Ng, A. Y., &amp; Jordan, M. I. (2003). Latent Dirichlet Allocation. <em>JMLR</em>, 3, 993–1022.
+                (<a href="https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf" target="_blank" rel="noopener noreferrer">PDF</a>)
+              </li>
+              <li>
+                <span class="ref-type">R packages · CRAN</span><br />
+                <a href="https://cran.r-project.org/package=tidytext" target="_blank" rel="noopener noreferrer">tidytext</a>
+                · <a href="https://cran.r-project.org/package=quanteda" target="_blank" rel="noopener noreferrer">quanteda</a>
+                · <a href="https://cran.r-project.org/package=tm" target="_blank" rel="noopener noreferrer">tm</a>
+                · <a href="https://cran.r-project.org/package=topicmodels" target="_blank" rel="noopener noreferrer">topicmodels</a>
+                · <a href="https://cran.r-project.org/package=wordcloud2" target="_blank" rel="noopener noreferrer">wordcloud2</a>
+                · <a href="https://cran.r-project.org/package=ggplot2" target="_blank" rel="noopener noreferrer">ggplot2</a>
+              </li>
+              <li>
+                <span class="ref-type">Korean morphology</span><br />
+                Kiwi (<a href="https://github.com/bab2min/Kiwi" target="_blank" rel="noopener noreferrer">bab2min/Kiwi · GitHub</a>)
+              </li>
+              <li>
+                <span class="ref-type">VibeStatics · product</span><br />
+                <a href="https://vibestatics.com/en/">vibestatics.com/en</a>
+                · <a href="https://youtu.be/WgufmI_5kX8" target="_blank" rel="noopener noreferrer">YouTube demo</a>
+                · <a href="#download">Apply</a>
+              </li>
+            </ul>
           </div>
         </details>
       </div>
@@ -564,11 +755,16 @@
         </p>
         <ul class="search-topic-list">
           <li><strong>VibeStatics · Vibe Statistics · 바이브통계</strong> — Korean R text mining brand</li>
-          <li><strong>Statistical analysis · text analysis · document analysis</strong> — corpus workflows</li>
-          <li><strong>R text mining · RStudio · R packages</strong> — tidytext, quanteda, tm, ggplot2, topicmodels</li>
-          <li><strong>Word cloud · LDA</strong> — VibeStat-Text trial or formal edition (local R)</li>
-          <li><strong>LDA · topic modeling · TF-IDF</strong> — button-driven in VibeStat-Text</li>
-          <li><strong>Researchers · academia · institutions</strong> — papers, policy, surveys, interviews</li>
+          <li><strong>Text mining · text analytics</strong> — concepts <a href="#primer">primer →</a></li>
+          <li><strong>R programming · R language</strong> — history <a href="#r-history">R background →</a></li>
+          <li><strong>Statistical analysis · document analysis</strong> — corpus workflows</li>
+          <li><strong>R text mining · RStudio alternative</strong> — Windows · built-in R · buttons</li>
+          <li><strong>R packages</strong> — tidytext, quanteda, tm, ggplot2, topicmodels, wordcloud2</li>
+          <li><strong>Word cloud · make a word cloud</strong> — VibeStat-Text (local R)</li>
+          <li><strong>LDA · topic modeling · TF-IDF</strong> — button-driven analysis</li>
+          <li><strong>Korean morphology · Kiwi</strong> — elbird/Kiwi in VibeStat-Text</li>
+          <li><strong>Thesis · dissertation · research</strong> — papers, policy, surveys, interviews</li>
+          <li><strong>R without coding · before learning R</strong> — lower barriers <a href="#primer">guide →</a></li>
         </ul>
       </div>
 
@@ -711,13 +907,13 @@
         </details>
 
         <details class="fold-item">
-          <summary class="fold-q">How do I apply for the trial edition?</summary>
+          <summary class="fold-q">How do I apply?</summary>
           <div class="fold-a">
             <p>
-              <strong>Apply by email</strong> on this page. We send Windows trial install instructions
-              usable <strong>through September 30, 2026</strong>.
+              <strong>Apply by email</strong> on this page. We send Windows install instructions
+              <strong>through September 30, 2026</strong>.
               Word clouds, LDA, and morphology run in the app with <strong>built-in R</strong>.
-              <a href="#download">Trial application →</a>
+              <a href="#download">Apply →</a>
             </p>
           </div>
         </details>
@@ -729,6 +925,50 @@
               <strong>Yes.</strong> For papers, policy reports, surveys, interviews, and document corpora —
               frequency, word clouds, <strong>LDA topics</strong>, <strong>TF-IDF</strong>, document comparison.
               For researchers, graduate students, faculty, institutions, and professionals.
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">What is text mining?</summary>
+          <div class="fold-a">
+            <p>
+              <strong>Text mining</strong> quantifies patterns and topics in documents, articles, interviews, and surveys.
+              Workflows often move from frequency → TF-IDF → word clouds → LDA → document comparison.
+              <a href="#primer">Full primer →</a>
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">Can I start before learning R programming?</summary>
+          <div class="fold-a">
+            <p>
+              <strong>Partially yes.</strong> VibeStat-Text runs frequency, word clouds, and LDA via <strong>buttons</strong>
+              while using <strong>standard R packages</strong> under the hood. You can view R code and console output.
+              Deeper methodology still benefits from statistics and R literacy.
+              <a href="#primer">R history &amp; barriers →</a>
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">Can I make word clouds and LDA without coding?</summary>
+          <div class="fold-a">
+            <p>
+              <strong>Yes.</strong> Load PDF · Excel · CSV · TXT, then run morphology (Korean) → frequency → word cloud · LDA with buttons.
+              Computation runs in <strong>built-in R</strong> on your PC.
+              <a href="#video">YouTube demo →</a> · <a href="#download">Apply →</a>
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">Is it for papers, interviews, and survey text?</summary>
+          <div class="fold-a">
+            <p>
+              <strong>Yes.</strong> Theses, journal articles, policy reports, interview transcripts, and open-ended survey responses —
+              compare groups, extract LDA topics, and run TF-IDF on document corpora.
             </p>
           </div>
         </details>

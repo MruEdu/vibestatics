@@ -2976,3 +2976,77 @@ details[open] > .fold-q::after {
   flex: 1 1 auto;
   min-width: 8rem;
 }
+
+/* ── Primer / reference hub ── */
+.primer-hub .expand-lead {
+  margin-bottom: 1rem;
+}
+
+.primer-body p {
+  margin: 0 0 0.85rem;
+}
+
+.primer-body p:last-child {
+  margin-bottom: 0;
+}
+
+.primer-note {
+  padding: 0.65rem 0.85rem;
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  border-left: 3px solid rgba(59, 158, 255, 0.35);
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 0 var(--radius-ui) var(--radius-ui) 0;
+}
+
+.workflow-steps {
+  margin: 0.5rem 0 1rem 1.25rem;
+  padding: 0;
+  line-height: 1.65;
+}
+
+.workflow-steps li {
+  margin-bottom: 0.45rem;
+}
+
+.ref-intro {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.ref-biblio {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+}
+
+.ref-biblio > li {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.ref-biblio > li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.ref-type {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.ref-biblio cite {
+  font-style: italic;
+}
+
+.primer-hub .fold-a a,
+.ref-biblio a {
+  word-break: break-word;
+}

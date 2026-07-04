@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="assets/app-icon.png?v=2" type="image/png" />
-  <link rel="stylesheet" href="styles.css?v=78" />
+  <link rel="stylesheet" href="styles.css?v=79" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -80,7 +80,7 @@
           "@type": "Offer",
           "price": "0",
           "priceCurrency": "KRW",
-          "description": "시험판 이메일 신청 · 2026년 9월 30일까지 사용"
+          "description": "이메일 이용 신청 · 2026년 9월 30일까지 안내"
         },
         "publisher": { "@id": "https://vibestatics.com/#organization" },
         "description": "교육학 박사가 박사 논문·대학원 텍스트마이닝 지도 경험에서 설계. 워드클라우드, LDA, 형태소 빈도, 문서 비교, Vibe-Talk, Vibe-Loom. Korean and English UI ready (footer KO/EN toggle).",
@@ -222,10 +222,10 @@
           },
           {
             "@type": "Question",
-            "name": "시험판은 어떻게 신청하나요?",
+            "name": "이용 신청은 어떻게 하나요?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "vibestatics.com에서 이메일로 시험판을 신청하면 2026년 9월 30일까지 사용 가능한 Windows 시험판 설치 안내를 드립니다. 워드클라우드·LDA·형태소 분석 등은 앱에서 로컬 R로 실행됩니다."
+              "text": "vibestatics.com에서 이메일로 이용 신청을 보내시면 2026년 9월 30일까지 Windows 설치 안내를 드립니다. 워드클라우드·LDA·형태소 분석 등은 앱에서 로컬 R로 실행됩니다."
             }
           },
           {
@@ -241,7 +241,7 @@
             "name": "한국어 텍스트·형태소 분석이 되나요?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "VibeStat-Text 시험판·정식판에서는 elbird(Kiwi) 등 한국어 형태소 분석기로 단어 빈도·워드클라우드·LDA를 실행합니다."
+              "text": "VibeStat-Text에서는 elbird(Kiwi) 등 한국어 형태소 분석기로 단어 빈도·워드클라우드·LDA를 실행합니다."
             }
           },
           {
@@ -250,6 +250,38 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "네. VibeStat-Text에서 LDA 토픽 모델링·TF-IDF·단어 빈도·워드클라우드·문서 비교를 버튼으로 실행합니다. topicmodels·tidytext·quanteda 등 R 패키지로 로컬 PC에서 처리됩니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "텍스트마이닝이란 무엇인가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "텍스트마이닝은 논문·보고서·인터뷰·설문 등 비정형 텍스트에서 빈도·주제·패턴을 정량적으로 추출하는 분석입니다. VibeStat-Text는 빈도·TF-IDF·워드클라우드·LDA·문서 비교를 내장 R로 실행하는 바이브스타틱스 제품입니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "R 프로그래밍을 배우기 전에 텍스트 분석을 시작할 수 있나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "VibeStat-Text는 R 스크립트 없이 버튼으로 빈도·워드클라우드·LDA를 실행합니다. 내부는 표준 R 패키지(tidytext·quanteda·topicmodels 등)이며 R 코드·콘솔 열람이 가능합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "코딩 없이 워드클라우드·LDA를 만들 수 있나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "네. VibeStat-Text에서 자료를 불러온 뒤 형태소 분석·빈도·워드클라우드·LDA를 버튼으로 실행합니다. 연산은 PC 안의 내장 R에서 로컬로 처리됩니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "R 프로그래밍 언어는 어떤 배경에서 만들어졌나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "R은 1990년대 Ross Ihaka·Robert Gentleman(뉴질랜드 오클랜드 대학)이 개발한 오픈 소스 통계 언어입니다. 1995년 공개, The R Foundation(2000)이 관리합니다. 학술 통계·텍스트마이닝 패키지 생태계(CRAN)가 큽니다."
             }
           }
         ]
@@ -278,7 +310,7 @@
       <a class="app-bar-cta app-bar-cta-ghost" href="en/" hreflang="en" lang="en">EN</a>
       <a class="app-bar-cta app-bar-cta-ghost" href="#guide">안내</a>
       <a class="app-bar-cta app-bar-cta-ghost" href="#contact">문의</a>
-      <a class="app-bar-cta" href="#download">시험판 신청</a>
+      <a class="app-bar-cta" href="#download">이용 신청</a>
     </div>
   </header>
 
@@ -308,7 +340,7 @@
             <li>최초 설치 시 인터넷</li>
             <li>내장 교재·Help</li>
             <li class="hero-chip hero-chip-try"><a href="#video" class="hero-chip-link">▶ YouTube 시연</a></li>
-            <li class="hero-chip hero-chip-cta"><a href="#download" class="hero-chip-link">시험판 신청</a></li>
+            <li class="hero-chip hero-chip-cta"><a href="#download" class="hero-chip-link">이용 신청</a></li>
           </ul>
         </div>
         <div class="hero-preview-wrap">
@@ -328,10 +360,11 @@
     <nav class="page-nav" aria-label="페이지 안내">
       <a href="#guide">한눈에</a>
       <a href="#origin">설계 배경</a>
-      <a href="#download">시험판 신청</a>
+      <a href="#download">이용 신청</a>
       <a href="#video">시연</a>
       <a href="#trust-r">R·신뢰</a>
       <a href="#more">자세히 보기</a>
+      <a href="#primer">배경·이론</a>
       <a href="#faq">Q&amp;A</a>
       <a href="#search-topics">검색 안내</a>
       <a href="en/" hreflang="en" lang="en">English</a>
@@ -367,9 +400,9 @@
 
       <p class="demo-contact-line">
         바로 <a href="tel:01031056999"><strong>전화 문의</strong></a>
-        · <a href="#download"><strong>시험판 신청</strong></a>
+        · <a href="#download"><strong>이용 신청</strong></a>
       </p>
-      <p class="demo-duo-footnote">시연 영상은 YouTube에서 시청하세요. 시험판은 <a href="#download">이메일 신청</a>.</p>
+      <p class="demo-duo-footnote">시연 영상은 YouTube에서 시청하세요. 프로그램은 <a href="#download">이메일 이용 신청</a>.</p>
     </section>
 
     <section class="card visitor-guide" id="guide" aria-labelledby="guide-heading">
@@ -413,12 +446,13 @@
         핵심 텍스트마이닝은 <strong>API 없이 로컬 R</strong>로 동작합니다.
       </p>
       <p class="guide-next">
-        써 보고 싶으시면 <a href="#download">시험판 신청</a>
+        써 보고 싶으시면 <a href="#download">이용 신청</a>
         · 더 알고 싶으시면 <a href="#more">자세히 보기</a>
         · <a href="#video">YouTube 시연</a>
         · <a href="#trust-r">R·신뢰</a>
         · 설계 이야기 <a href="#origin">설계 배경</a>
         · 이름·차이 <a href="#faq">Q&amp;A</a>
+        · 배경 지식 <a href="#primer">텍스트마이닝·R 이론</a>
       </p>
     </section>
 
@@ -446,23 +480,23 @@
     </section>
 
     <section class="card download" id="download">
-      <p class="card-eyebrow">Trial</p>
-      <h2>시험판 신청</h2>
-      <p class="download-version">선착순 모집 · 연구자 · 기관 · 실무 담당자 · <strong>2026년 9월 30일</strong>까지 사용</p>
+      <p class="card-eyebrow">Apply</p>
+      <h2>이용 신청</h2>
+      <p class="download-version">연구자 · 기관 · 실무 담당자 · <strong>2026년 9월 30일</strong>까지 이용 안내</p>
       <p class="policy-notice">
-        시험판 무료 다운로드는 <strong>회사 정책에 따라 종료</strong>하였습니다.
-        <strong>이메일 신청</strong>하시면 <strong>2026년 9월 30일까지</strong> 사용 가능한 시험판 설치 안내를 드립니다.
+        공개 무료 다운로드는 <strong>회사 정책에 따라 종료</strong>하였습니다.
+        <strong>이메일 신청</strong>하시면 <strong>2026년 9월 30일까지</strong> Windows 설치 안내를 드립니다.
       </p>
       <p class="download-recommend">
         아래 버튼으로 <strong>이메일 신청</strong>을 보내 주세요. 학과·학번은 받지 않습니다.
         <strong>소속</strong>과 <strong>전공·연구 분야</strong> 정도만 적어 주세요.
       </p>
       <a class="btn btn-zip btn-full" id="btn-beta-apply" href="mailto:hyc6999@gmail.com">
-        <span class="btn-label">시험판 신청</span>
-        <span class="btn-meta">2026.9.30까지 시험판 · 이메일 양식 자동 입력</span>
+        <span class="btn-label">이용 신청</span>
+        <span class="btn-meta">2026.9.30까지 · 이메일 양식 자동 입력</span>
       </a>
       <a class="btn btn-secondary-outline btn-full" id="btn-license-consult" href="mailto:hyc6999@gmail.com">
-        <span class="btn-label">정식판·라이선스 · 유통 제휴 상담</span>
+        <span class="btn-label">라이선스 · 유통 제휴 문의</span>
         <span class="btn-meta">개인·대학·기관 구매 · 출판사·총판·교육 SW 유통</span>
       </a>
       <p class="download-trust">
@@ -474,9 +508,9 @@
     <section class="card inquiry inquiry-compact" id="contact">
       <p class="card-eyebrow">Contact</p>
       <h2>개인 · 기관 · 특강</h2>
-      <p class="inquiry-teaser">연구자·대학·기관 정식판, 출판·유통 파트너(총판·교육 SW 납품), 맞춤 특강 — <a href="#download">시험판 신청</a> 또는 아래 상담</p>
+      <p class="inquiry-teaser">연구자·대학·기관, 출판·유통 파트너(총판·교육 SW 납품), 맞춤 특강 — <a href="#download">이용 신청</a> 또는 아래 문의</p>
       <div class="inquiry-actions">
-        <a class="inquiry-btn inquiry-btn-purchase" id="btn-license-contact" href="mailto:hyc6999@gmail.com">정식판·라이선스 · 유통 제휴</a>
+        <a class="inquiry-btn inquiry-btn-purchase" id="btn-license-contact" href="mailto:hyc6999@gmail.com">라이선스 · 유통 제휴</a>
         <a class="inquiry-btn inquiry-btn-lecture" href="mailto:hyc6999@gmail.com?subject=VibeStat-Text%20특강%20강의%20문의">특강 · 강의 문의</a>
       </div>
     </section>
@@ -484,7 +518,7 @@
     <section class="card expand-hub" id="more" aria-labelledby="more-heading">
       <p class="card-eyebrow">More</p>
       <h2 id="more-heading">자세히 보기</h2>
-      <p class="expand-lead">설계 배경·R 신뢰·브랜드·기능·에디션 — 버튼을 눌러 펼쳐 보세요.</p>
+      <p class="expand-lead">설계 배경·R 신뢰·브랜드·기능·<a href="#primer">이론·참고</a> — 버튼을 눌러 펼쳐 보세요.</p>
 
       <div class="fold-list">
         <details class="fold-item" id="origin">
@@ -591,7 +625,7 @@
             <ul class="intro-list">
               <li>Windows 10/11 · <strong>최초 설치 시 인터넷 연결 필요</strong></li>
               <li>내장 R 엔진 — API 키 없이 핵심 텍스트마이닝 · AI는 선택(BYOK)</li>
-              <li><strong>시험판은 이메일 신청</strong> — <strong>2026년 9월 30일까지</strong> 사용 · 개별 설치 안내</li>
+              <li><strong>이메일로 이용 신청</strong> — <strong>2026년 9월 30일까지</strong> 안내 · 개별 설치 안내</li>
               <li>첫 실행 약관 동의 · 바탕 화면 바로 가기 · 인증번호 불필요</li>
             </ul>
           </div>
@@ -631,29 +665,6 @@
         </details>
 
         <details class="fold-item">
-          <summary class="fold-q">시험판 · 정식판 비교</summary>
-          <div class="fold-a">
-            <p class="edition-lead"><strong>로컬 R 분석</strong>은 PC 안에서 실행 · API 키 없이 핵심 기능 · <strong>AI 연동</strong>은 본인 키(온라인)</p>
-            <div class="edition-grid">
-              <article class="edition-col edition-col-beta">
-                <h3>시험판 <span class="edition-tag">이메일 신청 · ~2026.9.30</span></h3>
-                <dl class="edition-dl">
-                  <div><dt>로컬 · 비연동</dt><dd>빈도 · TF-IDF · 워드클라우드 · LDA · 문서 비교</dd></div>
-                  <div><dt>API 연동</dt><dd>Vibe-Talk · Vibe-Loom (Upstage Solar · 본인 API 키)</dd></div>
-                </dl>
-              </article>
-              <article class="edition-col edition-col-formal">
-                <h3>정식판 <span class="edition-tag edition-tag-formal">개인·기관</span></h3>
-                <dl class="edition-dl">
-                  <div><dt>로컬 · 비연동</dt><dd>시험판 + 네트워크 · 감성 · LDA K스캔 등</dd></div>
-                  <div><dt>API 연동</dt><dd>AI R 교정 · 주석 · 리포트 ZIP/PDF</dd></div>
-                </dl>
-              </article>
-            </div>
-          </div>
-        </details>
-
-        <details class="fold-item">
           <summary class="fold-q">Vibe-Talk · Vibe-Loom (선택 AI)</summary>
           <div class="fold-a">
             <p>
@@ -671,7 +682,7 @@
         </details>
 
         <details class="fold-item">
-          <summary class="fold-q">시험판 신청 항목 · 정책</summary>
+          <summary class="fold-q">이용 신청 안내</summary>
           <div class="fold-a">
             <dl class="beta-apply-fields">
               <div><dt>이름</dt><dd>필수</dd></div>
@@ -680,8 +691,209 @@
               <div><dt>연락처 · 회신 이메일</dt><dd>안내 발송용</dd></div>
               <div><dt>사용 목적</dt><dd>연구 · 수업 · 기타</dd></div>
             </dl>
-            <p>이메일 신청 시 <strong>2026년 9월 30일까지</strong> 사용 가능한 시험판 설치 안내를 드립니다.</p>
+            <p>이메일 신청 시 <strong>2026년 9월 30일까지</strong> Windows 설치 안내를 드립니다.</p>
             <p>국내 유통·파트너 검토 중 — 교육·출판·기관 사업 관심 업체는 <a href="mailto:hyc6999@gmail.com">이메일 문의</a></p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="card primer-hub" id="primer" aria-labelledby="primer-heading">
+      <p class="card-eyebrow">Reference</p>
+      <h2 id="primer-heading">배경 지식 · 텍스트마이닝 이론 · R 역사</h2>
+      <p class="expand-lead">
+        <strong>텍스트마이닝</strong> · <strong>R 프로그래밍</strong> · <strong>토픽 모델링</strong> ·
+        <strong>워드클라우드</strong> · <strong>TF-IDF</strong> 등을 검색하셨다면 아래를 참고하세요.
+        사실에 기반한 개념 정리와 <strong>공식·학술 참고 링크</strong>를 모았습니다.
+        <strong>바이브스타틱스(VibeStatics)·바이브통계</strong>는 이러한 학술 표준을
+        <strong>버튼·내장 R</strong>로 실행하는 Windows 프로그램입니다.
+      </p>
+
+      <div class="fold-list">
+        <details class="fold-item" open>
+          <summary class="fold-q">텍스트마이닝(Text Mining)이란? — 개념·원리·워크플로</summary>
+          <div class="fold-a primer-body">
+            <p>
+              <strong>텍스트마이닝</strong>(text mining, text analytics)은
+              논문·보고서·뉴스·인터뷰·설문 응답 등 <strong>비정형 텍스트</strong>에서
+              패턴·주제·빈도·관계를 <strong>정량적으로</strong> 추출하는 분석 영역입니다.
+              통계·정보검색·자연어처리·기계학습이 교차합니다.
+              (<a href="https://en.wikipedia.org/wiki/Text_mining" target="_blank" rel="noopener noreferrer">Wikipedia · Text mining</a>
+              · <a href="https://ko.wikipedia.org/wiki/%ED%85%8D%EC%8A%A4%ED%8A%B8_%EB%A7%88%EC%9D%B4%EB%8B%9D" target="_blank" rel="noopener noreferrer">위키백과 · 텍스트 마이닝</a>)
+            </p>
+            <p>학술·정책·실무에서 흔한 <strong>분석 워크플로</strong>는 다음과 같습니다.</p>
+            <ol class="workflow-steps">
+              <li><strong>연구 질문·코퍼스 설계</strong> — 어떤 문서·기간·집단을 비교할지 정의</li>
+              <li><strong>수집·정제</strong> — PDF·Excel·CSV·TXT 적재, 인코딩·중복·메타데이터 정리</li>
+              <li><strong>전처리·토큰화</strong> — 불용어 제거, 형태소 분석(한국어), 구문·신조어 사전</li>
+              <li><strong>탐색</strong> — 단어·문서 빈도, TF-IDF, 워드클라우드</li>
+              <li><strong>모델링·비교</strong> — LDA 토픽, 문서 간 로그오즈비·네트워크 등</li>
+              <li><strong>해석·보고</strong> — 표·그림·방법론 기술, 재현 가능한 설정 기록</li>
+            </ol>
+            <p>
+              <strong>VibeStat-Text</strong>는 2~5단계를 <strong>버튼과 내장 R</strong>로 이어 주며,
+              R·패키지 설치 부담을 줄이려는 <strong>바이브스타틱스</strong>의 연구용 도구입니다.
+              <a href="#download">이용 신청 →</a>
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">단어 빈도 · TF-IDF · 워드클라우드 — 원리 요약</summary>
+          <div class="fold-a primer-body">
+            <p>
+              <strong>단어 빈도(word frequency)</strong>는 코퍼스에서 단어가 나타난 횟수입니다.
+              가장 기본적인 텍스트 요약이며, 전처리(불용어·형태소)에 따라 결과가 달라집니다.
+            </p>
+            <p>
+              <strong>TF-IDF</strong>(term frequency–inverse document frequency)는
+              한 문서에서 두드러지는 단어를 찾기 위해
+              문서 내 빈도(TF)와 전체 코퍼스에서의 희소성(IDF)을 결합합니다.
+              (<a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf" target="_blank" rel="noopener noreferrer">Wikipedia · TF-IDF</a>)
+            </p>
+            <p>
+              <strong>워드클라우드</strong>는 빈도·가중치에 비례해 단어 크기를 배치한 시각화입니다.
+              논문·보고서의 <strong>보조 Figure</strong>로 쓰이며, 해석은 빈도 표·맥락과 함께 제시하는 것이 좋습니다.
+              VibeStat-Text는 <strong>wordcloud2</strong> 등 R 패키지 경로로 생성합니다.
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">LDA · 토픽 모델링 — 개념과 학술 참고</summary>
+          <div class="fold-a primer-body">
+            <p>
+              <strong>LDA</strong>(Latent Dirichlet Allocation)는 문서 집합이
+              여러 <strong>잠재 주제(topic)</strong>의 단어 혼합으로 생성되었다고 가정하는
+              확률적 토픽 모델입니다.
+              각 문서가 어떤 주제 비율을 갖는지, 각 주제가 어떤 단어를 선호하는지 추정합니다.
+              (<a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation" target="_blank" rel="noopener noreferrer">Wikipedia · LDA</a>)
+            </p>
+            <p>
+              대표 논문: Blei, Ng &amp; Jordan (2003),
+              <cite>Latent Dirichlet Allocation</cite>, <em>Journal of Machine Learning Research</em>.
+              (<a href="https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf" target="_blank" rel="noopener noreferrer">JMLR PDF</a>)
+            </p>
+            <p>
+              VibeStat-Text는 <strong>topicmodels</strong>·<strong>tidytext</strong> 등
+              <a href="https://cran.r-project.org/package=topicmodels" target="_blank" rel="noopener noreferrer">CRAN topicmodels</a>
+              경로로 LDA를 로컬 R에서 실행합니다.
+              주제 수 K 선택·해석은 연구자의 판단이 필요합니다.
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item" id="r-history">
+          <summary class="fold-q">R 프로그래밍 언어 — 역사·배경</summary>
+          <div class="fold-a primer-body">
+            <p>
+              <strong>R</strong>은 1990년대 뉴질랜드 오클랜드 대학의
+              <strong>Ross Ihaka</strong>·<strong>Robert Gentleman</strong>이 개발한
+              <strong>통계 계산·그래픽</strong>용 오픈 소스 언어입니다.
+              1995년 첫 공개, 2000년 <strong>The R Foundation</strong> 설립.
+              S 언어의 오픈 구현 계열로, 학술·공공·산업에서 널리 쓰입니다.
+              (<a href="https://www.r-project.org/about.html" target="_blank" rel="noopener noreferrer">The R Project · About</a>
+              · <a href="https://en.wikipedia.org/wiki/R_(programming_language)" target="_blank" rel="noopener noreferrer">Wikipedia · R</a>
+              · <a href="https://ko.wikipedia.org/wiki/R_(%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)" target="_blank" rel="noopener noreferrer">위키백과 · R</a>)
+            </p>
+            <p>
+              R은 <strong>패키지 생태계</strong>(CRAN 등)로 확장됩니다.
+              텍스트마이닝에는 <strong>tm</strong>, <strong>tidytext</strong>, <strong>quanteda</strong>,
+              <strong>topicmodels</strong>, <strong>wordcloud2</strong>, <strong>ggplot2</strong> 등이
+              학술 현장에서 자주 인용됩니다.
+              VibeStat-Text는 이들을 <strong>내장 R</strong>로 묶어 Windows에서 버튼으로 실행합니다.
+            </p>
+            <p class="primer-note">
+              R 로고 © <a href="https://www.rfoundation.org/" target="_blank" rel="noopener noreferrer">The R Foundation</a>.
+              VibeStat-Text는 R 공식 앱이 아닌 <strong>독립 제품</strong>이며, R 엔진·패키지를 활용합니다.
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">R 진입장벽 — 왜 어렵게 느껴지나, 대안은?</summary>
+          <div class="fold-a primer-body">
+            <p>
+              R을 처음 접하는 연구자·대학원생이 흔히 겪는 어려움은 다음과 같습니다.
+            </p>
+            <ul class="fold-ul">
+              <li><strong>환경 설치</strong> — R 본체, RStudio(현 <a href="https://posit.co/" target="_blank" rel="noopener noreferrer">Posit</a>), 패키지 의존성</li>
+              <li><strong>스크립트 문법</strong> — 데이터 구조, 파이프, 에러 메시지 해석</li>
+              <li><strong>재현성</strong> — 전처리·시드·패키지 버전 기록</li>
+              <li><strong>한국어 전처리</strong> — 형태소 분석기 선택·사전 관리</li>
+            </ul>
+            <p>
+              <strong>바이브스타틱스</strong>의 <strong>VibeStat-Text</strong>는
+              「R을 쓰고 싶지만 코딩·환경에서 막혔던」 연구자를 위해
+              <strong>내장 R + 버튼 UI + 사전·교재</strong>로 위 장벽을 낮추는 것을 목표로 합니다.
+              핵심 연산은 여전히 <strong>표준 R 패키지</strong>에서 실행되므로
+              방법론·재현성 논의와 맞닿아 있습니다. <a href="#trust-r">R·신뢰 안내 →</a>
+            </p>
+            <p>
+              IDE 없이 R을 쓰는 다른 경로로는 스크립트·노트북·전용 GUI 등이 있으며,
+              VibeStat-Text는 <strong>텍스트·문서 코퍼스 분석</strong>에 특화된
+              <strong>RStudio 대안</strong> 성격의 데스크톱 도구입니다.
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item" id="references">
+          <summary class="fold-q">참고문헌 · 공식 링크 · 위키</summary>
+          <div class="fold-a primer-body">
+            <p class="ref-intro">
+              아래 링크는 2026년 기준 공식·학술 출처입니다. 개념 학습·방법론 인용 시 원문을 확인하세요.
+            </p>
+            <ul class="ref-biblio">
+              <li>
+                <span class="ref-type">R · 공식</span><br />
+                <a href="https://www.r-project.org/" target="_blank" rel="noopener noreferrer">The R Project for Statistical Computing</a>
+                · <a href="https://www.rfoundation.org/" target="_blank" rel="noopener noreferrer">The R Foundation</a>
+                · <a href="https://cran.r-project.org/" target="_blank" rel="noopener noreferrer">CRAN</a>
+              </li>
+              <li>
+                <span class="ref-type">R · 위키</span><br />
+                <a href="https://en.wikipedia.org/wiki/R_(programming_language)" target="_blank" rel="noopener noreferrer">Wikipedia · R (programming language)</a>
+                · <a href="https://ko.wikipedia.org/wiki/R_(%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)" target="_blank" rel="noopener noreferrer">위키백과 · R</a>
+              </li>
+              <li>
+                <span class="ref-type">텍스트마이닝 · 위키</span><br />
+                <a href="https://en.wikipedia.org/wiki/Text_mining" target="_blank" rel="noopener noreferrer">Wikipedia · Text mining</a>
+                · <a href="https://ko.wikipedia.org/wiki/%ED%85%8D%EC%8A%A4%ED%8A%B8_%EB%A7%88%EC%9D%B4%EB%8B%9D" target="_blank" rel="noopener noreferrer">위키백과 · 텍스트 마이닝</a>
+              </li>
+              <li>
+                <span class="ref-type">정보검색 · 교재</span><br />
+                Manning, Raghavan &amp; Schütze,
+                <cite>Introduction to Information Retrieval</cite>
+                (<a href="https://nlp.stanford.edu/IR-book/" target="_blank" rel="noopener noreferrer">Stanford IR Book</a>)
+              </li>
+              <li>
+                <span class="ref-type">LDA · 논문</span><br />
+                Blei, D. M., Ng, A. Y., &amp; Jordan, M. I. (2003).
+                Latent Dirichlet Allocation. <em>JMLR</em>, 3, 993–1022.
+                (<a href="https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+                · <a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation" target="_blank" rel="noopener noreferrer">Wikipedia · LDA</a>)
+              </li>
+              <li>
+                <span class="ref-type">R 패키지 · CRAN</span><br />
+                <a href="https://cran.r-project.org/package=tidytext" target="_blank" rel="noopener noreferrer">tidytext</a>
+                · <a href="https://cran.r-project.org/package=quanteda" target="_blank" rel="noopener noreferrer">quanteda</a>
+                · <a href="https://cran.r-project.org/package=tm" target="_blank" rel="noopener noreferrer">tm</a>
+                · <a href="https://cran.r-project.org/package=topicmodels" target="_blank" rel="noopener noreferrer">topicmodels</a>
+                · <a href="https://cran.r-project.org/package=wordcloud2" target="_blank" rel="noopener noreferrer">wordcloud2</a>
+                · <a href="https://cran.r-project.org/package=ggplot2" target="_blank" rel="noopener noreferrer">ggplot2</a>
+              </li>
+              <li>
+                <span class="ref-type">한국어 형태소</span><br />
+                Kiwi (<a href="https://github.com/bab2min/Kiwi" target="_blank" rel="noopener noreferrer">bab2min/Kiwi · GitHub</a>)
+                — VibeStat-Text에서는 elbird 등 경로로 연동
+              </li>
+              <li>
+                <span class="ref-type">바이브스타틱스 · 제품</span><br />
+                <a href="https://vibestatics.com/">vibestatics.com</a> (공식)
+                · <a href="https://youtu.be/WgufmI_5kX8" target="_blank" rel="noopener noreferrer">YouTube 시연</a>
+                · <a href="#download">이용 신청</a>
+              </li>
+            </ul>
           </div>
         </details>
       </div>
@@ -704,13 +916,17 @@
         </p>
         <ul class="search-topic-list">
           <li><strong>바이브 · 바이브통계 · VibeStatics</strong> — 한국 R·통계·텍스트마이닝 브랜드 (이 페이지)</li>
+          <li><strong>텍스트마이닝 · 텍스트 분석</strong> — 개념·워크플로 <a href="#primer">배경 지식 →</a></li>
+          <li><strong>R 프로그래밍 · R 언어</strong> — 역사·패키지 <a href="#r-history">R 배경 →</a></li>
           <li><strong>통계 · 통계 분석</strong> — R 패키지 기반 빈도·LDA·TF-IDF·문서 비교</li>
-          <li><strong>텍스트마이닝 · 텍스트 분석 · 자료 분석 · 문서 분석</strong> — PDF·Excel·CSV·TXT 코퍼스</li>
-          <li><strong>R 텍스트마이닝 · RStudio · R 패키지</strong> — tidytext · quanteda · tm · ggplot2 · topicmodels · wordcloud2</li>
-          <li><strong>워드클라우드 · LDA</strong> — VibeStat-Text 시험판·정식판 (로컬 R · 형태소 분석)</li>
-          <li><strong>LDA · 토픽 모델링</strong> — VibeStat-Text 버튼 분석 (로컬 R)</li>
-          <li><strong>한국어 형태소 분석</strong> — 시험판·정식판 (elbird/Kiwi)</li>
-          <li><strong>연구 · 논문 · 대학원 · 기관</strong> — 학술·정책·실무 문서 코퍼스 분석</li>
+          <li><strong>자료 분석 · 문서 분석 · 코퍼스</strong> — PDF·Excel·CSV·TXT</li>
+          <li><strong>R 텍스트마이닝 · RStudio 대안</strong> — Windows 버튼 분석·내장 R</li>
+          <li><strong>R 패키지</strong> — tidytext · quanteda · tm · ggplot2 · topicmodels · wordcloud2</li>
+          <li><strong>워드클라우드 · 워드클라우드 만드는 법</strong> — VibeStat-Text (로컬 R · 형태소)</li>
+          <li><strong>LDA · 토픽 모델링 · TF-IDF</strong> — 버튼 분석 (로컬 R)</li>
+          <li><strong>한국어 형태소 분석 · Kiwi</strong> — VibeStat-Text (elbird/Kiwi)</li>
+          <li><strong>논문 · 박사 · 대학원 · 연구</strong> — 학술·정책·인터뷰·설문 코퍼스</li>
+          <li><strong>코딩 없이 R · R 배우기 전</strong> — 진입장벽 완화 <a href="#primer">안내 →</a></li>
         </ul>
       </div>
 
@@ -899,12 +1115,12 @@
         </details>
 
         <details class="fold-item">
-          <summary class="fold-q">시험판은 어떻게 신청하나요?</summary>
+          <summary class="fold-q">이용 신청은 어떻게 하나요?</summary>
           <div class="fold-a">
             <p>
-              <strong>이메일 신청</strong> 후 <strong>2026년 9월 30일까지</strong> 사용 가능한 Windows 시험판 설치 안내를 드립니다.
+              <strong>이메일 신청</strong> 후 <strong>2026년 9월 30일까지</strong> Windows 설치 안내를 드립니다.
               워드클라우드·LDA·형태소 분석 등은 앱에서 <strong>로컬 R</strong>로 실행됩니다.
-              <a href="#download">시험판 신청 →</a>
+              <a href="#download">이용 신청 →</a>
             </p>
           </div>
         </details>
@@ -925,7 +1141,7 @@
           <summary class="fold-q">한국어 텍스트·형태소 분석이 되나요?</summary>
           <div class="fold-a">
             <p>
-              VibeStat-Text <strong>시험판·정식판</strong>에서는 <strong>elbird(Kiwi)</strong> 등
+              VibeStat-Text에서는 <strong>elbird(Kiwi)</strong> 등
               <strong>한국어 형태소 분석기</strong>로 단어 빈도·워드클라우드·LDA를 실행합니다.
             </p>
           </div>
@@ -938,6 +1154,55 @@
               <strong>네.</strong> VibeStat-Text에서 <strong>LDA 토픽 모델링 · TF-IDF · 단어 빈도 · 워드클라우드 · 문서 비교</strong>를
               버튼으로 실행합니다. <strong>topicmodels · tidytext · quanteda</strong> 등 R 패키지로
               <strong>로컬 PC</strong>에서 처리됩니다.
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">텍스트마이닝이란 무엇인가요?</summary>
+          <div class="fold-a">
+            <p>
+              <strong>텍스트마이닝</strong>은 문서·기사·인터뷰·설문 등 텍스트에서
+              빈도·주제·패턴을 정량적으로 추출하는 분석입니다.
+              빈도 → TF-IDF → 워드클라우드 → LDA → 문서 비교 순으로 확장하는 경우가 많습니다.
+              <a href="#primer">배경 지식·이론 전문 →</a>
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">R 프로그래밍을 배우기 전에 텍스트 분석을 시작할 수 있나요?</summary>
+          <div class="fold-a">
+            <p>
+              <strong>부분적으로 가능합니다.</strong> VibeStat-Text는 R 스크립트를 직접 작성하지 않아도
+              빈도·워드클라우드·LDA 등을 <strong>버튼</strong>으로 실행합니다.
+              내부에서는 <strong>표준 R 패키지</strong>가 돌아가며, R 코드·콘솔을 열람할 수 있습니다.
+              방법론을 깊이 익히려면 R·통계 기초 학습을 병행하는 것이 좋습니다.
+              <a href="#primer">R 역사·진입장벽 안내 →</a>
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">코딩 없이 워드클라우드·LDA를 만들 수 있나요?</summary>
+          <div class="fold-a">
+            <p>
+              <strong>네.</strong> VibeStat-Text에서 PDF·Excel·CSV·TXT를 불러온 뒤
+              형태소 분석(한국어) → 빈도 → 워드클라우드·LDA를 버튼으로 실행합니다.
+              연산은 PC 안의 <strong>내장 R</strong>에서 이루어집니다.
+              <a href="#video">YouTube 시연 →</a>
+              · <a href="#download">이용 신청 →</a>
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">논문·인터뷰·설문 자료 분석에 쓸 수 있나요?</summary>
+          <div class="fold-a">
+            <p>
+              <strong>네.</strong> 학위논문·학술지·정책보고서·평가보고서·인터뷰 전사·설문 서술형 응답 등
+              <strong>문서·텍스트 코퍼스</strong>를 넣고 집단·시기별 비교, LDA 주제 추출, TF-IDF 특이어 분석이 가능합니다.
+              연구자·기관·수업 실습 모두 대상입니다.
             </p>
           </div>
         </details>
