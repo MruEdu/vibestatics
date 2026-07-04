@@ -20,24 +20,28 @@
           'VibeStat-Text 시험판 신청',
           '안녕하세요. VibeStat-Text 시험판 신청합니다.\n\n' +
             '이름:\n소속 (대학·연구소·기관 등):\n전공·연구 분야:\n연락처:\n회신 이메일:\n\n' +
-            '시험판 사용 목적 (연구·수업·기타):\n간단한 코멘트 (선택):\n',
+            '시험판 사용 목적 (연구·수업·기타):\n간단한 코멘트 (선택):\n\n' +
+            '※ 2026년 9월 30일까지 사용 가능한 시험판 안내를 요청합니다.\n',
         )
       : mailto(
-          'VibeStat-Text Beta Trial Application',
-          'Hello. I would like to apply for the VibeStat-Text beta trial.\n\n' +
+          'VibeStat-Text Trial Edition Application',
+          'Hello. I would like to apply for the VibeStat-Text trial edition.\n\n' +
             'Name:\nAffiliation (university, institute, organization):\nResearch field:\nPhone:\nReply email:\n\n' +
-            'Intended use (research, teaching, other):\nComments (optional):\n',
+            'Intended use (research, teaching, other):\nComments (optional):\n\n' +
+            'I understand the trial edition is usable through September 30, 2026.\n',
         );
   }
 
-  var licenseSubject = isKo ? 'VibeStat-Text 정식·라이센스 상담' : 'VibeStat-Text License Inquiry';
+  var licenseSubject = isKo
+    ? 'VibeStat-Text 정식판·라이선스·유통 제휴 상담'
+    : 'VibeStat-Text License & Distribution Inquiry';
   var licenseBody = isKo
-    ? '안녕하세요. VibeStat-Text 정식판·라이센스 상담을 요청합니다.\n\n' +
-      '이름·담당자:\n소속·기관:\n연락처:\n회신 이메일:\n\n' +
-      '문의 유형 (정식판 구매·기관·수업·볼륨 라이센스 등):\n예상 사용자 수·기간:\n기타 요청 사항:\n'
-    : 'Hello. I would like to inquire about VibeStat-Text licensing.\n\n' +
-      'Name / contact person:\nOrganization:\nPhone:\nReply email:\n\n' +
-      'Inquiry type (formal license, institution, classroom, volume):\nExpected users / duration:\nNotes:\n';
+    ? '안녕하세요. VibeStat-Text 정식판·라이선스·유통 제휴 상담을 요청합니다.\n\n' +
+      '이름·담당자:\n소속·기관 (출판사·총판·대학·연구소 등):\n연락처:\n회신 이메일:\n\n' +
+      '문의 유형 (정식판 구매·기관·볼륨·출판사·유통 파트너·수업 패키지 등):\n예상 사용자 수·기간:\n기타 요청 사항:\n'
+    : 'Hello. I would like to inquire about VibeStat-Text licensing or distribution partnership.\n\n' +
+      'Name / contact person:\nOrganization (publisher, distributor, university, institute):\nPhone:\nReply email:\n\n' +
+      'Inquiry type (formal license, institution, volume, distribution partner, classroom):\nExpected users / duration:\nNotes:\n';
 
   ['btn-license-consult', 'btn-license-contact'].forEach(function (id) {
     var el = document.getElementById(id);
@@ -48,14 +52,20 @@
     btn.addEventListener('click', function () {
       var id = btn.getAttribute('data-youtube');
       var title = btn.getAttribute('data-title') || 'VibeStat-Text demo';
+      var start = btn.getAttribute('data-youtube-start');
       var teaser = btn.closest('.video-teaser');
       if (!id || !teaser) return;
 
       var wrap = teaser.querySelector('.video-wrap-compact');
       if (!wrap || wrap.dataset.loaded === '1') return;
 
+      var qs = 'autoplay=1';
+      if (start && String(start) !== '0') {
+        qs += '&start=' + encodeURIComponent(start);
+      }
+
       var iframe = document.createElement('iframe');
-      iframe.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1';
+      iframe.src = 'https://www.youtube.com/embed/' + id + '?' + qs;
       iframe.title = title;
       iframe.allow =
         'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';

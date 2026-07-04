@@ -13,7 +13,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://vibestatics.com/en/" />
   <meta property="og:title" content="VibeStatics | VibeStat-Text — R Text Mining for Researchers" />
-  <meta property="og:description" content="VibeStatics — R text mining &amp; statistics on Windows. Built-in R packages. Word clouds, LDA, document analysis. Korean UI ready; English UI in development." />
+  <meta property="og:description" content="VibeStatics — R text mining &amp; statistics on Windows. Built-in R packages. Word clouds, LDA, document analysis. Korean &amp; English UI ready." />
   <meta property="og:image" content="https://vibestatics.com/assets/app-icon.png" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:locale:alternate" content="ko_KR" />
@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="../assets/app-icon.png?v=2" type="image/png" />
-  <link rel="stylesheet" href="../styles.css?v=71" />
+  <link rel="stylesheet" href="../styles.css?v=76" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -44,6 +44,7 @@
         "alternateName": ["바이브스타틱스", "바이브통계", "Vibe Statistics"],
         "url": "https://vibestatics.com/",
         "email": "hyc6999@gmail.com",
+        "telephone": "+82-10-3105-6999",
         "description": "Korean software brand for R-based academic text mining and statistics on Windows.",
         "knowsAbout": [
           "R text mining",
@@ -61,8 +62,8 @@
         "applicationCategory": "EducationalApplication",
         "operatingSystem": "Windows 10, Windows 11",
         "inLanguage": ["ko", "en"],
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW", "description": "Beta trial by email application" },
-        "description": "Designed by Ed.D. from dissertation and graduate text-mining supervision. Word clouds, LDA, document comparison, Vibe-Talk, Vibe-Loom. Korean UI complete; English UI in development.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW", "description": "Trial edition by email · usable through Sep 30, 2026" },
+        "description": "Designed by Ed.D. from dissertation and graduate text-mining supervision. Word clouds, LDA, document comparison, Vibe-Talk, Vibe-Loom. Korean and English UI ready for research and teaching.",
         "featureList": [
           "Document and corpus text analysis",
           "Word frequency and TF-IDF",
@@ -144,10 +145,10 @@
           },
           {
             "@type": "Question",
-            "name": "When will the English UI be ready?",
+            "name": "Is the English UI available?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Korean UI is complete. English program UI is in active development."
+              "text": "Yes. Toggle KO/EN in the app footer. F1 Help, the Greenfield step guide, and core workflows are available in English. The vibestatics.com English page helps global researchers find VibeStatics."
             }
           },
           {
@@ -171,7 +172,7 @@
             "name": "Is there a free word cloud demo?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. On vibestatics.com (Korean homepage), the Word Cloud Playground lets you paste text and save a PNG without installing software. Morphological analysis, LDA, and document comparison require the VibeStat-Text beta or formal edition."
+              "text": "Yes. On vibestatics.com (Korean homepage), the Word Cloud Playground lets you paste text and save a PNG without installing software. Morphological analysis, LDA, and document comparison require the VibeStat-Text trial or formal edition."
             }
           },
           {
@@ -201,7 +202,7 @@
       <a class="app-bar-cta app-bar-cta-ghost" href="../" hreflang="ko" lang="ko">한국어</a>
       <a class="app-bar-cta app-bar-cta-ghost" href="#guide">Guide</a>
       <a class="app-bar-cta app-bar-cta-ghost" href="#faq">FAQ</a>
-      <a class="app-bar-cta" href="#download">Beta Apply</a>
+      <a class="app-bar-cta" href="#download">Trial apply</a>
     </div>
   </header>
 
@@ -223,7 +224,7 @@
           <p class="hero-audience"><strong>Built-in R engine</strong> — run word frequency, word clouds, and LDA with buttons, not scripts</p>
           <div class="status-pills" role="list" aria-label="Language status">
             <span class="status-pill status-pill-done" role="listitem">Made in Korea · Korean UI ready</span>
-            <span class="status-pill status-pill-soon" role="listitem">English UI in development</span>
+            <span class="status-pill status-pill-done" role="listitem">English UI ready · footer KO/EN</span>
           </div>
           <ul class="hero-chips">
             <li>Designed by Ed.D. scholar</li>
@@ -231,7 +232,7 @@
             <li>Internet for first install</li>
             <li>Built-in textbook · Help</li>
             <li class="hero-chip hero-chip-try"><a href="#playground" class="hero-chip-link" data-wc-open>☁️ Word cloud</a></li>
-            <li class="hero-chip hero-chip-cta"><a href="#download" class="hero-chip-link">Beta apply</a></li>
+            <li class="hero-chip hero-chip-cta"><a href="#download" class="hero-chip-link">Trial apply</a></li>
           </ul>
         </div>
         <div class="hero-preview-wrap">
@@ -251,7 +252,7 @@
     <nav class="page-nav" aria-label="Page sections">
       <a href="#guide">At a glance</a>
       <a href="#origin">Design story</a>
-      <a href="#download">Beta Apply</a>
+      <a href="#download">Trial apply</a>
       <a href="#video">Demo</a>
       <a href="#trust-r">R · Trust</a>
       <a href="#more">Learn more</a>
@@ -259,32 +260,74 @@
       <a href="../" hreflang="ko" lang="ko">한국어</a>
     </nav>
 
-    <section class="card video-spot" id="video" aria-labelledby="video-heading-en">
+    <section class="card video-spot demo-duo-en" id="video" aria-labelledby="video-heading-en">
       <p class="card-eyebrow">Demo</p>
-      <h2 id="video-heading-en" class="video-spot-title">6-minute demo (silent)</h2>
+      <h2 id="video-heading-en" class="video-spot-title">Watch the demo</h2>
       <p class="video-lead">Sample data → word frequency · word cloud · LDA</p>
-      <div class="video-teaser">
-        <button
-          type="button"
-          class="video-thumb"
-          data-youtube="mP4pKTpWBLU"
-          data-title="6-minute VibeStat-Text demo (silent)"
-          aria-label="Play 6-minute demo video"
-        >
-          <img
-            src="https://img.youtube.com/vi/mP4pKTpWBLU/mqdefault.jpg"
-            alt=""
-            width="320"
-            height="180"
-            loading="lazy"
-            decoding="async"
-          />
-          <span class="video-play-badge" aria-hidden="true">▶</span>
-        </button>
-        <p class="video-thumb-hint">Click to play · 6 min silent demo</p>
-        <div class="video-wrap video-wrap-compact" hidden></div>
+
+      <div class="demo-videos-stack demo-videos-stack-en">
+        <article class="demo-video-item">
+          <h3 class="demo-video-lang">English</h3>
+          <div class="video-teaser">
+            <button
+              type="button"
+              class="video-thumb"
+              data-youtube="WgufmI_5kX8"
+              data-youtube-start="0"
+              data-title="VibeStat-Text demo · English"
+              aria-label="Play demo · English"
+            >
+              <img
+                src="https://img.youtube.com/vi/WgufmI_5kX8/mqdefault.jpg"
+                alt=""
+                width="320"
+                height="180"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="video-play-badge" aria-hidden="true">▶</span>
+            </button>
+            <p class="video-thumb-hint">Click to play</p>
+            <div class="video-wrap video-wrap-compact" hidden></div>
+          </div>
+          <p class="video-link">
+            <a href="https://youtu.be/WgufmI_5kX8" rel="noopener noreferrer">YouTube · English</a>
+          </p>
+        </article>
+
+        <article class="demo-video-item">
+          <h3 class="demo-video-lang">한국어</h3>
+          <div class="video-teaser">
+            <button
+              type="button"
+              class="video-thumb"
+              data-youtube="WgufmI_5kX8"
+              data-youtube-start="175"
+              data-title="VibeStat-Text 시연 · 한국어"
+              aria-label="Play demo · Korean"
+            >
+              <img
+                src="https://img.youtube.com/vi/WgufmI_5kX8/mqdefault.jpg"
+                alt=""
+                width="320"
+                height="180"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="video-play-badge" aria-hidden="true">▶</span>
+            </button>
+            <p class="video-thumb-hint">Click to play</p>
+            <div class="video-wrap video-wrap-compact" hidden></div>
+          </div>
+          <p class="video-link">
+            <a href="https://youtu.be/WgufmI_5kX8?t=175" rel="noopener noreferrer">YouTube · Korean</a>
+          </p>
+        </article>
       </div>
-      <p class="video-link"><a href="https://youtu.be/mP4pKTpWBLU" rel="noopener noreferrer">Watch on YouTube</a></p>
+
+      <p class="demo-contact-line">
+        You want to hear more? Call <a href="tel:01031056999"><strong>010-3105-6999</strong></a>
+      </p>
     </section>
 
     <section class="card visitor-guide" id="guide" aria-labelledby="guide-heading-en">
@@ -328,9 +371,9 @@
         Core text mining runs <strong>offline with built-in R</strong> — no API key required.
       </p>
       <p class="guide-next">
-        To try it: <a href="#download">Beta application</a>
+        To try it: <a href="#download">Trial application</a>
         · Details: <a href="#more">Learn more</a>
-        · <a href="#video">6-min demo</a>
+        · <a href="#video">Watch demo</a>
         · <a href="#trust-r">R · trust</a>
         · Design story: <a href="#origin">Why we built it</a>
         · Names &amp; FAQ: <a href="#faq">Q&amp;A</a>
@@ -362,21 +405,25 @@
 
     <section class="card download" id="download">
       <p class="card-eyebrow">Trial</p>
-      <h2>Beta trial application</h2>
-      <p class="download-version">Limited slots · researchers · graduate students · institutions</p>
+      <h2>Trial edition application</h2>
+      <p class="download-version">English users welcome · limited slots · researchers · institutions · <strong>through Sep 30, 2026</strong></p>
       <p class="policy-notice">
-        Public free download has <strong>ended</strong>. Please apply by <strong>email</strong> for individual install instructions.
+        Public free download has <strong>ended</strong>.
+        Apply by <strong>email</strong> for a <strong>trial edition</strong> you can use <strong>through September 30, 2026</strong>.
+      </p>
+      <p class="download-recommend">
+        Use the button below to send your application. We ask for your <strong>affiliation</strong> and <strong>research field</strong> — no student ID required.
       </p>
       <a class="btn btn-zip btn-full" id="btn-beta-apply" href="mailto:hyc6999@gmail.com">
-        <span class="btn-label">Apply for beta</span>
-        <span class="btn-meta">Email form auto-filled · Gmail or mail app</span>
+        <span class="btn-label">Apply for trial edition</span>
+        <span class="btn-meta">Trial through Sep 30, 2026 · email form auto-filled</span>
       </a>
       <a class="btn btn-secondary-outline btn-full" id="btn-license-consult" href="mailto:hyc6999@gmail.com">
-        <span class="btn-label">License inquiry</span>
-        <span class="btn-meta">Formal edition · university · volume</span>
+        <span class="btn-label">License · distribution partnership</span>
+        <span class="btn-meta">Formal · university · publisher · channel sales</span>
       </a>
       <p class="download-trust">
-        <a href="mailto:hyc6999@gmail.com">hyc6999@gmail.com</a>
+        <a href="tel:01031056999">010-3105-6999</a> · <a href="mailto:hyc6999@gmail.com">hyc6999@gmail.com</a>
       </p>
     </section>
 
@@ -445,10 +492,13 @@
         </details>
 
         <details class="fold-item">
-          <summary class="fold-q">6-minute demo (silent)</summary>
+          <summary class="fold-q">Demo video (English · Korean)</summary>
           <div class="fold-a">
             <p>Sample data → word frequency · word cloud · LDA</p>
-            <p><a href="#video">Play demo video →</a></p>
+            <p>
+              <a href="#video">Play demo →</a>
+              · <a href="https://youtu.be/WgufmI_5kX8" rel="noopener noreferrer">YouTube</a>
+            </p>
           </div>
         </details>
 
@@ -476,7 +526,7 @@
             <ul class="intro-list">
               <li>Windows 10/11 · <strong>internet required for first install</strong></li>
               <li>Built-in R — core mining without API key · AI optional (BYOK)</li>
-              <li><strong>Beta by email application</strong> — individual install instructions</li>
+              <li><strong>Trial edition by email</strong> — usable <strong>through Sep 30, 2026</strong> · individual install instructions</li>
               <li>First-run terms · desktop shortcut · no activation code</li>
             </ul>
           </div>
@@ -513,12 +563,12 @@
         </details>
 
         <details class="fold-item">
-          <summary class="fold-q">Beta vs formal edition</summary>
+          <summary class="fold-q">Trial vs formal edition</summary>
           <div class="fold-a">
             <p><strong>Local R analysis</strong> runs on your PC without an API key. <strong>AI features</strong> are optional (online, your key).</p>
             <div class="edition-grid">
               <article class="edition-col edition-col-beta">
-                <h3>Beta <span class="edition-tag">by email</span></h3>
+                <h3>Trial <span class="edition-tag">by email · through Sep 30, 2026</span></h3>
                 <dl class="edition-dl">
                   <div><dt>Local</dt><dd>Frequency · TF-IDF · word cloud · LDA · doc compare</dd></div>
                   <div><dt>API</dt><dd>Vibe-Talk · Vibe-Loom (Upstage Solar · your key)</dd></div>
@@ -527,7 +577,7 @@
               <article class="edition-col edition-col-formal">
                 <h3>Formal <span class="edition-tag edition-tag-formal">inquiry</span></h3>
                 <dl class="edition-dl">
-                  <div><dt>Local</dt><dd>Beta + network · sentiment · LDA K-scan, etc.</dd></div>
+                  <div><dt>Local</dt><dd>Trial + network · sentiment · LDA K-scan, etc.</dd></div>
                   <div><dt>API</dt><dd>AI R fix · annotations · report ZIP/PDF</dd></div>
                 </dl>
               </article>
@@ -647,9 +697,8 @@
           <summary class="fold-q">Is the English UI available?</summary>
           <div class="fold-a">
             <p>
-              <strong>Korean UI is complete</strong> and ready for research and teaching.
-              The <strong>English program UI</strong> is <strong>in active development</strong> —
-              this English web page helps global researchers find VibeStatics while the app UI is being localized.
+              <strong>Yes.</strong> Toggle <strong>EN</strong> in the app footer for English labels, F1 Help, and the
+              <strong>Step guide · Greenfield</strong> rail. Korean and English share the same R engine and sample corpora.
             </p>
           </div>
         </details>
