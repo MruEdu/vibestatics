@@ -1399,6 +1399,18 @@ body {
   filter: brightness(1.1);
 }
 
+.inquiry-btn-community {
+  grid-column: 1 / -1;
+  background: rgba(254, 229, 0, 0.1);
+  color: #f3e9b8;
+  border: 1px solid rgba(254, 229, 0, 0.32);
+}
+
+.inquiry-btn-community:hover {
+  background: rgba(254, 229, 0, 0.16);
+  color: #fff8dc;
+}
+
 /* ── Footer ── */
 .footer {
   display: flex;
