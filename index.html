@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="index, follow" />
-  <meta name="description" content="바이브스타틱스(VibeStatics)·바이브통계 — R·통계·텍스트마이닝·문서 분석 Windows 프로그램 VibeStat-Text. RStudio 없이 tidytext·quanteda·ggplot2 패키지로 로컬 분석. 워드클라우드 무료 체험·LDA·형태소 빈도. 연구·기관·실무. vibestatics.com" />
+  <meta name="description" content="바이브스타틱스(VibeStatics)·바이브통계 — R·통계·텍스트마이닝·문서 분석 Windows 프로그램 VibeStat-Text. RStudio 없이 tidytext·quanteda·ggplot2 패키지로 로컬 분석. 워드클라우드·LDA·형태소 빈도. 연구·기관·실무. vibestatics.com" />
   <meta name="keywords" content="바이브스타틱스, 바이브통계, 바이브, VibeStatics, Vibe Statistics, VibeStat-Text, 바이브 R, R 텍스트마이닝, RStudio, R 패키지, tidytext, quanteda, ggplot2, topicmodels, 통계, 통계 분석, 텍스트마이닝, 텍스트 분석, 자료 분석, 문서 분석, 워드클라우드, 워드클라우드 만들기, LDA, 토픽 모델링, TF-IDF, 형태소 분석, 한국어 텍스트마이닝, Vibe-Talk, Vibe-Loom, 연구자, 논문, 대학원, 바이브 코딩" />
   <link rel="canonical" href="https://vibestatics.com/" />
   <link rel="alternate" hreflang="ko" href="https://vibestatics.com/" />
   <link rel="alternate" hreflang="en" href="https://vibestatics.com/en/" />
   <link rel="alternate" hreflang="x-default" href="https://vibestatics.com/" />
   <meta property="og:title" content="VibeStat-Text · 바이브통계 · 바이브스타틱스" />
-  <meta property="og:description" content="바이브·바이브통계·VibeStatics — R·통계·텍스트 분석·문서 분석. 내장 R·R 패키지 로컬 실행. 워드클라우드 무료 체험. LDA·형태소·TF-IDF. 연구·기관·실무." />
+  <meta property="og:description" content="바이브·바이브통계·VibeStatics — R·통계·텍스트 분석·문서 분석. 내장 R·R 패키지 로컬 실행. 워드클라우드·LDA·형태소·TF-IDF. 연구·기관·실무." />
   <meta property="og:url" content="https://vibestatics.com/" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ko_KR" />
@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="assets/app-icon.png?v=2" type="image/png" />
-  <link rel="stylesheet" href="styles.css?v=76" />
+  <link rel="stylesheet" href="styles.css?v=78" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -45,7 +45,7 @@
         "url": "https://vibestatics.com/",
         "email": "hyc6999@gmail.com",
         "telephone": "+82-10-3105-6999",
-        "description": "한국에서 개발한 R 기반 학술 텍스트마이닝·통계 분석 소프트웨어 브랜드(바이브통계). 한국어 UI 완료, 영어 UI 개발 중.",
+        "description": "한국에서 개발한 R 기반 학술 텍스트마이닝·통계 분석 소프트웨어 브랜드(바이브통계). 한국어·영어 UI 완료.",
         "knowsAbout": [
           "R text mining",
           "statistical analysis",
@@ -63,7 +63,7 @@
         "@id": "https://vibestatics.com/#webpage",
         "url": "https://vibestatics.com/",
         "name": "바이브스타틱스 · VibeStat-Text — R·통계 텍스트마이닝",
-        "description": "바이브·바이브통계·VibeStatics 공식 소개. R 패키지 기반 텍스트마이닝·통계·문서 분석·워드클라우드 무료 체험.",
+        "description": "바이브·바이브통계·VibeStatics 공식 소개. R 패키지 기반 텍스트마이닝·통계·문서 분석.",
         "isPartOf": { "@id": "https://vibestatics.com/#website" },
         "about": { "@id": "https://vibestatics.com/#vibestat-text" },
         "inLanguage": "ko"
@@ -92,34 +92,9 @@
           "문서 비교",
           "한국어 형태소 분석(elbird/Kiwi)",
           "PDF·Excel·CSV·TXT 불러오기",
-          "내장 R 엔진·R 코드 보기",
-          "워드클라우드 무료 웹 체험"
+          "내장 R 엔진·R 코드 보기"
         ],
         "keywords": "바이브, 바이브통계, 바이브스타틱스, VibeStatics, R 텍스트마이닝, RStudio, R packages, tidytext, quanteda, ggplot2, 통계, 통계 분석, 텍스트 분석, 문서 분석, 워드클라우드, LDA"
-      },
-      {
-        "@type": "HowTo",
-        "@id": "https://vibestatics.com/#howto-wordcloud",
-        "name": "vibestatics.com에서 워드클라우드 무료로 만들기",
-        "description": "설치 없이 글을 붙여넣어 워드클라우드를 체험하고 PNG로 저장하는 방법",
-        "step": [
-          {
-            "@type": "HowToStep",
-            "position": 1,
-            "text": "vibestatics.com 메인 페이지에서 「워드클라우드 체험마당」 또는 「워드클라우드 만들기」를 클릭합니다."
-          },
-          {
-            "@type": "HowToStep",
-            "position": 2,
-            "text": "노래 가사, 일기, 뉴스, 보고서 등 텍스트를 붙여넣거나 「옛이야기 예시」를 누릅니다."
-          },
-          {
-            "@type": "HowToStep",
-            "position": 3,
-            "text": "「워드클라우드 만들기」를 누르면 단어 구름이 생성됩니다. PNG 버튼으로 이미지를 저장할 수 있습니다."
-          }
-        ],
-        "tool": { "@type": "HowToTool", "name": "VibeStatics 워드클라우드 체험마당" }
       },
       {
         "@type": "FAQPage",
@@ -215,10 +190,10 @@
           },
           {
             "@type": "Question",
-            "name": "영어 UI는 언제 되나요?",
+            "name": "영어 UI는 사용할 수 있나요?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "VibeStat-Text 한국어 UI는 완료되었습니다. 영어 프로그램 UI는 바이브스타틱스가 개발 중입니다."
+              "text": "네. VibeStat-Text 앱 푸터에서 EN을 누르면 영어 UI·F1 Help·Greenfield 순서 안내를 사용할 수 있습니다. 한국어·영어 UI 모두 완료되었습니다."
             }
           },
           {
@@ -247,10 +222,10 @@
           },
           {
             "@type": "Question",
-            "name": "워드클라우드를 무료로 만들어 볼 수 있나요?",
+            "name": "시험판은 어떻게 신청하나요?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "네. vibestatics.com 메인 페이지의 「워드클라우드 체험마당」에서 설치 없이 글을 붙여넣어 워드클라우드를 만들고 PNG로 저장할 수 있습니다. 형태소 분석·LDA·문서 비교 등 고급 분석은 VibeStat-Text 시험판·정식판에서 제공됩니다."
+              "text": "vibestatics.com에서 이메일로 시험판을 신청하면 2026년 9월 30일까지 사용 가능한 Windows 시험판 설치 안내를 드립니다. 워드클라우드·LDA·형태소 분석 등은 앱에서 로컬 R로 실행됩니다."
             }
           },
           {
@@ -266,7 +241,7 @@
             "name": "한국어 텍스트·형태소 분석이 되나요?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "VibeStat-Text 정식·시험판에서는 elbird(Kiwi) 등 한국어 형태소 분석기로 단어 빈도·워드클라우드·LDA를 실행합니다. 웹 체험마당은 띄어쓰기 기준으로만 단어를 나눕니다."
+              "text": "VibeStat-Text 시험판·정식판에서는 elbird(Kiwi) 등 한국어 형태소 분석기로 단어 빈도·워드클라우드·LDA를 실행합니다."
             }
           },
           {
@@ -332,7 +307,7 @@
             <li>R 엔진 내장</li>
             <li>최초 설치 시 인터넷</li>
             <li>내장 교재·Help</li>
-            <li class="hero-chip hero-chip-try"><a href="#playground" class="hero-chip-link" data-wc-open>☁️ 워드클라우드 만들기</a></li>
+            <li class="hero-chip hero-chip-try"><a href="#video" class="hero-chip-link">▶ YouTube 시연</a></li>
             <li class="hero-chip hero-chip-cta"><a href="#download" class="hero-chip-link">시험판 신청</a></li>
           </ul>
         </div>
@@ -355,7 +330,6 @@
       <a href="#origin">설계 배경</a>
       <a href="#download">시험판 신청</a>
       <a href="#video">시연</a>
-      <a href="#playground">워드클라우드</a>
       <a href="#trust-r">R·신뢰</a>
       <a href="#more">자세히 보기</a>
       <a href="#faq">Q&amp;A</a>
@@ -363,159 +337,40 @@
       <a href="en/" hreflang="en" lang="en">English</a>
     </nav>
 
-    <section class="card video-spot demo-duo" id="video" aria-labelledby="demo-duo-heading">
+    <section class="card video-spot" id="video" aria-labelledby="demo-heading">
       <header class="demo-duo-header">
-        <p class="card-eyebrow">Demo · Try</p>
-        <h2 id="demo-duo-heading" class="demo-duo-title">시연 보기 · 워드클라우드 체험</h2>
-        <p class="demo-duo-lead">영어·한국어 시연 영상 또는 워드클라우드 체험</p>
+        <p class="card-eyebrow">Demo</p>
+        <h2 id="demo-heading" class="demo-duo-title">제품 시연 (YouTube)</h2>
+        <p class="demo-duo-lead">샘플 데이터 → 단어 빈도 · 워드클라우드 · LDA · 앱 실제 워크플로</p>
       </header>
 
-      <div class="demo-duo-grid">
-        <div class="demo-duo-pane demo-duo-video">
-          <h3 class="demo-duo-subtitle">시연 보기</h3>
-          <p class="demo-duo-desc">샘플 데이터 → 단어 빈도 · 워드클라우드 · LDA</p>
-          <div class="demo-duo-pane-body demo-videos-stack">
-            <article class="demo-video-item">
-              <h4 class="demo-video-lang">English</h4>
-              <div class="video-teaser">
-                <button
-                  type="button"
-                  class="video-thumb"
-                  data-youtube="WgufmI_5kX8"
-                  data-youtube-start="0"
-                  data-title="VibeStat-Text demo · English"
-                  aria-label="시연 영상 재생 · English"
-                >
-                  <img
-                    src="https://img.youtube.com/vi/WgufmI_5kX8/mqdefault.jpg"
-                    alt=""
-                    width="320"
-                    height="180"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <span class="video-play-badge" aria-hidden="true">▶</span>
-                </button>
-                <p class="video-thumb-hint">클릭하여 재생</p>
-                <div class="video-wrap video-wrap-compact" hidden></div>
-              </div>
-              <p class="video-link">
-                <a href="https://youtu.be/WgufmI_5kX8" rel="noopener noreferrer">YouTube · English</a>
-              </p>
-            </article>
-
-            <article class="demo-video-item">
-              <h4 class="demo-video-lang">한국어</h4>
-              <div class="video-teaser">
-                <button
-                  type="button"
-                  class="video-thumb"
-                  data-youtube="WgufmI_5kX8"
-                  data-youtube-start="175"
-                  data-title="VibeStat-Text 시연 · 한국어"
-                  aria-label="시연 영상 재생 · 한국어"
-                >
-                  <img
-                    src="https://img.youtube.com/vi/WgufmI_5kX8/mqdefault.jpg"
-                    alt=""
-                    width="320"
-                    height="180"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <span class="video-play-badge" aria-hidden="true">▶</span>
-                </button>
-                <p class="video-thumb-hint">클릭하여 재생</p>
-                <div class="video-wrap video-wrap-compact" hidden></div>
-              </div>
-              <p class="video-link">
-                <a href="https://youtu.be/WgufmI_5kX8?t=175" rel="noopener noreferrer">YouTube · 한국어</a>
-              </p>
-            </article>
-          </div>
-
-          <p class="demo-contact-line">
-            더 듣고 싶으신가요? <a href="tel:01031056999"><strong>010-3105-6999</strong></a>
-          </p>
-        </div>
-
-        <div class="demo-duo-pane demo-duo-playground" id="playground" aria-labelledby="playground-heading">
-          <h3 class="demo-duo-subtitle" id="playground-heading">워드클라우드 체험마당</h3>
-          <p class="demo-duo-desc">붙여넣기만 · 바로 체험</p>
-          <div class="demo-duo-pane-body">
-            <button type="button" class="btn btn-zip btn-full wc-play-cta" data-wc-open>
-              <span class="btn-label">워드클라우드 체험해 보기</span>
-              <span class="btn-meta">붙여넣기 · PNG · 띄어쓰기만</span>
-            </button>
-            <button type="button" class="btn btn-secondary-outline btn-full wc-play-guide" data-wc-open data-wc-open-guide>
-              <span class="btn-label">사용 설명서</span>
-            </button>
-            <p class="wc-play-morpho-line">형태소 분석은 <a href="#download">시험판·정식판</a>에서만 가능합니다.</p>
-          </div>
-        </div>
+      <div class="demo-youtube-actions">
+        <a
+          class="btn btn-zip"
+          href="https://youtu.be/WgufmI_5kX8"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="btn-label">English</span>
+          <span class="btn-meta">YouTube · 새 탭</span>
+        </a>
+        <a
+          class="btn btn-secondary-outline"
+          href="https://youtu.be/WgufmI_5kX8?t=175"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="btn-label">한국어</span>
+          <span class="btn-meta">2:55~ · YouTube</span>
+        </a>
       </div>
-      <p class="demo-duo-footnote">자세한 흐름은 위 시연 영상 참고</p>
+
+      <p class="demo-contact-line">
+        바로 <a href="tel:01031056999"><strong>전화 문의</strong></a>
+        · <a href="#download"><strong>시험판 신청</strong></a>
+      </p>
+      <p class="demo-duo-footnote">시연 영상은 YouTube에서 시청하세요. 시험판은 <a href="#download">이메일 신청</a>.</p>
     </section>
-
-    <dialog class="wc-modal" id="wc-modal" aria-labelledby="wc-modal-title">
-      <div class="wc-modal-inner">
-        <header class="wc-modal-head">
-          <div>
-            <p class="wc-modal-eyebrow">놀이터 · 무료 체험</p>
-            <h2 id="wc-modal-title">워드클라우드 만들어 보기</h2>
-          </div>
-          <button type="button" class="wc-modal-close" data-wc-close="wc-modal" aria-label="닫기">✕</button>
-        </header>
-        <div class="wc-modal-body">
-          <label class="wc-label" for="wc-text-input">글 붙여넣기</label>
-          <div class="wc-input-zone" id="wc-input-zone">
-            <textarea
-              id="wc-text-input"
-              class="wc-textarea"
-              rows="8"
-              placeholder="노래 가사, 일기, 뉴스, 보고서 등을 붙여넣으세요. (Ctrl+V)"
-            ></textarea>
-            <div class="wc-guide-view" id="wc-guide-panel" hidden>
-              <p class="wc-guide-view-lead"><strong>안녕하세요!</strong> 워드클라우드 놀이터입니다.</p>
-              <p class="wc-guide-view-p">설치 없이 글만 붙여넣으면 단어 구름을 만들 수 있어요.</p>
-              <ol class="wc-guide-view-steps">
-                <li><strong>1.</strong> 글 붙여넣기 (가사, 일기, 뉴스, 보고서…)</li>
-                <li><strong>2.</strong> 워드클라우드 만들기</li>
-                <li><strong>3.</strong> PNG 저장</li>
-              </ol>
-              <p class="wc-guide-view-tip">글 없으면 <strong>옛이야기 예시</strong> 버튼을 눌러 보세요.</p>
-              <p class="wc-guide-view-note">참고: 띄어쓰기로만 단어를 나눕니다.<br />형태소 분석은 시험판·정식판에서 가능합니다.</p>
-              <p class="wc-guide-view-close">아래 <strong>설명서 닫기</strong>를 누르면 붙여넣기 창으로 돌아갑니다.</p>
-            </div>
-          </div>
-          <p class="wc-text-limits" id="wc-text-limits"></p>
-          <div class="wc-modal-actions">
-            <button type="button" class="wc-action wc-action-primary" id="wc-btn-generate">워드클라우드 만들기</button>
-            <button type="button" class="wc-action" id="wc-btn-guide" aria-expanded="false" aria-controls="wc-guide-panel">설명서 보기</button>
-            <button type="button" class="wc-action" id="wc-btn-download">PNG</button>
-            <button type="button" class="wc-action" id="wc-btn-demo" title="옛이야기 예시 글">옛이야기 예시</button>
-          </div>
-          <p class="wc-status" id="wc-status" role="status" aria-live="polite"></p>
-          <div class="wc-canvas-wrap">
-            <canvas id="wc-canvas" width="640" height="396" aria-label="워드클라우드 미리보기"></canvas>
-          </div>
-        </div>
-      </div>
-    </dialog>
-
-    <dialog class="wc-modal wc-upsell-dialog" id="wc-upsell-modal" aria-labelledby="wc-upsell-title">
-      <div class="wc-modal-inner wc-upsell-inner">
-        <header class="wc-modal-head">
-          <h2 id="wc-upsell-title">VibeStat-Text 기능</h2>
-          <button type="button" class="wc-modal-close" data-wc-close="wc-upsell-modal" aria-label="닫기">✕</button>
-        </header>
-        <p id="wc-upsell-body" class="wc-upsell-body"></p>
-        <div class="wc-upsell-actions">
-          <a class="btn btn-zip" href="#download">시험판 신청</a>
-          <button type="button" class="btn btn-secondary-outline" data-wc-close="wc-upsell-modal">닫기</button>
-        </div>
-      </div>
-    </dialog>
 
     <section class="card visitor-guide" id="guide" aria-labelledby="guide-heading">
       <p class="card-eyebrow">안내</p>
@@ -560,7 +415,7 @@
       <p class="guide-next">
         써 보고 싶으시면 <a href="#download">시험판 신청</a>
         · 더 알고 싶으시면 <a href="#more">자세히 보기</a>
-        · <a href="#video">시연 보기</a>
+        · <a href="#video">YouTube 시연</a>
         · <a href="#trust-r">R·신뢰</a>
         · 설계 이야기 <a href="#origin">설계 배경</a>
         · 이름·차이 <a href="#faq">Q&amp;A</a>
@@ -695,8 +550,9 @@
           <div class="fold-a">
             <p>샘플 데이터 → 단어 빈도 · 워드클라우드 · LDA</p>
             <p>
-              <a href="#video">시연 영상 재생 →</a>
-              · <a href="https://youtu.be/WgufmI_5kX8" rel="noopener noreferrer">YouTube</a>
+              <a href="https://youtu.be/WgufmI_5kX8" target="_blank" rel="noopener noreferrer">YouTube · English</a>
+              · <a href="https://youtu.be/WgufmI_5kX8?t=175" target="_blank" rel="noopener noreferrer">YouTube · 한국어</a>
+              · <a href="#video">시연 안내 →</a>
             </p>
           </div>
         </details>
@@ -851,7 +707,7 @@
           <li><strong>통계 · 통계 분석</strong> — R 패키지 기반 빈도·LDA·TF-IDF·문서 비교</li>
           <li><strong>텍스트마이닝 · 텍스트 분석 · 자료 분석 · 문서 분석</strong> — PDF·Excel·CSV·TXT 코퍼스</li>
           <li><strong>R 텍스트마이닝 · RStudio · R 패키지</strong> — tidytext · quanteda · tm · ggplot2 · topicmodels · wordcloud2</li>
-          <li><strong>워드클라우드 · 워드클라우드 만들기</strong> — <a href="#playground">무료 웹 체험마당</a> · 시험판에서 형태소 분석</li>
+          <li><strong>워드클라우드 · LDA</strong> — VibeStat-Text 시험판·정식판 (로컬 R · 형태소 분석)</li>
           <li><strong>LDA · 토픽 모델링</strong> — VibeStat-Text 버튼 분석 (로컬 R)</li>
           <li><strong>한국어 형태소 분석</strong> — 시험판·정식판 (elbird/Kiwi)</li>
           <li><strong>연구 · 논문 · 대학원 · 기관</strong> — 학술·정책·실무 문서 코퍼스 분석</li>
@@ -1043,12 +899,12 @@
         </details>
 
         <details class="fold-item">
-          <summary class="fold-q">워드클라우드를 무료로 만들어 볼 수 있나요?</summary>
+          <summary class="fold-q">시험판은 어떻게 신청하나요?</summary>
           <div class="fold-a">
             <p>
-              <strong>네.</strong> 이 페이지의 <a href="#playground">워드클라우드 체험마당</a>에서
-              <strong>설치 없이</strong> 글을 붙여넣어 워드클라우드를 만들고 <strong>PNG</strong>로 저장할 수 있습니다.
-              형태소 분석·LDA·문서 비교 등 고급 분석은 <a href="#download">VibeStat-Text 시험판·정식판</a>에서 제공됩니다.
+              <strong>이메일 신청</strong> 후 <strong>2026년 9월 30일까지</strong> 사용 가능한 Windows 시험판 설치 안내를 드립니다.
+              워드클라우드·LDA·형태소 분석 등은 앱에서 <strong>로컬 R</strong>로 실행됩니다.
+              <a href="#download">시험판 신청 →</a>
             </p>
           </div>
         </details>
@@ -1071,7 +927,6 @@
             <p>
               VibeStat-Text <strong>시험판·정식판</strong>에서는 <strong>elbird(Kiwi)</strong> 등
               <strong>한국어 형태소 분석기</strong>로 단어 빈도·워드클라우드·LDA를 실행합니다.
-              웹 <a href="#playground">체험마당</a>은 <strong>띄어쓰기</strong> 기준으로만 단어를 나눕니다.
             </p>
           </div>
         </details>
@@ -1131,8 +986,6 @@
       <a class="footer-inquiry" href="tel:01031056999"><span class="contact-kind contact-kind-inline" aria-hidden="true">T.</span> 010-3105-6999 · 개인·기관 구매 · 특강 문의</a>
     </footer>
   </main>
-  <script src="assets/wordcloud2.js?v=1" defer></script>
   <script src="landing.js" defer></script>
-  <script src="wordcloud-playground.js?v=29" defer></script>
 </body>
 </html>

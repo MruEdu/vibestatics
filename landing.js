@@ -28,6 +28,7 @@
           'Hello. I would like to apply for the VibeStat-Text trial edition.\n\n' +
             'Name:\nAffiliation (university, institute, organization):\nResearch field:\nPhone:\nReply email:\n\n' +
             'Intended use (research, teaching, other):\nComments (optional):\n\n' +
+            'English UI beta tester (optional):\n\n' +
             'I understand the trial edition is usable through September 30, 2026.\n',
         );
   }
@@ -46,37 +47,5 @@
   ['btn-license-consult', 'btn-license-contact'].forEach(function (id) {
     var el = document.getElementById(id);
     if (el) el.href = mailto(licenseSubject, licenseBody);
-  });
-
-  document.querySelectorAll('.video-thumb[data-youtube]').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var id = btn.getAttribute('data-youtube');
-      var title = btn.getAttribute('data-title') || 'VibeStat-Text demo';
-      var start = btn.getAttribute('data-youtube-start');
-      var teaser = btn.closest('.video-teaser');
-      if (!id || !teaser) return;
-
-      var wrap = teaser.querySelector('.video-wrap-compact');
-      if (!wrap || wrap.dataset.loaded === '1') return;
-
-      var qs = 'autoplay=1';
-      if (start && String(start) !== '0') {
-        qs += '&start=' + encodeURIComponent(start);
-      }
-
-      var iframe = document.createElement('iframe');
-      iframe.src = 'https://www.youtube.com/embed/' + id + '?' + qs;
-      iframe.title = title;
-      iframe.allow =
-        'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-      iframe.allowFullscreen = true;
-      wrap.appendChild(iframe);
-      wrap.hidden = false;
-      wrap.dataset.loaded = '1';
-
-      btn.hidden = true;
-      var hint = teaser.querySelector('.video-thumb-hint');
-      if (hint) hint.hidden = true;
-    });
   });
 })();

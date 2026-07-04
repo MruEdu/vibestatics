@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="../assets/app-icon.png?v=2" type="image/png" />
-  <link rel="stylesheet" href="../styles.css?v=76" />
+  <link rel="stylesheet" href="../styles.css?v=78" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -70,8 +70,7 @@
           "Word clouds",
           "LDA topic modeling",
           "Document comparison",
-          "Built-in R engine with code view",
-          "Free word cloud web demo on vibestatics.com"
+          "Built-in R engine with code view"
         ],
         "keywords": "VibeStatics, Vibe Statistics, R text mining, RStudio, R packages, tidytext, quanteda, ggplot2, statistical analysis, word cloud, LDA, document analysis",
         "publisher": { "@id": "https://vibestatics.com/#organization" }
@@ -169,10 +168,10 @@
           },
           {
             "@type": "Question",
-            "name": "Is there a free word cloud demo?",
+            "name": "How do I apply for the trial edition?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. On vibestatics.com (Korean homepage), the Word Cloud Playground lets you paste text and save a PNG without installing software. Morphological analysis, LDA, and document comparison require the VibeStat-Text trial or formal edition."
+              "text": "Apply by email on vibestatics.com/en. We send Windows trial install instructions usable through September 30, 2026. Word clouds, LDA, and morphology run in the app with built-in R."
             }
           },
           {
@@ -231,7 +230,8 @@
             <li>Built-in R</li>
             <li>Internet for first install</li>
             <li>Built-in textbook · Help</li>
-            <li class="hero-chip hero-chip-try"><a href="#playground" class="hero-chip-link" data-wc-open>☁️ Word cloud</a></li>
+            <li class="hero-chip hero-chip-try"><a href="#video" class="hero-chip-link">▶ YouTube demo</a></li>
+            <li class="hero-chip"><a href="#download" class="hero-chip-link">English beta welcome</a></li>
             <li class="hero-chip hero-chip-cta"><a href="#download" class="hero-chip-link">Trial apply</a></li>
           </ul>
         </div>
@@ -260,74 +260,37 @@
       <a href="../" hreflang="ko" lang="ko">한국어</a>
     </nav>
 
-    <section class="card video-spot demo-duo-en" id="video" aria-labelledby="video-heading-en">
+    <section class="card video-spot" id="video" aria-labelledby="video-heading-en">
       <p class="card-eyebrow">Demo</p>
-      <h2 id="video-heading-en" class="video-spot-title">Watch the demo</h2>
-      <p class="video-lead">Sample data → word frequency · word cloud · LDA</p>
+      <h2 id="video-heading-en" class="demo-duo-title">Product demo (YouTube)</h2>
+      <p class="demo-duo-lead">Sample data → word frequency · word cloud · LDA · real app workflow</p>
 
-      <div class="demo-videos-stack demo-videos-stack-en">
-        <article class="demo-video-item">
-          <h3 class="demo-video-lang">English</h3>
-          <div class="video-teaser">
-            <button
-              type="button"
-              class="video-thumb"
-              data-youtube="WgufmI_5kX8"
-              data-youtube-start="0"
-              data-title="VibeStat-Text demo · English"
-              aria-label="Play demo · English"
-            >
-              <img
-                src="https://img.youtube.com/vi/WgufmI_5kX8/mqdefault.jpg"
-                alt=""
-                width="320"
-                height="180"
-                loading="lazy"
-                decoding="async"
-              />
-              <span class="video-play-badge" aria-hidden="true">▶</span>
-            </button>
-            <p class="video-thumb-hint">Click to play</p>
-            <div class="video-wrap video-wrap-compact" hidden></div>
-          </div>
-          <p class="video-link">
-            <a href="https://youtu.be/WgufmI_5kX8" rel="noopener noreferrer">YouTube · English</a>
-          </p>
-        </article>
-
-        <article class="demo-video-item">
-          <h3 class="demo-video-lang">한국어</h3>
-          <div class="video-teaser">
-            <button
-              type="button"
-              class="video-thumb"
-              data-youtube="WgufmI_5kX8"
-              data-youtube-start="175"
-              data-title="VibeStat-Text 시연 · 한국어"
-              aria-label="Play demo · Korean"
-            >
-              <img
-                src="https://img.youtube.com/vi/WgufmI_5kX8/mqdefault.jpg"
-                alt=""
-                width="320"
-                height="180"
-                loading="lazy"
-                decoding="async"
-              />
-              <span class="video-play-badge" aria-hidden="true">▶</span>
-            </button>
-            <p class="video-thumb-hint">Click to play</p>
-            <div class="video-wrap video-wrap-compact" hidden></div>
-          </div>
-          <p class="video-link">
-            <a href="https://youtu.be/WgufmI_5kX8?t=175" rel="noopener noreferrer">YouTube · Korean</a>
-          </p>
-        </article>
+      <div class="demo-youtube-actions">
+        <a
+          class="btn btn-zip"
+          href="https://youtu.be/WgufmI_5kX8"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="btn-label">English</span>
+          <span class="btn-meta">YouTube · new tab</span>
+        </a>
+        <a
+          class="btn btn-secondary-outline"
+          href="https://youtu.be/WgufmI_5kX8?t=175"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="btn-label">한국어</span>
+          <span class="btn-meta">From 2:55 · YouTube</span>
+        </a>
       </div>
 
       <p class="demo-contact-line">
-        You want to hear more? Call <a href="tel:01031056999"><strong>010-3105-6999</strong></a>
+        <a href="tel:01031056999"><strong>Call</strong></a>
+        · <a href="#download"><strong>Trial apply</strong></a>
       </p>
+      <p class="demo-duo-footnote">Watch on YouTube in full screen. <a href="#download">Apply for trial edition</a> — English beta testers welcome.</p>
     </section>
 
     <section class="card visitor-guide" id="guide" aria-labelledby="guide-heading-en">
@@ -373,7 +336,7 @@
       <p class="guide-next">
         To try it: <a href="#download">Trial application</a>
         · Details: <a href="#more">Learn more</a>
-        · <a href="#video">Watch demo</a>
+        · <a href="#video">YouTube demo</a>
         · <a href="#trust-r">R · trust</a>
         · Design story: <a href="#origin">Why we built it</a>
         · Names &amp; FAQ: <a href="#faq">Q&amp;A</a>
@@ -406,17 +369,18 @@
     <section class="card download" id="download">
       <p class="card-eyebrow">Trial</p>
       <h2>Trial edition application</h2>
-      <p class="download-version">English users welcome · limited slots · researchers · institutions · <strong>through Sep 30, 2026</strong></p>
+      <p class="download-version">English beta testers welcome · researchers · institutions · <strong>through Sep 30, 2026</strong></p>
       <p class="policy-notice">
         Public free download has <strong>ended</strong>.
-        Apply by <strong>email</strong> for a <strong>trial edition</strong> you can use <strong>through September 30, 2026</strong>.
+        Apply by <strong>email</strong> for a <strong>trial edition</strong> usable <strong>through September 30, 2026</strong>.
+        <strong>English UI is ready</strong> — toggle EN in the app footer after install.
       </p>
       <p class="download-recommend">
         Use the button below to send your application. We ask for your <strong>affiliation</strong> and <strong>research field</strong> — no student ID required.
       </p>
       <a class="btn btn-zip btn-full" id="btn-beta-apply" href="mailto:hyc6999@gmail.com">
         <span class="btn-label">Apply for trial edition</span>
-        <span class="btn-meta">Trial through Sep 30, 2026 · email form auto-filled</span>
+        <span class="btn-meta">Trial through Sep 30, 2026 · English beta welcome</span>
       </a>
       <a class="btn btn-secondary-outline btn-full" id="btn-license-consult" href="mailto:hyc6999@gmail.com">
         <span class="btn-label">License · distribution partnership</span>
@@ -496,8 +460,9 @@
           <div class="fold-a">
             <p>Sample data → word frequency · word cloud · LDA</p>
             <p>
-              <a href="#video">Play demo →</a>
-              · <a href="https://youtu.be/WgufmI_5kX8" rel="noopener noreferrer">YouTube</a>
+              <a href="https://youtu.be/WgufmI_5kX8" target="_blank" rel="noopener noreferrer">YouTube · English</a>
+              · <a href="https://youtu.be/WgufmI_5kX8?t=175" target="_blank" rel="noopener noreferrer">YouTube · Korean</a>
+              · <a href="#video">Demo links →</a>
             </p>
           </div>
         </details>
@@ -601,7 +566,7 @@
           <li><strong>VibeStatics · Vibe Statistics · 바이브통계</strong> — Korean R text mining brand</li>
           <li><strong>Statistical analysis · text analysis · document analysis</strong> — corpus workflows</li>
           <li><strong>R text mining · RStudio · R packages</strong> — tidytext, quanteda, tm, ggplot2, topicmodels</li>
-          <li><strong>Word cloud</strong> — free demo on the <a href="../#playground" hreflang="ko">Korean homepage playground</a></li>
+          <li><strong>Word cloud · LDA</strong> — VibeStat-Text trial or formal edition (local R)</li>
           <li><strong>LDA · topic modeling · TF-IDF</strong> — button-driven in VibeStat-Text</li>
           <li><strong>Researchers · academia · institutions</strong> — papers, policy, surveys, interviews</li>
         </ul>
@@ -746,12 +711,13 @@
         </details>
 
         <details class="fold-item">
-          <summary class="fold-q">Is there a free word cloud demo?</summary>
+          <summary class="fold-q">How do I apply for the trial edition?</summary>
           <div class="fold-a">
             <p>
-              <strong>Yes.</strong> The <a href="../#playground" hreflang="ko">Word Cloud Playground</a> on the Korean homepage
-              lets you paste text and save a PNG without installing software.
-              Morphological analysis, LDA, and document comparison need the VibeStat-Text app.
+              <strong>Apply by email</strong> on this page. We send Windows trial install instructions
+              usable <strong>through September 30, 2026</strong>.
+              Word clouds, LDA, and morphology run in the app with <strong>built-in R</strong>.
+              <a href="#download">Trial application →</a>
             </p>
           </div>
         </details>
@@ -785,7 +751,8 @@
       <p class="footer-lang">
         <a href="../" hreflang="ko" lang="ko">한국어</a> · <a href="#faq">English FAQ</a>
       </p>
-      <a class="footer-inquiry" href="mailto:hyc6999@gmail.com">hyc6999@gmail.com · license &amp; lecture inquiry</a>
+      <a class="footer-inquiry" href="tel:01031056999"><span class="contact-kind contact-kind-inline" aria-hidden="true">T.</span> 010-3105-6999</a>
+      · <a class="footer-inquiry" href="mailto:hyc6999@gmail.com">hyc6999@gmail.com · license &amp; lecture</a>
     </footer>
   </main>
   <script src="../landing.js" defer></script>
