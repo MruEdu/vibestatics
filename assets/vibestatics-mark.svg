@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="VibeStatics">
+  <defs>
+    <linearGradient id="vs-wave" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2dd4bf" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <linearGradient id="vs-bar" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#14b8a6" />
+    </linearGradient>
+  </defs>
+  <!-- Vibe: voice / flow wave -->
+  <path
+    d="M8 32c4-10 8-10 12 0s8 10 12 0"
+    fill="none"
+    stroke="url(#vs-wave)"
+    stroke-width="2.4"
+    stroke-linecap="round"
+  />
+  <path
+    d="M8 40c3-6 6-6 9 0s6 6 9 0"
+    fill="none"
+    stroke="url(#vs-wave)"
+    stroke-width="2"
+    stroke-linecap="round"
+    opacity="0.72"
+  />
+  <path
+    d="M8 24c3-6 6-6 9 0s6 6 9 0"
+    fill="none"
+    stroke="url(#vs-wave)"
+    stroke-width="2"
+    stroke-linecap="round"
+    opacity="0.72"
+  />
+  <!-- Statics: histogram bars -->
+  <rect x="40" y="28" width="5" height="16" rx="1.5" fill="url(#vs-bar)" />
+  <rect x="47.5" y="22" width="5" height="22" rx="1.5" fill="url(#vs-bar)" />
+  <rect x="55" y="31" width="5" height="13" rx="1.5" fill="url(#vs-bar)" opacity="0.88" />
+  <!-- VS hint: wave meets bars -->
+  <circle cx="34" cy="32" r="2.2" fill="#5eead4" opacity="0.95" />
+</svg>
