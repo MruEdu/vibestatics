@@ -2767,6 +2767,116 @@ details[open] > .fold-q::after {
   }
 }
 
+/* ── Research & education programs ── */
+.programs-hub {
+  margin-bottom: 1.25rem;
+  border-color: rgba(59, 158, 255, 0.22);
+  background: linear-gradient(165deg, rgba(30, 58, 95, 0.35) 0%, var(--bg-panel) 48%);
+}
+
+.programs-lead {
+  margin: 0 0 1rem;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+
+.programs-field {
+  margin: 0 0 1.1rem;
+  padding: 0.95rem 1.05rem;
+  border-radius: var(--radius-ui);
+  background: rgba(0, 0, 0, 0.22);
+  border: 1px solid rgba(59, 158, 255, 0.18);
+}
+
+.programs-field-label {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #7ec8ff;
+}
+
+.programs-field p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.62;
+  color: #d4d4d4;
+}
+
+.programs-quote {
+  margin: 0 0 1.15rem;
+  padding: 0.85rem 1rem 0.85rem 0.95rem;
+  border-left: 3px solid rgba(59, 158, 255, 0.55);
+  background: rgba(59, 158, 255, 0.06);
+  border-radius: 0 var(--radius-ui) var(--radius-ui) 0;
+}
+
+.programs-quote p {
+  margin: 0;
+  font-size: 0.86rem;
+  line-height: 1.62;
+  color: #c8c8c8;
+}
+
+.programs-quote cite {
+  display: block;
+  margin-top: 0.55rem;
+  font-size: 0.74rem;
+  font-style: normal;
+  color: var(--text-muted);
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.program-card {
+  padding: 0.95rem 1rem;
+  border-radius: var(--radius-ui);
+  background: rgba(0, 0, 0, 0.18);
+  border: 1px solid var(--border);
+}
+
+.program-card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--heading);
+}
+
+.program-card p {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.programs-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem 1rem;
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.programs-cta .btn {
+  flex: 1 1 12rem;
+  max-width: 100%;
+}
+
+@media (max-width: 820px) {
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Word cloud playground */
 .wc-play-lead {
   margin: 0 0 1rem;
