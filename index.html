@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="assets/app-icon.png?v=5" type="image/png" />
-  <link rel="stylesheet" href="styles.css?v=81" />
+  <link rel="stylesheet" href="styles.css?v=82" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -129,7 +129,7 @@
             "name": "Vibe-Talk과 Vibe-Loom이란?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Vibe-Talk은 대화형 분석 도우미, Vibe-Loom은 논문·보고서 서술 직조를 돕는 선택 AI 기능입니다. 본인 API 키(BYOK)로 사용하며, 핵심 텍스트마이닝은 API 없이 로컬 R로 실행됩니다."
+              "text": "Vibe-Talk은 대화형 분석 도우미, Vibe-Loom은 논문·보고서 서술 직조를 돕는 선택 AI 기능입니다. 마이크 음성 입력(받아쓰기)도 지원합니다. 본인 API 키(BYOK)로 사용하며, 핵심 텍스트마이닝은 API 없이 로컬 R로 실행됩니다."
             }
           },
           {
@@ -177,7 +177,7 @@
             "name": "AI·API 키가 꼭 필요한가요?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "아니요. 핵심 텍스트마이닝은 API 키 없이 로컬 R로 실행됩니다. Vibe-Talk·Vibe-Loom 등 AI 기능은 선택이며 사용 시 본인 API 키가 필요합니다."
+              "text": "아니요. 핵심 텍스트마이닝은 API 키 없이 로컬 R로 실행됩니다. Vibe-Talk·Vibe-Loom·마이크 음성은 선택이며, 앱 API 설정에서 Upstage Solar(채팅)와 OpenAI Whisper(마이크) 키를 연결합니다."
             }
           },
           {
@@ -333,6 +333,7 @@
           <div class="status-pills" role="list" aria-label="언어·개발 현황">
             <span class="status-pill status-pill-done" role="listitem">한국 개발 · 한국어 UI 완료</span>
             <span class="status-pill status-pill-done" role="listitem" lang="en">English UI ready · footer KO/EN</span>
+            <span class="status-pill status-pill-done" role="listitem">음성 입력 · Vibe-Talk · Vibe-Loom</span>
           </div>
           <ul class="hero-chips">
             <li>교육학 박사 · 지도 경험에서 설계</li>
@@ -436,14 +437,16 @@
             <li><strong>자료 불러오기</strong> — PDF · Excel · CSV · TXT · 여러 PDF 합치기</li>
             <li><strong>버튼 분석 (로컬 R)</strong> — 형태소·단어 빈도 · TF-IDF · 워드클라우드 · LDA · 문서 비교</li>
             <li><strong>사전·전처리</strong> — 불용어·유의어·복합어 반영 후 재분석 · 결과 <code>.vibestat/output/</code></li>
-            <li><strong>선택 AI (BYOK)</strong> — <strong>Vibe-Talk</strong> 대화형 분석 도우미 · <strong>Vibe-Loom</strong> 논문·보고서 직조 보조</li>
+            <li><strong>선택 AI · 음성 (BYOK)</strong> — Vibe-Talk · Vibe-Loom · <strong>마이크</strong> · 앱 <strong>API 설정</strong>에서 Upstage Solar(채팅) + OpenAI Whisper(음성) 키 연결</li>
             <li>내장 교재·F1 Help — 5분 따라하기로 바로 시작</li>
           </ul>
         </div>
       </div>
       <p class="guide-vibe-note">
-        <strong>Vibe-Talk</strong>·<strong>Vibe-Loom</strong>은 본인 API 키로 쓰는 <strong>선택 기능</strong>입니다.
-        핵심 텍스트마이닝은 <strong>API 없이 로컬 R</strong>로 동작합니다.
+        <strong>Vibe-Talk</strong>·<strong>Vibe-Loom</strong>·<strong>마이크 음성</strong>은 <strong>선택</strong>입니다.
+        앱 <strong>API 설정</strong>에서 <strong>Upstage Solar 키</strong>(채팅)와
+        <strong>OpenAI 키</strong>(Whisper·마이크)를 연결한 뒤 Talk·Loom 입력창 <strong>마이크</strong>로 말해 받아쓸 수 있습니다.
+        핵심 텍스트마이닝(빈도·LDA 등)은 <strong>API 없이 로컬 R</strong>입니다.
       </p>
       <p class="guide-next">
         써 보고 싶으시면 <a href="#download">이용 신청</a>
@@ -486,6 +489,20 @@
       <p class="policy-notice">
         공개 무료 다운로드는 <strong>회사 정책에 따라 종료</strong>하였습니다.
         <strong>이메일 신청</strong>하시면 <strong>2026년 9월 30일까지</strong> Windows 설치 안내를 드립니다.
+      </p>
+      <p class="install-caution" role="note">
+        <span class="install-caution-title">⚠ 설치 주의</span>
+        PC·노트북에 <strong>R(R for Windows)</strong>이 이미 설치되어 있으면, VibeStat-Text 내장 R과
+        <strong>충돌·오류</strong>가 날 수 있습니다.
+        <strong>최초 설치 전</strong> Windows <strong>「설정 → 앱 → 설치된 앱」</strong>에서 R을
+        <strong>제거</strong>한 뒤 VibeStat-Text를 설치하세요. (RStudio·Posit만 있고 R 본체가 없으면 그대로 진행해도 됩니다.)
+        <br /><br />
+        R을 제거한 뒤 <strong>첫 실행</strong>하면 앱이 <strong>인터넷에서 R과 필요 패키지를 자동으로 받아 설치</strong>합니다.
+        R을 따로 깔 필요는 없지만, <strong>최초 1회는 수 분</strong> 걸릴 수 있습니다. LIVE LOG·화면을 지켜보세요.
+        <br /><br />
+        <strong>설치 후에도 오류</strong>가 나면 <strong>VibeStat-Text</strong>와 <strong>R</strong>을
+        <strong>전부 삭제</strong>한 다음, 처음부터 <strong>다시 설치</strong>하세요.
+        (두 번째 설치·업데이트만 할 때는 보통 문제 없습니다.)
       </p>
       <p class="download-recommend">
         아래 버튼으로 <strong>이메일 신청</strong>을 보내 주세요. 학과·학번은 받지 않습니다.
@@ -625,6 +642,9 @@
             </p>
             <ul class="intro-list">
               <li>Windows 10/11 · <strong>최초 설치 시 인터넷 연결 필요</strong></li>
+              <li><strong>최초 설치 전</strong> — PC에 <strong>R(R for Windows)</strong>이 있으면 <strong>제거 후</strong> 설치 (내장 R과 충돌 방지)</li>
+              <li><strong>첫 실행</strong> — R·패키지를 앱이 <strong>자동 다운로드·설치</strong> · <strong>최초 1회 수 분</strong> · 인터넷 필요</li>
+              <li><strong>설치 후 오류</strong> — <strong>VibeStat-Text</strong>와 <strong>R</strong>을 <strong>전부 삭제</strong> 후 처음부터 재설치</li>
               <li>내장 R 엔진 — API 키 없이 핵심 텍스트마이닝 · AI는 선택(BYOK)</li>
               <li><strong>이메일로 이용 신청</strong> — <strong>2026년 9월 30일까지</strong> 안내 · 개별 설치 안내</li>
               <li>첫 실행 약관 동의 · 바탕 화면 바로 가기 · 인증번호 불필요</li>
@@ -660,7 +680,7 @@
             <ul class="fold-ul">
               <li>사전 관리 — 불용어 · 유의어 · 신조어·복합어 반영 후 재분석</li>
               <li>결과 저장 — <code>.vibestat/output/</code> CSV·이미지</li>
-              <li>선택 AI — Vibe-Talk · Vibe-Loom (본인 API 키)</li>
+              <li>선택 AI — Vibe-Talk · Vibe-Loom · <strong>마이크 음성 입력</strong> (본인 API 키)</li>
             </ul>
           </div>
         </details>
@@ -674,11 +694,39 @@
               <strong>보조</strong>하는 기능입니다. 둘 다 <strong>선택</strong>이며 <strong>본인 API 키(BYOK)</strong>가 필요합니다.
             </p>
             <p>
+              <strong>음성 입력</strong> — 채팅창 <strong>마이크 버튼</strong>으로 말하면 텍스트로 받아씁니다.
+              타이핑 대신 말로 질문·지시할 수 있습니다. 핵심 분석(R 빈도·LDA 등)과는 별개의 <strong>선택 기능</strong>입니다.
+            </p>
+            <p><strong>API 연결 요약</strong> (앱 <strong>API 설정</strong>):</p>
+            <ol class="fold-ol api-setup-steps">
+              <li><strong>AI 채팅</strong> — <a href="https://console.upstage.ai/" target="_blank" rel="noopener noreferrer">Upstage Console</a>에서 API 키 발급 → 앱에 붙여넣기 · 모델 <strong>solar-pro</strong> 권장</li>
+              <li><strong>마이크(Whisper)</strong> — 「<strong>OpenAI 키 별도</strong>」 선택 → <a href="https://platform.openai.com/" target="_blank" rel="noopener noreferrer">OpenAI</a> API 키 입력 (Solar 채팅과 <strong>별도</strong>)</li>
+              <li><strong>저장</strong> → Vibe-Talk·Vibe-Loom에서 마이크 사용 · OpenAI만 채팅·음성 쓰면 <strong>한 키</strong>로 가능</li>
+            </ol>
+            <p>
               <strong>VibeStat-Text</strong>의 본체는 <strong>로컬 R 텍스트마이닝</strong>입니다.
               빈도·워드클라우드·LDA·문서 비교 등 핵심 기능은 <strong>API 없이</strong> PC 안에서 실행됩니다.
               Talk·Loom은 바이브 코딩(스크립트 생성)과 달리, <strong>이미 만든 분석 결과</strong>를 바탕으로
               연구 흐름을 이어 주는 <strong>바이브 R</strong> 경험의 확장입니다.
             </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">음성 입력 · API 연결 (선택)</summary>
+          <div class="fold-a">
+            <p>
+              <strong>빈도·워드클라우드·LDA·문서 비교</strong> 등 핵심 분석은 <strong>API 키 없이</strong> 로컬 R입니다.
+              아래는 <strong>Vibe-Talk · Vibe-Loom · 마이크</strong>만 해당합니다.
+            </p>
+            <ol class="fold-ol api-setup-steps">
+              <li>앱에서 <strong>API 설정</strong>을 엽니다 (상단 메뉴 또는 Vibe-Talk 첫 사용 시).</li>
+              <li><strong>Upstage Solar API 키</strong> — <a href="https://console.upstage.ai/" target="_blank" rel="noopener noreferrer">console.upstage.ai</a> 가입 → API Keys → 키 생성 → 앱에 붙여넣기 · 모델 <strong>solar-pro</strong>.</li>
+              <li><strong>음성(마이크)</strong> — 「음성」에서 <strong>OpenAI 키 별도 (Whisper)</strong> 선택 → OpenAI API 키 입력.
+                Solar로 채팅할 때 Whisper는 <strong>OpenAI 키가 따로</strong> 필요합니다.</li>
+              <li><strong>저장하고 사용</strong> → Talk·Loom 입력창 <strong>마이크</strong> 버튼 → 말하면 텍스트로 받아쓰기.</li>
+            </ol>
+            <p class="fold-note">OpenAI만 LLM·음성 모두 쓰는 경우 한 OpenAI 키로 채팅·Whisper를 함께 쓸 수 있습니다. 음성을 쓰지 않으면 「사용 안 함(타이핑만)」을 선택하세요.</p>
           </div>
         </details>
 
@@ -693,6 +741,13 @@
               <div><dt>사용 목적</dt><dd>연구 · 수업 · 기타</dd></div>
             </dl>
             <p>이메일 신청 시 <strong>2026년 9월 30일까지</strong> Windows 설치 안내를 드립니다.</p>
+            <p class="install-caution" role="note">
+              <span class="install-caution-title">⚠ 설치 주의</span>
+              이미 <strong>R</strong>이 설치된 노트북·PC에는 <strong>R 제거 후</strong> VibeStat-Text를 설치하세요.
+              <strong>첫 실행</strong> 시 R·패키지를 앱이 자동으로 받아 설치하므로 <strong>최초 1회는 수 분</strong> 걸릴 수 있습니다.
+              <strong>설치 후에도 오류</strong>가 나면 <strong>VibeStat-Text</strong>와 <strong>R</strong>을
+              <strong>전부 삭제</strong>한 뒤 처음부터 <strong>다시 설치</strong>하세요.
+            </p>
             <p>국내 유통·파트너 검토 중 — 교육·출판·기관 사업 관심 업체는 <a href="mailto:hyc6999@gmail.com">이메일 문의</a></p>
           </div>
         </details>
@@ -963,6 +1018,7 @@
             <p>
               <strong>Vibe-Talk</strong> — 대화형 분석 도우미.
               <strong>Vibe-Loom</strong> — 논문·보고서 서술·직조 보조.
+              <strong>마이크 음성 입력</strong> — 말하면 받아쓰기(OpenAI Whisper · 선택).
               둘 다 <strong>선택 AI</strong>(본인 API 키)이며, 핵심 텍스트마이닝은 <strong>로컬 R</strong>로 API 없이 실행됩니다.
             </p>
           </div>
@@ -1073,7 +1129,9 @@
           <div class="fold-a">
             <p>
               <strong>아니요.</strong> 핵심 텍스트마이닝은 <strong>API 키 없이</strong> 로컬 R로 실행됩니다.
-              Vibe-Talk·Vibe-Loom 등 AI 기능은 <strong>선택</strong>이며, 사용 시 본인 API 키(BYOK)가 필요합니다.
+              <strong>Vibe-Talk · Vibe-Loom · 마이크</strong>는 선택이며, 앱 <strong>API 설정</strong>에서
+              <strong>Upstage Solar</strong>(채팅)와 <strong>OpenAI Whisper</strong>(마이크) 키를 연결합니다.
+              자세한 순서는 <a href="#more">자세히 보기 → 음성 입력 · API 연결</a>을 참고하세요.
             </p>
           </div>
         </details>

@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="../assets/app-icon.png?v=5" type="image/png" />
-  <link rel="stylesheet" href="../styles.css?v=81" />
+  <link rel="stylesheet" href="../styles.css?v=82" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -99,7 +99,7 @@
             "name": "What are Vibe-Talk and Vibe-Loom?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Vibe-Talk is a conversational analysis assistant; Vibe-Loom helps weave paper and report drafts. Both are optional AI features (your API key). Core text mining runs offline with built-in R."
+              "text": "Vibe-Talk is a conversational analysis assistant; Vibe-Loom helps weave paper and report drafts. Optional mic voice input (Whisper) is supported. Connect Upstage Solar (chat) and OpenAI Whisper (mic) in the app API settings. Core text mining runs offline with built-in R."
             }
           },
           {
@@ -131,7 +131,7 @@
             "name": "Is an API key required?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No for core text mining. Vibe-Talk and Vibe-Loom are optional and require your own API key (BYOK)."
+              "text": "No for core text mining. Optional Vibe-Talk, Vibe-Loom, and mic voice require your own API keys in the app API settings: Upstage Solar for chat and OpenAI Whisper for the microphone."
             }
           },
           {
@@ -247,7 +247,8 @@
           <p class="hero-audience"><strong>Built-in R engine</strong> — run word frequency, word clouds, and LDA with buttons, not scripts</p>
           <div class="status-pills" role="list" aria-label="Language status">
             <span class="status-pill status-pill-done" role="listitem">Made in Korea · Korean UI ready</span>
-            <span class="status-pill status-pill-done" role="listitem">English UI ready · footer KO/EN</span>
+            <span class="status-pill status-pill-done" role="listitem" lang="en">English UI ready · footer KO/EN</span>
+            <span class="status-pill status-pill-done" role="listitem">Voice input · Vibe-Talk · Vibe-Loom</span>
           </div>
           <ul class="hero-chips">
             <li>Designed by Ed.D. scholar</li>
@@ -350,13 +351,15 @@
             <li><strong>Load data</strong> — PDF · Excel · CSV · TXT · merge PDFs</li>
             <li><strong>Button analysis (local R)</strong> — morphology · frequency · TF-IDF · word cloud · LDA · doc compare</li>
             <li><strong>Dictionary &amp; preprocess</strong> — stopwords, synonyms, phrases · outputs in <code>.vibestat/output/</code></li>
-            <li><strong>Optional AI (BYOK)</strong> — <strong>Vibe-Talk</strong> conversational assistant · <strong>Vibe-Loom</strong> draft weaving for papers &amp; reports</li>
+            <li><strong>Optional AI · voice (BYOK)</strong> — <strong>Vibe-Talk</strong> · <strong>Vibe-Loom</strong> · <strong>mic</strong> · connect <strong>Upstage Solar</strong> (chat) + <strong>OpenAI Whisper</strong> (voice) in app <strong>API settings</strong></li>
             <li>Built-in tutorial · F1 Help — start in about five minutes</li>
           </ul>
         </div>
       </div>
       <p class="guide-vibe-note">
-        <strong>Vibe-Talk</strong> and <strong>Vibe-Loom</strong> are <strong>optional</strong> (your API key).
+        <strong>Vibe-Talk</strong>, <strong>Vibe-Loom</strong>, and <strong>mic voice</strong> are <strong>optional</strong>.
+        In the app <strong>API settings</strong>, connect an <strong>Upstage Solar key</strong> (chat) and
+        an <strong>OpenAI key</strong> (Whisper · mic), then use the <strong>microphone</strong> in Talk/Loom to dictate.
         Core text mining runs <strong>offline with built-in R</strong> — no API key required.
       </p>
       <p class="guide-next">
@@ -401,6 +404,19 @@
         Public free download has <strong>ended</strong>.
         Apply by <strong>email</strong> and we send Windows install instructions <strong>through September 30, 2026</strong>.
         <strong>English UI is ready</strong> — toggle EN in the app footer after install.
+      </p>
+      <p class="install-caution" role="note">
+        <span class="install-caution-title">⚠ Install caution</span>
+        If <strong>R for Windows</strong> is already on your PC, it may <strong>conflict</strong> with VibeStat-Text’s bundled R and cause errors.
+        <strong>Before your first install</strong>, uninstall R from <strong>Settings → Apps → Installed apps</strong>, then install VibeStat-Text.
+        (Posit/RStudio alone without a separate R install is usually fine.)
+        <br /><br />
+        On <strong>first launch</strong>, the app <strong>automatically downloads and installs R and required packages</strong> from the internet.
+        You do not install R separately, but the <strong>first run may take several minutes</strong>. Keep the app open and watch LIVE LOG.
+        <br /><br />
+        If errors <strong>persist after install</strong>, <strong>uninstall VibeStat-Text and R completely</strong>, then
+        <strong>install again from scratch</strong>.
+        (Routine updates or second installs are usually unaffected.)
       </p>
       <p class="download-recommend">
         Use the button below to send your application. We ask for your <strong>affiliation</strong> and <strong>research field</strong> — no student ID required.
@@ -518,6 +534,9 @@
             </p>
             <ul class="intro-list">
               <li>Windows 10/11 · <strong>internet required for first install</strong></li>
+              <li><strong>Before first install</strong> — if <strong>R for Windows</strong> is installed, <strong>uninstall R first</strong> (avoids conflict with bundled R)</li>
+              <li><strong>First launch</strong> — app <strong>auto-downloads R and packages</strong> · <strong>several minutes on first run</strong> · internet required</li>
+              <li><strong>Errors after install</strong> — <strong>uninstall VibeStat-Text and R completely</strong>, then reinstall from scratch</li>
               <li>Built-in R — core mining without API key · AI optional (BYOK)</li>
               <li><strong>Apply by email</strong> — <strong>through Sep 30, 2026</strong> · individual install instructions</li>
               <li>First-run terms · desktop shortcut · no activation code</li>
@@ -534,7 +553,7 @@
               <li>Word clouds · LDA topics · network graphs · document comparison</li>
               <li>Dictionary manager — stopwords, synonyms, phrases; re-run analysis</li>
               <li>Outputs saved under <code>.vibestat/output/</code></li>
-              <li>Optional AI — Vibe-Talk · Vibe-Loom (your API key, BYOK)</li>
+              <li>Optional AI — Vibe-Talk · Vibe-Loom · <strong>mic voice</strong> (your API keys)</li>
             </ul>
           </div>
         </details>
@@ -548,10 +567,38 @@
               Both are <strong>optional</strong> and require <strong>your API key (BYOK)</strong>.
             </p>
             <p>
+              <strong>Voice input</strong> — use the chat <strong>microphone button</strong> to dictate text.
+              Speak questions or instructions instead of typing. Separate from core R analysis (frequency, LDA, etc.).
+            </p>
+            <p><strong>API setup (summary)</strong> — open app <strong>API settings</strong>:</p>
+            <ol class="fold-ol api-setup-steps">
+              <li><strong>AI chat</strong> — get an API key from <a href="https://console.upstage.ai/" target="_blank" rel="noopener noreferrer">Upstage Console</a> → paste in the app · model <strong>solar-pro</strong> recommended</li>
+              <li><strong>Mic (Whisper)</strong> — choose <strong>Separate OpenAI key</strong> → paste an <a href="https://platform.openai.com/" target="_blank" rel="noopener noreferrer">OpenAI</a> API key (separate from Solar chat)</li>
+              <li><strong>Save</strong> → use the mic in Talk/Loom · if you use OpenAI for both chat and voice, <strong>one key</strong> can cover both</li>
+            </ol>
+            <p>
               Core text mining runs <strong>locally with built-in R</strong> — no API key.
               Unlike Vibe Coding (script generation), Talk and Loom extend the <strong>Vibe R</strong> workflow
               after you have reproducible outputs from button-driven analysis.
             </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">Voice input · API setup (optional)</summary>
+          <div class="fold-a">
+            <p>
+              <strong>Frequency · word clouds · LDA · document comparison</strong> run <strong>without any API key</strong> on local R.
+              The steps below apply only to <strong>Vibe-Talk · Vibe-Loom · microphone</strong>.
+            </p>
+            <ol class="fold-ol api-setup-steps">
+              <li>Open <strong>API settings</strong> in the app (top menu or when you first use Vibe-Talk).</li>
+              <li><strong>Upstage Solar API key</strong> — sign up at <a href="https://console.upstage.ai/" target="_blank" rel="noopener noreferrer">console.upstage.ai</a> → API Keys → create a key → paste in the app · model <strong>solar-pro</strong>.</li>
+              <li><strong>Voice (mic)</strong> — under voice, choose <strong>Separate OpenAI key (Whisper)</strong> → enter your OpenAI API key.
+                When using Solar for chat, Whisper needs a <strong>separate OpenAI key</strong>.</li>
+              <li><strong>Save and use</strong> → <strong>microphone</strong> button in Talk/Loom → speak to dictate text.</li>
+            </ol>
+            <p class="fold-note">If you use OpenAI for both LLM chat and voice, one OpenAI key can cover both. Choose “Off (typing only)” if you do not need voice.</p>
           </div>
         </details>
 
@@ -566,6 +613,12 @@
               <div><dt>Intended use</dt><dd>Research · teaching · other</dd></div>
             </dl>
             <p>After you apply by email, we send Windows install instructions <strong>through September 30, 2026</strong>.</p>
+            <p class="install-caution" role="note">
+              <span class="install-caution-title">⚠ Install caution</span>
+              Uninstall existing <strong>R for Windows</strong> before your first VibeStat-Text install if R is already on the PC.
+              On <strong>first launch</strong>, the app auto-downloads R and packages — allow <strong>several minutes</strong> and keep internet connected.
+              If errors <strong>persist after install</strong>, remove <strong>both VibeStat-Text and R</strong>, then reinstall from scratch.
+            </p>
             <p>For licensing or distribution partnership: <a href="mailto:hyc6999@gmail.com">email us</a></p>
           </div>
         </details>
@@ -801,7 +854,8 @@
             <p>
               <strong>Vibe-Talk</strong> — conversational analysis assistant.
               <strong>Vibe-Loom</strong> — paper/report drafting support.
-              Optional AI (your key); core mining runs <strong>offline with built-in R</strong>.
+              <strong>Mic voice</strong> — optional dictation (OpenAI Whisper).
+              Optional AI (your keys); core mining runs <strong>offline with built-in R</strong>.
             </p>
           </div>
         </details>
@@ -880,7 +934,9 @@
           <div class="fold-a">
             <p>
               <strong>No</strong> for core text mining — runs offline with built-in R.
-              Optional AI (Vibe-Talk, Vibe-Loom) requires <strong>your own</strong> API key (BYOK).
+              Optional <strong>Vibe-Talk · Vibe-Loom · mic voice</strong> need your keys in app <strong>API settings</strong>:
+              <strong>Upstage Solar</strong> (chat) and <strong>OpenAI Whisper</strong> (microphone).
+              See <a href="#more">Learn more → Voice input · API setup</a>.
             </p>
           </div>
         </details>
