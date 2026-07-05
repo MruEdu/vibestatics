@@ -1,25 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="VibeStatics">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="VibeStatics">
   <defs>
-    <linearGradient id="mark-ring" x1="18" y1="12" x2="102" y2="108" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#9a8550"/>
-      <stop offset="45%" stop-color="#7a6840"/>
-      <stop offset="100%" stop-color="#5c4f32"/>
+    <linearGradient id="vs-wave" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2dd4bf" />
+      <stop offset="100%" stop-color="#38bdf8" />
     </linearGradient>
-    <linearGradient id="mark-shine" x1="30" y1="20" x2="90" y2="100" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#b8a066" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#5c4f32" stop-opacity="0"/>
+    <linearGradient id="vs-bar" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#14b8a6" />
     </linearGradient>
   </defs>
-  <circle cx="60" cy="60" r="54" fill="url(#mark-ring)"/>
-  <circle cx="60" cy="60" r="54" fill="url(#mark-shine)"/>
-  <circle cx="60" cy="60" r="54" fill="none" stroke="#4a4030" stroke-width="1.2" opacity="0.6"/>
-  <g fill="none" stroke="#161410" stroke-width="2" stroke-linecap="round">
-    <ellipse cx="60" cy="60" rx="22" ry="10" transform="rotate(0 60 60)"/>
-    <ellipse cx="60" cy="60" rx="22" ry="10" transform="rotate(60 60 60)"/>
-    <ellipse cx="60" cy="60" rx="22" ry="10" transform="rotate(120 60 60)"/>
-  </g>
-  <circle cx="60" cy="60" r="3.5" fill="#161410"/>
-  <circle cx="82" cy="60" r="2.2" fill="#161410"/>
-  <circle cx="49" cy="41" r="2" fill="#161410"/>
-  <circle cx="49" cy="79" r="2" fill="#161410"/>
+  <!-- Vibe: voice / flow wave -->
+  <path
+    d="M8 32c4-10 8-10 12 0s8 10 12 0"
+    fill="none"
+    stroke="url(#vs-wave)"
+    stroke-width="2.4"
+    stroke-linecap="round"
+  />
+  <path
+    d="M8 40c3-6 6-6 9 0s6 6 9 0"
+    fill="none"
+    stroke="url(#vs-wave)"
+    stroke-width="2"
+    stroke-linecap="round"
+    opacity="0.72"
+  />
+  <path
+    d="M8 24c3-6 6-6 9 0s6 6 9 0"
+    fill="none"
+    stroke="url(#vs-wave)"
+    stroke-width="2"
+    stroke-linecap="round"
+    opacity="0.72"
+  />
+  <!-- Statics: histogram bars -->
+  <rect x="40" y="28" width="5" height="16" rx="1.5" fill="url(#vs-bar)" />
+  <rect x="47.5" y="22" width="5" height="22" rx="1.5" fill="url(#vs-bar)" />
+  <rect x="55" y="31" width="5" height="13" rx="1.5" fill="url(#vs-bar)" opacity="0.88" />
+  <!-- VS hint: wave meets bars -->
+  <circle cx="34" cy="32" r="2.2" fill="#5eead4" opacity="0.95" />
 </svg>
