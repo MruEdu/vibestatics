@@ -15,22 +15,8 @@
 
   var betaBtn = document.getElementById('btn-beta-apply');
   if (betaBtn) {
-    betaBtn.href = isKo
-      ? mailto(
-          'VibeStat-Text 이용 신청',
-          '안녕하세요. VibeStat-Text 이용 신청합니다.\n\n' +
-            '이름:\n소속 (대학·연구소·기관 등):\n전공·연구 분야:\n연락처:\n회신 이메일:\n\n' +
-            '사용 목적 (연구·수업·기타):\n간단한 코멘트 (선택):\n\n' +
-            '※ 2026년 9월 30일까지 이용 안내를 요청합니다.\n',
-        )
-      : mailto(
-          'VibeStat-Text Application',
-          'Hello. I would like to apply to use VibeStat-Text.\n\n' +
-            'Name:\nAffiliation (university, institute, organization):\nResearch field:\nPhone:\nReply email:\n\n' +
-            'Intended use (research, teaching, other):\nComments (optional):\n\n' +
-            'English UI beta tester (optional):\n\n' +
-            'I understand install guidance is provided through September 30, 2026.\n',
-        );
+    betaBtn.hidden = true;
+    betaBtn.setAttribute('aria-hidden', 'true');
   }
 
   var licenseSubject = isKo
