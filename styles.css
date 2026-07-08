@@ -2004,6 +2004,29 @@ body {
   color: var(--muted);
 }
 
+.video-spot .btn .btn-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.video-spot .yt-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.35rem;
+  height: 0.9rem;
+  padding: 0 0.2rem 0 0.28rem;
+  border-radius: 3px;
+  background: #c4302b;
+  color: #fff;
+  font-size: 0.52rem;
+  line-height: 1;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
 .video-spot .demo-self-made-note {
   max-width: 36rem;
   margin: 0.5rem auto 0;
