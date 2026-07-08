@@ -2006,11 +2006,14 @@ body {
 
 .video-spot .demo-flow-line {
   max-width: 36rem;
-  margin: 0.65rem auto 0.35rem;
+  margin: 0.85rem auto 1.1rem;
+  padding: 0.65rem 0.75rem;
   font-size: 0.95rem;
   line-height: 1.5;
   text-align: center;
   color: var(--text);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .video-spot .demo-flow-line a {
