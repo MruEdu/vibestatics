@@ -1981,6 +1981,46 @@ body {
   padding-bottom: 1.15rem;
 }
 
+.video-spot .demo-duo-subtitle {
+  max-width: 36rem;
+  margin: 0.85rem auto 0.45rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--heading);
+  text-align: center;
+}
+
+.video-spot .demo-riss-btn {
+  max-width: 36rem;
+  margin: 0 auto 0.5rem;
+}
+
+.video-spot .demo-riss-lead {
+  max-width: 36rem;
+  margin: 0 auto 0.55rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  text-align: center;
+  color: var(--muted);
+}
+
+.video-spot .demo-flow-line {
+  max-width: 36rem;
+  margin: 0.65rem auto 0.35rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--text);
+}
+
+.video-spot .demo-flow-line a {
+  text-decoration: none;
+}
+
+.video-spot .demo-flow-line a:hover {
+  text-decoration: underline;
+}
+
 .demo-duo-header {
   text-align: center;
   margin-bottom: 1.1rem;
