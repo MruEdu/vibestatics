@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="../assets/app-icon.png?v=5" type="image/png" />
-  <link rel="stylesheet" href="../styles.css?v=87" />
+  <link rel="stylesheet" href="../styles.css?v=91" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -62,7 +62,7 @@
         "applicationCategory": "EducationalApplication",
         "operatingSystem": "Windows 10, Windows 11",
         "inLanguage": ["ko", "en"],
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW", "description": "Application by email · guidance through Sep 30, 2026" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW", "description": "7.7.7-free-trial 2nd release · free until Sep 30, 2026 · formal license inquiry" },
         "description": "Designed by Ed.D. from dissertation and graduate text-mining supervision. Word clouds, LDA, document comparison, Vibe-Talk, Vibe-Loom. Korean and English UI ready for research and teaching.",
         "featureList": [
           "Document and corpus text analysis",
@@ -99,7 +99,7 @@
             "name": "What are Vibe-Talk and Vibe-Loom?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Vibe-Talk is a conversational analysis assistant; Vibe-Loom helps weave paper and report drafts. Optional mic voice input (Whisper) is supported. Connect Upstage Solar (chat) and OpenAI Whisper (mic) in the app API settings. Core text mining runs offline with built-in R."
+              "text": "Vibe-Talk is a conversational analysis assistant; Vibe-Loom helps weave paper and report drafts. Both are optional (BYOK). Core text mining runs offline with built-in R. Mic voice input (OpenAI Whisper) is under development."
             }
           },
           {
@@ -131,7 +131,7 @@
             "name": "Is an API key required?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No for core text mining. Optional Vibe-Talk, Vibe-Loom, and mic voice require your own API keys in the app API settings: Upstage Solar for chat and OpenAI Whisper for the microphone."
+              "text": "No for core text mining. Optional Vibe-Talk and Vibe-Loom use your Upstage Solar (chat) key in app API settings. Mic voice input (OpenAI Whisper) is under development."
             }
           },
           {
@@ -171,7 +171,7 @@
             "name": "How do I apply to use VibeStat-Text?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The VibeStat-Text personal trial distribution closed in July 2026. Thank you for your interest and support. For formal licenses, institutions, workshops, or lectures, contact us via vibestatics.com/en or hyc6999@gmail.com."
+              "text": "VibeStat-Text 7.7.7-free-trial 2nd preview is redistributed free for individual researchers until Sep 30, 2026. Initial code 7777. It fixes issues found in the 1st trial. Ask about errors and usage in the Kakao open chat; share reviews and experiences. Free lectures for chat members are being prepared. For formal licenses, institutions, workshops, or lectures, contact vibestatics.com/en or hyc6999@gmail.com."
             }
           },
           {
@@ -225,12 +225,44 @@
       <a class="app-bar-cta app-bar-cta-ghost" href="../" hreflang="ko" lang="ko">한국어</a>
       <a class="app-bar-cta app-bar-cta-ghost" href="#guide">Guide</a>
       <a class="app-bar-cta app-bar-cta-ghost" href="#faq">FAQ</a>
-      <a class="app-bar-cta" href="#download">Trial notice</a>
+      <a class="app-bar-cta" href="#download">Free download</a>
     </div>
   </header>
 
   <main class="page" id="main">
     <header class="hero">
+      <div class="hero-free-trial" role="region" aria-label="2nd free trial redistribution">
+        <p class="hero-free-trial-kicker">2nd free redistribution</p>
+        <h2>VibeStat-Text 7.7.7-free-trial — 2nd preview free trial</h2>
+        <p>Thank you for your support and error reports.</p>
+        <p>We fixed issues found in the <strong>1st trial</strong> and are redistributing the <strong>2nd trial</strong> build.</p>
+        <p>Anyone may download and share freely with fellow researchers.</p>
+        <p class="hero-free-trial-meta">
+          Valid until: <strong>September 30, 2026</strong> · initial code: <strong>7777</strong>
+        </p>
+        <p class="hero-free-trial-meta">Installer · portable · install guide · user manual included</p>
+        <p class="hero-free-trial-meta">2nd release with fixes from the 1st trial.</p>
+        <div class="hero-free-trial-actions">
+          <a
+            class="hero-free-trial-btn hero-free-trial-btn-primary"
+            href="https://drive.google.com/file/d/1JVbOXAASIC6SsyiZeWQ4Nru7myW7eXS_/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Free trial download</a>
+          <a
+            class="hero-free-trial-btn"
+            href="https://open.kakao.com/o/gbsK4wCi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Open chat · errors · how-to · reviews</a>
+        </div>
+        <p class="hero-free-trial-note hero-free-trial-community">
+          For <strong>error reports and how-to questions</strong>, use the
+          <a href="https://open.kakao.com/o/gbsK4wCi" target="_blank" rel="noopener noreferrer">open chat</a>.
+          <strong>Usage reviews and tips</strong> are welcome.
+          <strong>Free lectures for open-chat members</strong> are being prepared; we will announce first in the chat.
+        </p>
+      </div>
       <div class="hero-grid">
         <div class="hero-copy">
           <p class="hero-brand-ko" lang="ko">바이브스타틱스 · 바이브통계</p>
@@ -248,7 +280,8 @@
           <div class="status-pills" role="list" aria-label="Language status">
             <span class="status-pill status-pill-done" role="listitem">Made in Korea · Korean UI ready</span>
             <span class="status-pill status-pill-done" role="listitem" lang="en">English UI ready · footer KO/EN</span>
-            <span class="status-pill status-pill-done" role="listitem">Voice input · Vibe-Talk · Vibe-Loom</span>
+            <span class="status-pill status-pill-done" role="listitem">Vibe-Talk · Vibe-Loom</span>
+            <span class="status-pill status-pill-soon" role="listitem">Voice input · in development</span>
           </div>
           <ul class="hero-chips">
             <li>Designed by Ed.D. scholar</li>
@@ -257,7 +290,7 @@
             <li>Built-in textbook · Help</li>
             <li class="hero-chip hero-chip-try"><a href="#video" class="hero-chip-link">▶ YouTube demo</a></li>
             <li class="hero-chip"><a href="#download" class="hero-chip-link">English beta welcome</a></li>
-            <li class="hero-chip hero-chip-cta"><a href="#download" class="hero-chip-link">Trial closed</a></li>
+            <li class="hero-chip hero-chip-cta"><a href="#download" class="hero-chip-link">Free download</a></li>
           </ul>
         </div>
         <div class="hero-preview-wrap">
@@ -278,7 +311,7 @@
       <a href="#guide">At a glance</a>
       <a href="#programs">Research · education</a>
       <a href="#origin">Design story</a>
-      <a href="#download">Trial notice</a>
+      <a href="#download">Free download</a>
       <a href="#video">Demo</a>
       <a href="#trust-r">R · Trust</a>
       <a href="#more">Learn more</a>
@@ -352,15 +385,18 @@
             <li><strong>Load data</strong> — PDF · Excel · CSV · TXT · merge PDFs</li>
             <li><strong>Button analysis (local R)</strong> — morphology · frequency · TF-IDF · word cloud · LDA · doc compare</li>
             <li><strong>Dictionary &amp; preprocess</strong> — stopwords, synonyms, phrases · outputs in <code>.vibestat/output/</code></li>
-            <li><strong>Optional AI · voice (BYOK)</strong> — <strong>Vibe-Talk</strong> · <strong>Vibe-Loom</strong> · <strong>mic</strong> · connect <strong>Upstage Solar</strong> (chat) + <strong>OpenAI Whisper</strong> (voice) in app <strong>API settings</strong></li>
+            <li><strong>Optional AI (BYOK)</strong> — <strong>Vibe-Talk</strong> · <strong>Vibe-Loom</strong> · connect <strong>Upstage Solar</strong> (chat) in app <strong>API settings</strong> · <strong>mic voice in development</strong></li>
             <li>Built-in tutorial · F1 Help — start in about five minutes</li>
           </ul>
         </div>
       </div>
       <p class="guide-vibe-note">
-        <strong>Vibe-Talk</strong>, <strong>Vibe-Loom</strong>, and <strong>mic voice</strong> are <strong>optional</strong>.
-        In the app <strong>API settings</strong>, connect an <strong>Upstage Solar key</strong> (chat) and
-        an <strong>OpenAI key</strong> (Whisper · mic), then use the <strong>microphone</strong> in Talk/Loom to dictate.
+        <strong>Vibe-Talk</strong> and <strong>Vibe-Loom</strong> are <strong>optional</strong>.
+        In the app <strong>API settings</strong>, connect an <strong>Upstage Solar key</strong> (chat).
+        <strong>Mic voice input</strong> is <strong>under development</strong> (OpenAI Whisper planned).
+        For <strong>errors · how-to · reviews</strong>, join the
+        <a href="https://open.kakao.com/o/gbsK4wCi" target="_blank" rel="noopener noreferrer">open chat</a>
+        — <strong>free lectures for members</strong> are being prepared.
         Core text mining runs <strong>offline with built-in R</strong> — no API key required.
       </p>
       <p class="guide-next">
@@ -459,23 +495,53 @@
         </a>
         <span>
           <a href="tel:01031056999">010-3105-6999</a>
-          · <a href="https://open.kakao.com/o/gbsK4wCi" target="_blank" rel="noopener noreferrer">Open chat</a>
+          · <a href="https://open.kakao.com/o/gbsK4wCi" target="_blank" rel="noopener noreferrer">Open chat · errors · reviews</a>
         </span>
       </p>
     </section>
 
     <section class="card download" id="download">
       <p class="card-eyebrow">Notice</p>
-      <h2>Trial distribution closed</h2>
-      <p class="download-version">VibeStat-Text personal trial · <strong>closed July 2026</strong></p>
-      <p class="policy-notice policy-notice-closed">
-        <strong>The VibeStat-Text personal trial distribution has ended.</strong>
-        <strong>Thank you</strong> to everyone who tried the app and shared feedback.
-        We are no longer accepting new trial applications or install guidance.
+      <h2>VibeStat-Text 7.7.7-free-trial — 2nd preview free trial</h2>
+      <p class="download-version">2nd preview for individual researchers · <strong>valid until September 30, 2026</strong></p>
+      <p class="policy-notice">
+        In gratitude for your support, we are redistributing the
+        <strong>VibeStat-Text 2nd preview free trial</strong> for individual researchers.
+        Thank you to everyone who used the 1st trial and reported issues.
+        This <strong>2nd trial</strong> fixes errors and instability found in the 1st release.
+        Anyone may download and share freely with fellow researchers.
       </p>
       <p class="trial-closed-banner" role="status">
-        If you already received a trial build, you may continue per the instructions you received.
-        For formal licenses, institutions, or workshops, please use the contact options below.
+        Initial code: <strong>7777</strong>.
+        Valid until <strong>September 30, 2026</strong>. Institutional use requires a formal license.
+      </p>
+      <p class="trial-closed-banner" role="status">
+        This file is the <strong>official build</strong> from VibeStatics Google Drive.
+        After extracting, read the <strong>install guide</strong> and <strong>user manual</strong> first.
+      </p>
+      <a
+        class="btn btn-zip btn-full"
+        href="https://drive.google.com/file/d/1JVbOXAASIC6SsyiZeWQ4Nru7myW7eXS_/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="btn-label">Free trial download</span>
+        <span class="btn-meta">Google Drive · installer + portable · install guide · manual</span>
+      </a>
+      <a
+        class="btn btn-secondary-outline btn-full"
+        href="https://open.kakao.com/o/gbsK4wCi"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="btn-label">Open chat · errors · how-to · reviews</span>
+        <span class="btn-meta">Text mining lab · error reports · how-to · reviews · free lectures coming</span>
+      </a>
+      <p class="community-banner" role="note">
+        For <strong>error reports and how-to questions</strong>, ask in the
+        <a href="https://open.kakao.com/o/gbsK4wCi" target="_blank" rel="noopener noreferrer">Kakao open chat</a>.
+        <strong>Usage reviews and tips</strong> help us improve the next release.
+        <strong>Free lectures for open-chat members</strong> are being prepared; we will announce first in the chat.
       </p>
       <p class="install-caution" role="note">
         <span class="install-caution-title">⚠ Install caution</span>
@@ -499,6 +565,8 @@
       <p class="download-recommend">
         For <strong>formal licenses · institutions · distribution</strong>, use the button below.
         For <strong>workshops · lectures · advisory</strong>, see <a href="#programs">programs</a> or <a href="#contact">contact</a>.
+        For install or analysis questions, use the <a href="https://open.kakao.com/o/gbsK4wCi" target="_blank" rel="noopener noreferrer">open chat</a> for
+        <strong>errors · how-to · reviews</strong>. <strong>Free lectures for chat members</strong> are being prepared.
       </p>
       <a class="btn btn-secondary-outline btn-full" id="btn-license-consult" href="mailto:hyc6999@gmail.com">
         <span class="btn-label">License · distribution partnership</span>
@@ -506,8 +574,23 @@
       </a>
       <p class="download-trust">
         <a href="tel:01031056999">010-3105-6999</a> · <a href="mailto:hyc6999@gmail.com">hyc6999@gmail.com</a>
-        · <a href="https://open.kakao.com/o/gbsK4wCi" target="_blank" rel="noopener noreferrer">Open chat</a>
+        · <a href="https://open.kakao.com/o/gbsK4wCi" target="_blank" rel="noopener noreferrer">Open chat · errors · reviews</a>
       </p>
+    </section>
+
+    <section class="card inquiry inquiry-compact" id="contact">
+      <p class="card-eyebrow">Contact</p>
+      <h2>Individual · institution · lecture</h2>
+      <p class="inquiry-teaser">
+        Researchers, universities, institutions, publishers, distribution partners — <a href="mailto:hyc6999@gmail.com">email</a>
+        · <a href="https://open.kakao.com/o/gbsK4wCi" target="_blank" rel="noopener noreferrer">open chat</a>
+        (errors · how-to · reviews · free lectures for members coming)
+      </p>
+      <div class="inquiry-actions">
+        <a class="inquiry-btn inquiry-btn-purchase" href="mailto:hyc6999@gmail.com">License · distribution</a>
+        <a class="inquiry-btn inquiry-btn-lecture" href="mailto:hyc6999@gmail.com?subject=VibeStat-Text%20lecture%20inquiry">Workshop · lecture</a>
+        <a class="inquiry-btn inquiry-btn-community" href="https://open.kakao.com/o/gbsK4wCi" target="_blank" rel="noopener noreferrer">Open chat · errors · how-to · reviews</a>
+      </div>
     </section>
 
     <section class="card expand-hub" id="more">
@@ -614,7 +697,7 @@
               <li><strong>Errors after install</strong> — <strong>uninstall VibeStat-Text and R completely</strong>, then reinstall from scratch</li>
               <li><strong>Security permissions</strong> — right-click Setup/exe → <strong>Properties → Security → Edit</strong> → your account → check <strong>Full control · Modify · Read &amp; execute · Read · Write</strong> under Allow · normal on <strong>first install</strong> (not a PC fault)</li>
               <li>Built-in R — core mining without API key · AI optional (BYOK)</li>
-              <li><strong>Trial distribution</strong> — <strong>closed July 2026</strong> · no new applications</li>
+              <li><strong>2nd free trial</strong> — fixes from 1st trial · share freely · valid until Sep 30, 2026</li>
               <li>First-run terms · desktop shortcut · no activation code</li>
             </ul>
           </div>
@@ -629,7 +712,7 @@
               <li>Word clouds · LDA topics · network graphs · document comparison</li>
               <li>Dictionary manager — stopwords, synonyms, phrases; re-run analysis</li>
               <li>Outputs saved under <code>.vibestat/output/</code></li>
-              <li>Optional AI — Vibe-Talk · Vibe-Loom · <strong>mic voice</strong> (your API keys)</li>
+              <li>Optional AI — Vibe-Talk · Vibe-Loom · <strong>mic voice (in development)</strong></li>
             </ul>
           </div>
         </details>
@@ -643,14 +726,13 @@
               Both are <strong>optional</strong> and require <strong>your API key (BYOK)</strong>.
             </p>
             <p>
-              <strong>Voice input</strong> — use the chat <strong>microphone button</strong> to dictate text.
-              Speak questions or instructions instead of typing. Separate from core R analysis (frequency, LDA, etc.).
+              <strong>Voice input</strong> (in development) — dictation via the chat <strong>microphone button</strong> is being prepared (OpenAI Whisper · optional).
+              Separate from core R analysis (frequency, LDA, etc.).
             </p>
             <p><strong>API setup (summary)</strong> — open app <strong>API settings</strong>:</p>
             <ol class="fold-ol api-setup-steps">
               <li><strong>AI chat</strong> — get an API key from <a href="https://console.upstage.ai/" target="_blank" rel="noopener noreferrer">Upstage Console</a> → paste in the app · model <strong>solar-pro</strong> recommended</li>
-              <li><strong>Mic (Whisper)</strong> — choose <strong>Separate OpenAI key</strong> → paste an <a href="https://platform.openai.com/" target="_blank" rel="noopener noreferrer">OpenAI</a> API key (separate from Solar chat)</li>
-              <li><strong>Save</strong> → use the mic in Talk/Loom · if you use OpenAI for both chat and voice, <strong>one key</strong> can cover both</li>
+              <li><strong>Mic (Whisper)</strong> (in development) — OpenAI Whisper voice input is being prepared</li>
             </ol>
             <p>
               Core text mining runs <strong>locally with built-in R</strong> — no API key.
@@ -661,28 +743,40 @@
         </details>
 
         <details class="fold-item">
-          <summary class="fold-q">Voice input · API setup (optional)</summary>
+          <summary class="fold-q">Voice input · API setup (optional) (in development)</summary>
           <div class="fold-a">
             <p>
               <strong>Frequency · word clouds · LDA · document comparison</strong> run <strong>without any API key</strong> on local R.
-              The steps below apply only to <strong>Vibe-Talk · Vibe-Loom · microphone</strong>.
+              Below covers <strong>Vibe-Talk · Vibe-Loom</strong> chat setup and <strong>mic voice</strong> (currently <strong>in development</strong>).
             </p>
             <ol class="fold-ol api-setup-steps">
               <li>Open <strong>API settings</strong> in the app (top menu or when you first use Vibe-Talk).</li>
               <li><strong>Upstage Solar API key</strong> — sign up at <a href="https://console.upstage.ai/" target="_blank" rel="noopener noreferrer">console.upstage.ai</a> → API Keys → create a key → paste in the app · model <strong>solar-pro</strong>.</li>
-              <li><strong>Voice (mic)</strong> — under voice, choose <strong>Separate OpenAI key (Whisper)</strong> → enter your OpenAI API key.
-                When using Solar for chat, Whisper needs a <strong>separate OpenAI key</strong>.</li>
-              <li><strong>Save and use</strong> → <strong>microphone</strong> button in Talk/Loom → speak to dictate text.</li>
+              <li><strong>Voice (mic)</strong> (in development) — OpenAI Whisper dictation is being prepared. When ready, you will connect a separate OpenAI key under voice settings.</li>
             </ol>
-            <p class="fold-note">If you use OpenAI for both LLM chat and voice, one OpenAI key can cover both. Choose “Off (typing only)” if you do not need voice.</p>
+            <p class="fold-note">When voice input ships, use the <strong>microphone</strong> button in Talk/Loom to dictate. For now, Vibe-Talk and Vibe-Loom chat (typing) are available.</p>
           </div>
         </details>
 
         <details class="fold-item">
-          <summary class="fold-q">Trial distribution closed</summary>
+          <summary class="fold-q">2nd free trial distribution</summary>
           <div class="fold-a">
             <p>
-              <strong>VibeStat-Text personal trial</strong> applications and install guidance <strong>closed in July 2026</strong>.
+              <strong>VibeStat-Text 7.7.7-free-trial</strong> 2nd preview is redistributed free for individual researchers.
+              It fixes issues found in the 1st trial. Code <strong>7777</strong> · valid until <strong>September 30, 2026</strong>.
+              For <strong>errors · how-to · reviews</strong>, use the
+              <a href="https://open.kakao.com/o/gbsK4wCi" target="_blank" rel="noopener noreferrer">open chat</a>.
+              <strong>Free lectures for members</strong> are being prepared.
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">Trial distribution (archive)</summary>
+          <div class="fold-a">
+            <p>
+              <em>Superseded by the 2nd free trial above.</em>
+              Earlier individual trial applications closed in July 2026; the 2nd build is now available for direct download.
               <strong>Thank you</strong> for trying the app and sharing feedback.
             </p>
             <p>
@@ -933,7 +1027,7 @@
             <p>
               <strong>Vibe-Talk</strong> — conversational analysis assistant.
               <strong>Vibe-Loom</strong> — paper/report drafting support.
-              <strong>Mic voice</strong> — optional dictation (OpenAI Whisper).
+              <strong>Mic voice</strong> (in development) — OpenAI Whisper dictation is being prepared.
               Optional AI (your keys); core mining runs <strong>offline with built-in R</strong>.
             </p>
           </div>
@@ -1013,8 +1107,8 @@
           <div class="fold-a">
             <p>
               <strong>No</strong> for core text mining — runs offline with built-in R.
-              Optional <strong>Vibe-Talk · Vibe-Loom · mic voice</strong> need your keys in app <strong>API settings</strong>:
-              <strong>Upstage Solar</strong> (chat) and <strong>OpenAI Whisper</strong> (microphone).
+              Optional <strong>Vibe-Talk · Vibe-Loom</strong> use your <strong>Upstage Solar</strong> (chat) key in app <strong>API settings</strong>.
+              <strong>Mic voice (OpenAI Whisper)</strong> is <strong>in development</strong>.
               See <a href="#more">Learn more → Voice input · API setup</a>.
             </p>
           </div>
@@ -1046,9 +1140,22 @@
           <summary class="fold-q">How do I apply for the trial?</summary>
           <div class="fold-a">
             <p>
-              <strong>New trial applications closed in July 2026.</strong> Thank you for your support.
-              Word clouds, LDA, and morphology run in the app with <strong>built-in R</strong>.
+              The <strong>2nd preview free trial</strong> is available for direct download until <strong>September 30, 2026</strong>.
+              Initial code <strong>7777</strong>. It fixes issues from the 1st trial.
+              Anyone may <a href="#download">download free</a> and share.
               For formal licenses or programs: <a href="#contact">Contact →</a>
+            </p>
+          </div>
+        </details>
+
+        <details class="fold-item">
+          <summary class="fold-q">Where do I ask about errors, how-to, or share reviews?</summary>
+          <div class="fold-a">
+            <p>
+              Use the <strong>Kakao open chat</strong>
+              (<a href="https://open.kakao.com/o/gbsK4wCi" target="_blank" rel="noopener noreferrer">text mining lab</a>)
+              for <strong>error reports and how-to questions</strong>, and to share <strong>usage reviews and tips</strong>.
+              <strong>Free lectures for open-chat members</strong> are being prepared; we will announce first in the chat.
             </p>
           </div>
         </details>
@@ -1125,7 +1232,7 @@
       </div>
       <p class="footer-lang">
         <a href="../" hreflang="ko" lang="ko">한국어</a> · <a href="#faq">English FAQ</a>
-        · <a href="https://open.kakao.com/o/gbsK4wCi" target="_blank" rel="noopener noreferrer">Open chat</a>
+        · <a href="https://open.kakao.com/o/gbsK4wCi" target="_blank" rel="noopener noreferrer">Open chat · errors · reviews</a>
       </p>
       <a class="footer-inquiry" href="tel:01031056999"><span class="contact-kind contact-kind-inline" aria-hidden="true">T.</span> 010-3105-6999</a>
       · <a class="footer-inquiry" href="mailto:hyc6999@gmail.com">hyc6999@gmail.com · license &amp; lecture</a>

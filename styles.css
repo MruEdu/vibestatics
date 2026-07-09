@@ -1703,6 +1703,32 @@ body {
   background: rgba(148, 163, 184, 0.12);
 }
 
+.community-banner {
+  margin: 0 0 1rem;
+  padding: 0.85rem 1rem;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--text);
+  border: 1px solid rgba(15, 150, 96, 0.45);
+  border-radius: 8px;
+  background: rgba(15, 150, 96, 0.1);
+}
+
+.community-banner strong {
+  color: #6ee7b7;
+}
+
+.hero-free-trial-community {
+  margin-top: 0.65rem !important;
+  line-height: 1.55 !important;
+}
+
+.hero-free-trial-community a {
+  color: #6ee7b7;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .trial-closed-banner {
   margin: 0 0 1rem;
   padding: 0.7rem 0.9rem;
