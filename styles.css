@@ -360,6 +360,30 @@ body {
   background: #0f9660;
 }
 
+.hero-free-trial-btn-ko {
+  color: #ffffff;
+  border-color: #4a7aab;
+  background: #2d5f8f;
+}
+
+.hero-free-trial-btn-ko:hover {
+  color: #ffffff;
+  border-color: #5a8fbf;
+  background: #3570a8;
+}
+
+.hero-free-trial-btn-en {
+  color: #ffffff;
+  border-color: #3d7a5c;
+  background: #0d7a4a;
+}
+
+.hero-free-trial-btn-en:hover {
+  color: #ffffff;
+  border-color: #4a8a68;
+  background: #0f9660;
+}
+
 .hero-free-trial-note {
   margin: 0 !important;
   font-size: 0.8rem !important;
