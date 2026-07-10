@@ -12,6 +12,10 @@
   --accent-muted: rgba(168, 176, 184, 0.12);
   --sky-text: #c8ccd0;
   --sky-link: #a8b0b8;
+  /* 금지: 청색 형광 — UI·본문 강조는 아래 회청·회색만 사용 */
+  --ui-soft: #9aa3ad;
+  --ui-emphasis: #c8ccd0;
+  --ui-strong: #d0d4d8;
   --header-h: 42px;
   --radius-ui: 4px;
   --page-max: 1080px;
@@ -830,7 +834,7 @@ body {
   border-radius: 4px;
   font-size: 0.8rem;
   line-height: 1.55;
-  color: #8ab4d9;
+  color: var(--ui-soft);
   background: rgba(16, 185, 129, 0.06);
   border: 1px solid rgba(16, 185, 129, 0.22);
 }
@@ -952,7 +956,7 @@ body {
   margin-top: 0.35rem;
   font-size: 0.76rem;
   line-height: 1.45;
-  color: #8ab4d9;
+  color: var(--ui-soft);
 }
 
 .install-help-note {
@@ -2236,7 +2240,7 @@ body {
   border-radius: var(--radius-ui);
   font-size: 0.82rem;
   line-height: 1.6;
-  color: #c5dff5;
+  color: var(--text);
   word-break: keep-all;
 }
 
@@ -2251,7 +2255,7 @@ body {
 .wc-guide-view-lead {
   margin: 0 0 0.45rem;
   font-size: 0.9rem;
-  color: #e8f4ff;
+  color: var(--ui-strong);
 }
 
 .wc-guide-view-p {
@@ -2272,7 +2276,7 @@ body {
 .wc-guide-view-close {
   margin: 0 0 0.45rem;
   font-size: 0.78rem;
-  color: #a8c9e8;
+  color: var(--ui-soft);
 }
 
 .wc-guide-view-note {
@@ -2290,7 +2294,7 @@ body {
   font-size: 0.68rem;
   line-height: 1.35;
   text-align: center;
-  color: #a8c9e8;
+  color: var(--ui-soft);
   word-break: keep-all;
 }
 
@@ -2329,7 +2333,7 @@ body {
   list-style: none;
   font-size: 0.82rem;
   line-height: 1.7;
-  color: #b8d9f8;
+  color: var(--ui-emphasis);
 }
 
 .wc-guide-steps-short li {
@@ -2344,7 +2348,7 @@ body {
 .wc-morpho-notice-soft {
   background: rgba(120, 128, 136, 0.06);
   border-color: rgba(120, 128, 136, 0.18);
-  color: #a8c9e8;
+  color: var(--ui-soft);
 }
 
 .wc-morpho-notice-soft strong {
@@ -2356,7 +2360,7 @@ body {
   padding: 0.55rem 0.7rem;
   font-size: 0.78rem;
   line-height: 1.5;
-  color: #b8d9f8;
+  color: var(--ui-emphasis);
   background: rgba(120, 128, 136, 0.1);
   border: 1px solid rgba(120, 128, 136, 0.28);
   border-radius: var(--radius-ui);
@@ -2364,7 +2368,7 @@ body {
 }
 
 .wc-morpho-notice strong {
-  color: #d4ebff;
+  color: var(--ui-strong);
   font-weight: 600;
 }
 
@@ -2416,7 +2420,7 @@ body {
   list-style: none;
   font-size: 0.82rem;
   line-height: 1.65;
-  color: #b8d9f8;
+  color: var(--ui-emphasis);
 }
 
 .wc-guide-steps li {
@@ -2432,7 +2436,7 @@ body {
   margin: 0 0 0.45rem;
   font-size: 0.8rem;
   line-height: 1.5;
-  color: #a8c9e8;
+  color: var(--ui-soft);
 }
 
 .wc-guide-note {
@@ -3007,7 +3011,7 @@ details[open] > .fold-q::after {
 .programs-hub {
   margin-bottom: 1.25rem;
   border-color: rgba(120, 128, 136, 0.22);
-  background: linear-gradient(165deg, rgba(30, 58, 95, 0.35) 0%, var(--bg-panel) 48%);
+  background: linear-gradient(165deg, rgba(120, 128, 136, 0.14) 0%, var(--bg-panel) 48%);
 }
 
 .programs-lead {
@@ -3283,12 +3287,13 @@ details[open] > .fold-q::after {
 
 .wc-action-primary {
   color: #fff;
-  background: #0e639c;
-  border-color: #1177bb;
+  background: #0d7a4a;
+  border-color: #3d7a5c;
 }
 
 .wc-action-primary:hover {
-  background: #1177bb;
+  background: #0f9660;
+  border-color: #4a8a68;
 }
 
 .wc-action-fun {
