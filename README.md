@@ -17,7 +17,7 @@
 | 경로 | 설명 |
 |------|------|
 | `/` | 한국어 랜딩 (SEO · FAQ 접이식) |
-| `/en/` | English intro (Korean UI complete; English UI in development) |
+| `/en/` | English intro · **VibeStat-Text-EN 0.7.7.EN_NEW** trial download |
 
 원본 편집은 `VibeStat-Text/landing/` 에서 하고, 배포 전 이 저장소로 복사합니다.
 
