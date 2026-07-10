@@ -6,7 +6,11 @@
     var link = event.target.closest("a");
     if (!link) return;
 
-    if (link.classList.contains("btn-zip")) {
+    if (
+      link.classList.contains("btn-zip") ||
+      link.classList.contains("btn-download-ko") ||
+      link.classList.contains("btn-download-en")
+    ) {
       gtag("event", "file_download", {
         event_category: "download",
         event_label: "beta_zip",

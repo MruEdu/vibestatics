@@ -21,7 +21,24 @@
   --page-max: 1080px;
 }
 
-/* 본문 링크·강조 — 형광색 대신 부드러운 회청색 (다크 배경 가독성) */
+/* 본문 링크·강조 — 형광색·브라우저 기본 청색 대신 회청색 (다크 배경 가독성) */
+a:any-link:not([class]) {
+  color: var(--sky-link);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: rgba(168, 176, 184, 0.45);
+  text-underline-offset: 2px;
+}
+
+a:any-link:not([class]):hover {
+  color: var(--sky-text);
+  text-decoration-color: rgba(200, 204, 208, 0.65);
+}
+
+a:any-link:not([class]):visited {
+  color: var(--sky-link);
+}
+
 .guide-lead a,
 .guide-next a,
 .inquiry-teaser a,
@@ -36,6 +53,8 @@
 .demo-contact-line a,
 .lang-promo a,
 .footer-lang a,
+.hero-free-trial-note a,
+.hero-free-trial p a:not([class]),
 .card p a:not([class]) {
   color: var(--sky-link);
   font-weight: 500;
@@ -57,6 +76,8 @@
 .demo-contact-line a:hover,
 .lang-promo a:hover,
 .footer-lang a:hover,
+.hero-free-trial-note a:hover,
+.hero-free-trial p a:not([class]):hover,
 .card p a:not([class]):hover {
   color: var(--sky-text);
   text-decoration-color: rgba(200, 204, 208, 0.65);
@@ -525,6 +546,37 @@ body {
   border-color: #4a8a68;
 }
 
+/* 다운로드 버튼 색 구분: 한국어판=파랑 · 영어판=초록 (형광 청색 금지) */
+.hero-chip-cta-ko .hero-chip-link,
+.btn-download-ko {
+  color: #ffffff;
+  font-weight: 600;
+  background: #2d5f8f;
+  border: 1px solid #4a7aab;
+}
+
+.hero-chip-cta-ko .hero-chip-link:hover,
+.btn-download-ko:hover {
+  color: #ffffff;
+  background: #3570a8;
+  border-color: #5a8fbf;
+}
+
+.hero-chip-cta-en .hero-chip-link,
+.btn-download-en {
+  color: #ffffff;
+  font-weight: 600;
+  background: #0d7a4a;
+  border: 1px solid #3d7a5c;
+}
+
+.hero-chip-cta-en .hero-chip-link:hover,
+.btn-download-en:hover {
+  color: #ffffff;
+  background: #0f9660;
+  border-color: #4a8a68;
+}
+
 .hero-preview-wrap {
   display: flex;
   justify-content: center;
@@ -859,6 +911,11 @@ body {
   display: flex;
   width: 100%;
   margin-bottom: 0.25rem;
+}
+
+.btn-download-ko,
+.btn-download-en {
+  text-decoration: none;
 }
 
 .btn-zip {
@@ -1727,10 +1784,16 @@ body {
   line-height: 1.55 !important;
 }
 
-.hero-free-trial-community a {
+.hero-free-trial-community a,
+.community-banner a {
   color: #6ee7b7;
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+.hero-free-trial-community a:hover,
+.community-banner a:hover {
+  color: #8ef0c8;
 }
 
 .trial-closed-banner {
