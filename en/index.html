@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="../assets/app-icon.png?v=5" type="image/png" />
-  <link rel="stylesheet" href="../styles.css?v=95" />
+  <link rel="stylesheet" href="../styles.css?v=96" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -62,7 +62,11 @@
         "applicationCategory": "EducationalApplication",
         "operatingSystem": "Windows 10, Windows 11",
         "inLanguage": ["ko", "en"],
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW", "description": "VibeStat-Text-EN 0.7.7.EN_NEW trial · all features · free until Sep 30, 2026 · formal license inquiry" },
+        "offers": [
+          { "@type": "Offer", "name": "Korean beta edition", "price": "0", "priceCurrency": "KRW", "description": "Free beta · first-run activation code 202606 · installer, textbook, and guides included (instructor textbook excluded) · valid until Sep 30, 2026" },
+          { "@type": "Offer", "name": "Korean formal edition", "price": "90000", "priceCurrency": "KRW", "description": "KRW 90,000 · valid until Sep 30, 2026 · two users · apply by phone +82-10-3105-6999" },
+          { "@type": "Offer", "name": "English trial edition", "price": "0", "priceCurrency": "KRW", "description": "VibeStat-Text-EN 0.7.7.EN_NEW trial · all features · free until Sep 30, 2026" }
+        ],
         "description": "Designed by Ed.D. from dissertation and graduate text-mining supervision. Word clouds, LDA, document comparison, Vibe-Talk, Vibe-Loom. Korean and English UI ready for research and teaching.",
         "featureList": [
           "Document and corpus text analysis",
@@ -168,10 +172,10 @@
           },
           {
             "@type": "Question",
-            "name": "How do I apply to use VibeStat-Text?",
+            "name": "How are the Korean beta and formal editions distributed?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "VibeStat-Text-EN 0.7.7.EN_NEW is the English trial distribution for individual researchers until Sep 30, 2026. All features included. Setup installer recommended. On first launch, accept terms and sync consent to record anonymous install status (Google Sheets). For formal licenses, institutions, workshops, or lectures, contact vibestatics.com/en or hyc6999@gmail.com."
+              "text": "Company policy separates the Korean beta and formal editions. The beta is free and uses first-run activation code 202606. The beta package includes the installer, textbook, and guides; the instructor textbook is excluded. The formal edition costs KRW 90,000, is valid until Sep 30, 2026, and may be used by two people. Apply by phone at +82-10-3105-6999. Instructor textbooks are planned for lecturers who apply."
             }
           },
           {
@@ -231,24 +235,27 @@
 
   <main class="page" id="main">
     <header class="hero">
-      <div class="hero-free-trial" role="region" aria-label="English trial distribution">
-        <p class="hero-free-trial-kicker">English trial release · Korean 2nd preview</p>
-        <h2>VibeStat-Text-EN 0.7.7.EN_NEW — English trial distribution</h2>
+      <div class="hero-free-trial" role="region" aria-label="Korean beta and formal edition policy">
+        <p class="hero-free-trial-kicker">Company policy · Korean beta and formal editions</p>
+        <h2>VibeStat-Text — Korean beta/formal distribution and English trial</h2>
         <p>
-          <strong>English trial operators welcome</strong> — individual researchers may download, try, and share feedback.
-          <strong>All features included</strong> until expiry. Recommended: <strong>Setup installer</strong>
-          (<code>VibeStat-Text-EN-Setup-0.7.7.EN_NEW.exe</code>). Portable exe also included.
-        </p>
-        <p>
-          <strong>Korean edition</strong> 7.7.7-free-trial 2nd preview is on the
-          <a href="../#download" hreflang="ko" lang="ko">Korean page</a> (auth code <strong>7777</strong> on first run).
+          Under company policy, the Korean edition is distributed separately as a <strong>free beta</strong>
+          and a <strong>paid formal edition</strong>.
         </p>
         <p class="hero-free-trial-meta">
-          Valid until: <strong>September 30, 2026, 23:59 KST</strong> (English &amp; Korean trials)
+          <strong>Korean beta:</strong> free · first-run activation code <strong>202606</strong>
+          · valid until September 30, 2026 · TF-IDF, LDA K-scan, and Vibe-Loom locked; Vibe-Talk available
+          · package includes <strong>installer, textbook, and guides</strong> (<strong>instructor textbook excluded</strong>)
         </p>
         <p class="hero-free-trial-meta">
-          English ZIP: Setup · Portable · Installation Guide · User Guide
-          · First launch: terms + sync consent → anonymous install record (Google Sheets)
+          <strong>Korean formal:</strong> <strong>KRW 90,000</strong> · valid until <strong>September 30, 2026</strong>
+          · <strong>two users</strong> · all features · apply by phone <strong>+82-10-3105-6999</strong>
+        </p>
+        <p class="hero-free-trial-meta">
+          <strong>Instructor textbook:</strong> planned for lecturers who apply · phone <strong>+82-10-3105-6999</strong>
+        </p>
+        <p class="hero-free-trial-meta">
+          <strong>English trial:</strong> VibeStat-Text-EN 0.7.7.EN_NEW · all features · free until September 30, 2026
         </p>
         <div class="hero-free-trial-actions">
           <a
@@ -259,21 +266,19 @@
           >English download</a>
           <a
             class="hero-free-trial-btn hero-free-trial-btn-ko"
-            href="https://drive.google.com/file/d/1Zv8jLVtXfd9vzHyI7Bcju9C38nTX1oeF/view?usp=sharing"
+            href="https://drive.google.com/file/d/1WleLxrS-IRw9FvcAcYRSxP0b-CUS5Zor/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             hreflang="ko"
             lang="ko"
-          >Korean download</a>
-          <a
-            class="hero-free-trial-btn"
-            href="mailto:hyc6999@gmail.com?subject=VibeStat-Text-EN%200.7.7.EN_NEW"
-          >License · institutional inquiry</a>
+          >Korean beta download</a>
+          <a class="hero-free-trial-btn" href="tel:+821031056999">Apply for formal edition</a>
+          <a class="hero-free-trial-btn" href="tel:+821031056999">Request instructor textbook</a>
         </div>
         <p class="hero-free-trial-note hero-free-trial-community">
-          For <strong>renewal, full edition, or institutional license</strong>, email
-          <a href="mailto:hyc6999@gmail.com">hyc6999@gmail.com</a>.
-          Trial feedback from <strong>English beta operators</strong> is welcome.
+          Activation code <strong>202606</strong> is entered on the app’s first-run product activation screen.
+          It is not an external AI API key. The Korean beta package includes the installer, textbook, and guides;
+          the <strong>instructor textbook is not included</strong>. Formal-edition and instructor-textbook applications are accepted by phone only.
         </p>
       </div>
       <div class="hero-grid">
@@ -303,7 +308,7 @@
             <li>Built-in textbook · Help</li>
             <li class="hero-chip hero-chip-try"><a href="#video" class="hero-chip-link">▶ RISS · demo</a></li>
             <li class="hero-chip hero-chip-cta-en"><a href="#download" class="hero-chip-link">English download</a></li>
-            <li class="hero-chip hero-chip-cta-ko"><a href="../#download" class="hero-chip-link" hreflang="ko" lang="ko">Korean download</a></li>
+            <li class="hero-chip hero-chip-cta-ko"><a href="../#download" class="hero-chip-link" hreflang="ko" lang="ko">Korean beta download</a></li>
           </ul>
         </div>
         <div class="hero-preview-wrap">
@@ -608,8 +613,32 @@
 
     <section class="card download" id="download">
       <p class="card-eyebrow">Notice</p>
-      <h2>VibeStat-Text-EN 0.7.7.EN_NEW — trial distribution</h2>
-      <p class="download-version">English trial for individual researchers · <strong>valid until September 30, 2026</strong></p>
+      <h2>VibeStat-Text distribution — Korean beta/formal and English trial</h2>
+      <p class="download-version">Company distribution policy · <strong>valid until September 30, 2026</strong></p>
+      <p class="policy-notice">
+        The Korean edition is distributed separately as a <strong>free beta</strong> and a <strong>paid formal edition</strong>.
+        The English trial remains available for individual researchers.
+      </p>
+      <div class="edition-table-wrap">
+        <table class="edition-table">
+          <thead>
+            <tr><th>Item</th><th>Korean beta</th><th>Korean formal</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>Price</th><td><strong>Free</strong></td><td><strong>KRW 90,000</strong></td></tr>
+            <tr><th>Users</th><td>Individual research trial</td><td><strong>Two users</strong></td></tr>
+            <tr><th>Valid through</th><td>September 30, 2026</td><td>September 30, 2026</td></tr>
+            <tr><th>Features</th><td>TF-IDF · LDA K-scan · Vibe-Loom locked · Vibe-Talk available</td><td><strong>All features</strong></td></tr>
+            <tr><th>Delivery</th><td>Google Drive download<br><small>Installer, textbook, and guides included<br>(instructor textbook excluded)</small></td><td>Provided after phone application</td></tr>
+            <tr><th>First run</th><td>Activation code <strong>202606</strong></td><td>Usage information provided to applicants</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="instructor-textbook-notice">
+        <strong>Instructor textbook:</strong> a lecturer edition is planned for instructors who apply.
+        Apply for the formal edition or instructor textbook by phone at
+        <a href="tel:+821031056999"><strong>+82-10-3105-6999</strong></a>.
+      </p>
       <p class="policy-notice">
         <strong>VibeStat-Text-EN 0.7.7.EN_NEW</strong> is the English trial build from VibeStatics for
         <strong>individual researchers</strong>. <strong>All text-mining and AI (BYOK) features are included</strong> until expiry.
@@ -627,17 +656,6 @@
         On <strong>first launch</strong>, accept distribution terms and <strong>sync consent</strong>.
         An anonymous install ID, app version, OS, install method (setup/portable), and timezone may be recorded to verify trial status (Google Sheets).
       </p>
-      <p class="download-cache-notice" role="note">
-        <span class="download-cache-notice-title">Korean download fails or opens an old file? (Updated 2026-07-12)</span>
-        Older trial ZIPs were moved to Google Drive <strong>Trash</strong>.
-        If you kept this page open, your browser or Google account <strong>cookies/cache</strong> may still open an
-        <strong>old link</strong>.
-        Click <strong>Korean download</strong> again, or hard-refresh the
-        <a href="../#download" hreflang="ko" lang="ko">Korean page</a> (<strong>Ctrl+F5</strong>).
-        Official file:
-        <code>open_0712_2VibeStat-Text-SP1_04-docs_0712_04_1330.zip</code>
-        · official Google Drive package
-      </p>
       <a
         class="btn btn-download-en btn-full"
         href="https://drive.google.com/file/d/1rgOI2YuMMpxhPO3rRdHUky1-0p44yR5y/view?usp=sharing"
@@ -649,12 +667,20 @@
       </a>
       <a
         class="btn btn-download-ko btn-full"
-        href="https://drive.google.com/file/d/1Zv8jLVtXfd9vzHyI7Bcju9C38nTX1oeF/view?usp=sharing"
+        href="https://drive.google.com/file/d/1WleLxrS-IRw9FvcAcYRSxP0b-CUS5Zor/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <span class="btn-label">Korean download (VibeStat-Text)</span>
-        <span class="btn-meta">Google Drive · Korean Setup · install guide · user manual · textbook (2026-07-12 · SP1_04)</span>
+        <span class="btn-label">Download Korean beta (Google Drive)</span>
+        <span class="btn-meta">Free · installer, textbook &amp; guides (instructor textbook excluded) · activation code 202606 · until Sep 30, 2026</span>
+      </a>
+      <a class="btn btn-secondary-outline btn-full" href="tel:+821031056999">
+        <span class="btn-label">Apply for Korean formal edition · +82-10-3105-6999</span>
+        <span class="btn-meta">KRW 90,000 · valid until September 30 · two users · all features</span>
+      </a>
+      <a class="btn btn-secondary-outline btn-full" href="tel:+821031056999">
+        <span class="btn-label">Request instructor textbook</span>
+        <span class="btn-meta">Planned for lecturers who apply · phone +82-10-3105-6999</span>
       </a>
       <a
         class="btn btn-secondary-outline btn-full"
@@ -691,14 +717,14 @@
         <strong>first install</strong> of files downloaded from the internet.
       </p>
       <p class="download-recommend">
-        For <strong>formal licenses · institutions · distribution</strong>, use the button below.
+        For the <strong>Korean formal edition</strong>, apply by phone at <a href="tel:+821031056999"><strong>+82-10-3105-6999</strong></a>.
         For <strong>workshops · lectures · advisory</strong>, see <a href="#programs">programs</a> or <a href="#contact">contact</a>.
         For install or analysis questions, use the <a href="https://open.kakao.com/o/gbsK4wCi" target="_blank" rel="noopener noreferrer">open chat</a> for
         <strong>errors · how-to · reviews</strong>. <strong>Free lectures for chat members</strong> are being prepared.
       </p>
-      <a class="btn btn-secondary-outline btn-full" id="btn-license-consult" href="mailto:hyc6999@gmail.com">
-        <span class="btn-label">License · distribution partnership</span>
-        <span class="btn-meta">Individual · university · publisher · channel sales</span>
+      <a class="btn btn-secondary-outline btn-full" id="btn-license-consult" href="tel:+821031056999">
+        <span class="btn-label">Apply for formal edition · +82-10-3105-6999</span>
+        <span class="btn-meta">KRW 90,000 · valid through September 30 · two users</span>
       </a>
       <p class="download-trust">
         <a href="tel:01031056999">010-3105-6999</a> · <a href="mailto:hyc6999@gmail.com">hyc6999@gmail.com</a>
@@ -710,12 +736,13 @@
       <p class="card-eyebrow">Contact</p>
       <h2>Individual · institution · lecture</h2>
       <p class="inquiry-teaser">
-        Researchers, universities, institutions, publishers, distribution partners — <a href="mailto:hyc6999@gmail.com">email</a>
+        Korean formal-edition and instructor-textbook applications — <a href="tel:+821031056999">+82-10-3105-6999</a>
+        · programs and partnerships — <a href="mailto:hyc6999@gmail.com">email</a>
         · <a href="https://open.kakao.com/o/gbsK4wCi" target="_blank" rel="noopener noreferrer">open chat</a>
         (errors · how-to · reviews · free lectures for members coming)
       </p>
       <div class="inquiry-actions">
-        <a class="inquiry-btn inquiry-btn-purchase" href="mailto:hyc6999@gmail.com">License · distribution</a>
+        <a class="inquiry-btn inquiry-btn-purchase" href="tel:+821031056999">Formal edition · +82-10-3105-6999</a>
         <a class="inquiry-btn inquiry-btn-lecture" href="mailto:hyc6999@gmail.com?subject=VibeStat-Text%20lecture%20inquiry">Workshop · lecture</a>
         <a class="inquiry-btn inquiry-btn-community" href="https://open.kakao.com/o/gbsK4wCi" target="_blank" rel="noopener noreferrer">Open chat · errors · how-to · reviews</a>
       </div>
@@ -845,8 +872,8 @@
               <li><strong>Errors after install</strong> — <strong>uninstall VibeStat-Text and R completely</strong>, then reinstall from scratch</li>
               <li><strong>Security permissions</strong> — right-click Setup/exe → <strong>Properties → Security → Edit</strong> → your account → check <strong>Full control · Modify · Read &amp; execute · Read · Write</strong> under Allow · normal on <strong>first install</strong> (not a PC fault)</li>
               <li>Built-in R — core mining without API key · AI optional (BYOK)</li>
-              <li><strong>2nd free trial</strong> — fixes from 1st trial · share freely · valid until Sep 30, 2026</li>
-              <li>First-run terms · desktop shortcut · no activation code</li>
+              <li><strong>Korean free beta</strong> — valid until Sep 30, 2026 · TF-IDF, LDA K-scan, and Vibe-Loom locked; Vibe-Talk available · installer, textbook &amp; guides included (instructor textbook excluded)</li>
+              <li>Korean beta first-run activation code <strong>202606</strong> · formal edition KRW 90,000·two users·phone application</li>
             </ul>
           </div>
         </details>
@@ -920,16 +947,18 @@
         </details>
 
         <details class="fold-item">
-          <summary class="fold-q">Trial distribution (archive)</summary>
+          <summary class="fold-q">Korean beta and formal edition policy</summary>
           <div class="fold-a">
             <p>
-              <em>Superseded by the 2nd free trial above.</em>
-              Earlier individual trial applications closed in July 2026; the 2nd build is now available for direct download.
-              <strong>Thank you</strong> for trying the app and sharing feedback.
+              Company policy separates the Korean <strong>free beta</strong> and <strong>formal edition</strong>.
+              The beta uses first-run activation code <strong>202606</strong>.
+              The beta package includes the <strong>installer, textbook, and guides</strong>; the <strong>instructor textbook is excluded</strong>.
             </p>
             <p>
-              For formal licenses or distribution: <a href="mailto:hyc6999@gmail.com">email us</a> ·
-              workshops: <a href="#programs">programs</a>.
+              The formal edition costs <strong>KRW 90,000</strong>, is valid until <strong>September 30, 2026</strong>,
+              and may be used by <strong>two people</strong>. Apply by phone:
+              <a href="tel:+821031056999"><strong>+82-10-3105-6999</strong></a>.
+              Instructor textbooks are planned for lecturers who apply.
             </p>
             <p class="install-caution" role="note">
               <span class="install-caution-title">⚠ Install caution</span>
@@ -1285,14 +1314,15 @@
         </details>
 
         <details class="fold-item">
-          <summary class="fold-q">How do I apply for the trial?</summary>
+          <summary class="fold-q">How do I use the Korean beta or apply for the formal edition?</summary>
           <div class="fold-a">
             <p>
-              Download <strong>VibeStat-Text-EN 0.7.7.EN_NEW</strong> until <strong>September 30, 2026</strong>.
-              Extract the ZIP, run <strong>Setup</strong> (recommended), accept terms + sync consent on first launch.
-              Anyone may <a href="#download">download free</a> for individual research.
-              Korean edition: <a href="../#download" hreflang="ko" lang="ko">Korean page</a>.
-              For formal licenses or programs: <a href="#contact">Contact →</a>
+              Download the <strong>Korean beta free</strong> and enter activation code <strong>202606</strong> on first run.
+              The package includes the installer, textbook, and guides; the instructor textbook is excluded.
+              The <strong>Korean formal edition</strong> costs KRW 90,000, is valid until September 30, 2026,
+              and supports two users. Apply by phone at
+              <a href="tel:+821031056999"><strong>+82-10-3105-6999</strong></a>.
+              Instructor textbooks are planned for lecturers who apply through the same number.
             </p>
           </div>
         </details>
